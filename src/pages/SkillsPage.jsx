@@ -10,30 +10,35 @@ export default function SkillsPage() {
           Operational expertise built across workplace environments, vendor ecosystems, and cross-functional teams.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+
+          {/* Core Skills — pill/tag style */}
           <div>
             <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-6">Core Skills</h2>
-            <ul className="space-y-4">
-              {about.skills.map((skill) => (
-                <li key={skill} className="flex items-center gap-4 text-slate-300">
-                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0" />
-                  <span className="text-base">{skill}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-6">Tools</h2>
             <div className="flex flex-wrap gap-3">
-              {about.tools.map((tool) => (
+              {about.skills.map((skill) => (
                 <span
-                  key={tool}
-                  className="border border-yellow-600/40 text-slate-300 bg-slate-800/50 rounded-full px-4 py-2 text-sm"
+                  key={skill}
+                  className="border border-yellow-600/40 text-yellow-500 bg-slate-800/50 rounded-full px-4 py-1.5 text-sm"
                 >
-                  {tool}
+                  {skill}
                 </span>
               ))}
             </div>
           </div>
+
+          {/* Tools — bullet list style */}
+          <div>
+            <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-6">Tools</h2>
+            <ul className="space-y-3">
+              {about.tools.map((tool) => (
+                <li key={tool} className="flex items-center gap-3 text-slate-300">
+                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0" />
+                  <span className="text-base">{tool}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>
