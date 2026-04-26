@@ -1,83 +1,172 @@
 [
   {
-    "id": "rho-2024",
+    "id": "rho-2025",
     "company": "Rho",
     "title": "Workplace Operations Manager",
     "location": "San Francisco, CA",
-    "start": "2024",
+    "start": "Jan 2026",
     "end": "Present",
     "bullets": [
       {
         "id": "rho-1",
-        "short": "Led full build-out of Rho's 325 Pacific SF headquarters, coordinating 15+ vendors across 3 concurrent floors from demolition through move-in",
+        "short": "Leading full build-out of Rho's 325 Pacific SF headquarters, coordinating 15+ vendors across 3 concurrent floors from demolition through move-in",
         "has_detail": true,
         "detail_needed": null,
-        "detail": {
-          "context": "Rho's SF headquarters at 325 Pacific Ave required a complete multi-floor renovation — electrical, flooring, HVAC, AV, lighting, millwork, and cleaning crews all running concurrently across 3 floors with an aggressive move-in target.",
-          "challenge": "With no general contractor overseeing the full scope, vendor sequencing had to be managed manually. Flooring couldn't start until electrical drilling was phased; lighting couldn't install after flooring was glued due to lift access restrictions. A structural blocker on Floor 3 made the planned electrical approach infeasible mid-project.",
-          "action": "Owned the critical path end-to-end — built a Notion-based tracking system with Granola integration for real-time meeting capture, ran weekly construction syncs with brokers and designers, and resolved the Floor 3 blocker by researching and proposing a surface-mounted Connect Track alternative that kept the timeline intact.",
-          "result": "Project on track for substantial completion the week of May 4, 2026. All 3 floors progressed through concurrent workstreams without a timeline slip attributable to coordination failure.",
-          "skills": ["Vendor Coordination", "Construction Oversight", "Scheduling", "Stakeholder Management"]
-        }
+        "skills": ["Vendor Coordination", "Construction Oversight", "Scheduling", "Stakeholder Management"],
+        "detail": "Managing a complete multi-floor renovation with no general contractor — all vendor sequencing, dependency management, and critical-path decisions owned directly. A structural blocker on Floor 3 mid-project made the planned electrical approach infeasible; researched and proposed a surface-mounted Connect Track alternative that preserved the timeline. Running weekly construction syncs with brokers, designers, and contractors while tracking all workstreams in a Notion system with Granola integration. Project on track for substantial completion week of May 4, 2026, with no timeline slippage attributable to coordination failure."
       },
       {
         "id": "rho-2",
-        "short": "Identified and disputed a $9K+ electrical overquote and design firm billing discrepancies through systematic invoice auditing against calendar records",
+        "short": "Identified and disputed a $9K+ electrical overquote and design firm billing discrepancies through systematic invoice auditing",
         "has_detail": true,
         "detail_needed": null,
-        "detail": {
-          "context": "With 15+ active vendor relationships and no dedicated finance oversight, invoice accuracy was entirely self-managed. Two separate billing issues emerged within the same project cycle.",
-          "challenge": "A vendor submitted an electrical quote that appeared significantly inflated. Separately, the design firm's invoice included billed meeting hours that didn't match the actual meeting record.",
-          "action": "Cross-referenced the design firm's billed hours against Google Calendar to surface the discrepancy. On the electrical side, flagged the pricing inconsistency directly, pushed for transparency on vendor billing, and identified an additional ~$5K savings opportunity by moving flat mold electrical from ceiling to floor on Floor 3.",
-          "result": "Disputed the ~$9K electrical overquote and surfaced the design firm billing discrepancy. Both issues escalated with documentation rather than absorbed into the budget.",
-          "skills": ["Invoice Auditing", "Budget Management", "Vendor Accountability", "Compliance"]
-        }
+        "skills": ["Invoice Auditing", "Budget Management", "Vendor Accountability"],
+        "detail": "With 15+ active vendors and no dedicated finance oversight, invoice accuracy was entirely self-managed across a high-volume project cycle. Cross-referenced the design firm's billed meeting hours against Google Calendar records to surface a discrepancy, and flagged a separate ~$9K electrical overquote by pushing for pricing transparency. Also identified an additional ~$5K savings opportunity by relocating flat mold electrical from ceiling to floor on Floor 3. Both issues escalated with documentation rather than absorbed into the budget."
       },
       {
         "id": "rho-3",
-        "short": "Managed real-time design and regulatory pivots — including a 44-fixture lighting crisis and a historic district permit rejection — without impacting construction timeline",
+        "short": "Resolved a 44-fixture lighting crisis and a historic district permit rejection in the same project week without impacting the construction timeline",
         "has_detail": true,
         "detail_needed": null,
-        "detail": {
-          "context": "Two high-impact blockers emerged in the same project week, either of which could have pushed the move-in date.",
-          "challenge": "Alcon shipped 44 pendant/indirect-direct fixtures instead of the specified surface-mount configuration, threatening the lighting install timeline and UL certification. Simultaneously, the city rejected the exterior signage permit due to historic district restrictions, leaving the signage scope unresolved.",
-          "action": "Diagnosed the lighting root cause with the vendor and electrician, then scoped a two-part remediation using aircraft cables and a 3-wire cable roll that preserved UL certification at $0 incremental cost. For signage, pivoted from the rejected permit to a no-permit acrylic panel replacement that required no new electrical and unblocked the scope entirely.",
-          "result": "Both blockers resolved within the same week. Pendant install kicked off on schedule; signage scope unblocked with no timeline impact and no added cost on the lighting side.",
-          "skills": ["Problem Solving", "Vendor Escalation", "Regulatory Navigation", "Decision-Making Under Pressure"]
-        }
+        "skills": ["Problem Solving", "Vendor Escalation", "Regulatory Navigation"],
+        "detail": "Alcon shipped pendant fixtures instead of the specified surface-mount configuration, threatening both the install schedule and UL certification. Diagnosed the root cause with the vendor and electrician, then scoped a two-part remediation using aircraft cables and a 3-wire cable roll that preserved certification at $0 incremental cost. Simultaneously, the city rejected the exterior signage permit due to historic district restrictions — pivoted to a no-permit acrylic panel replacement that required no new electrical and unblocked the scope entirely. Both blockers closed within the same week."
       }
     ]
   },
   {
-    "id": "klaviyo",
+    "id": "klaviyo-2025",
     "company": "Klaviyo",
-    "title": "[PLACEHOLDER — title needed]",
-    "location": "[PLACEHOLDER — location needed]",
-    "start": "[PLACEHOLDER]",
-    "end": "[PLACEHOLDER]",
+    "title": "Senior Office Coordinator",
+    "location": "San Francisco, CA",
+    "start": "May 2025",
+    "end": "Dec 2025",
     "bullets": [
       {
         "id": "klaviyo-1",
-        "short": "[PLACEHOLDER — resume bullet needed]",
+        "short": "Delivered $30K under budget on office design initiative by sourcing and managing local vendor partnerships",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Budget Management", "Vendor Coordination", "Space Planning"],
+        "detail": "Led the vendor strategy for a full office design initiative, sourcing local partnerships as an alternative to higher-cost default vendors. Managed the vendor relationships end-to-end — from scoping and negotiation through delivery — while maintaining design quality and timeline. Result: came in $30K under the approved budget without scope reduction."
+      },
+      {
+        "id": "klaviyo-2",
+        "short": "Led redesign and operational strategy for SF hub event space, improving usability for internal and client-facing programming",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Space Planning", "Employee Experience", "Event Programming"],
+        "detail": "Assessed the existing event space layout and identified friction points limiting its use for both internal team programming and external client events. Drove the redesign from operational and experiential angles — layout, AV capability, and workflow — to make the space more flexible and high-impact. The updated space improved usability across both programming types without requiring a full build-out."
+      },
+      {
+        "id": "klaviyo-3",
+        "short": "Built and implemented internal service catalog in Freshworks, creating scalable workflows for workplace and facilities requests",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Process Documentation", "Freshworks", "Workplace Operations"],
+        "detail": "Identified that incoming workplace and facilities requests lacked a consistent intake and routing process, creating response delays and dropped items. Built a structured service catalog in Freshworks that standardized request categories, routing logic, and SLAs across the team. The system created a scalable, trackable workflow that reduced manual triage and improved response consistency."
+      }
+    ]
+  },
+  {
+    "id": "bridge-2024",
+    "company": "BRIDGE Housing",
+    "title": "Office Coordinator",
+    "location": "San Francisco, CA",
+    "start": "May 2024",
+    "end": "May 2025",
+    "bullets": [
+      {
+        "id": "bridge-1",
+        "short": "Launched workplace program that increased in-office attendance by 35% using engagement insights to inform approach",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Employee Experience", "Workplace Analytics", "Event Programming"],
+        "detail": "Identified a decline in in-office attendance and used engagement data to understand the underlying drivers before designing a response. Built and launched a workplace program targeting the specific friction points — not a generic events calendar — grounded in what the data showed employees actually valued. The program drove a 35% increase in in-office attendance."
+      },
+      {
+        "id": "bridge-2",
+        "short": "Owned daily workplace operations supporting CFO, HR, and Development leadership as the central coordination point across departments",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Workplace Operations", "Stakeholder Management", "Facilities Management"],
+        "detail": "Served as the operational hub for executive-level stakeholders across three departments, managing competing priorities and requests without a formal escalation structure. Maintained consistent facility performance and service delivery across the organization by owning vendor relationships, service scheduling, and issue resolution directly. This role required independent judgment daily — knowing when to solve, escalate, or push back."
+      },
+      {
+        "id": "bridge-3",
+        "short": "Led onboarding and offboarding operations including access control, hardware provisioning, and workspace readiness",
         "has_detail": false,
-        "detail_needed": "Full role context needed: title, dates, location, key responsibilities, and at least one project with challenge/action/result to populate a bullet.",
+        "detail_needed": "Would benefit from: volume of onboardings managed, any process improvements made, or a specific example of a complex onboarding/offboarding case handled.",
+        "skills": ["Hardware Provisioning", "Process Documentation", "Workplace Operations"],
         "detail": null
       }
     ]
   },
   {
-    "id": "bridge",
-    "company": "Bridge",
-    "title": "[PLACEHOLDER — title needed]",
-    "location": "[PLACEHOLDER — location needed]",
-    "start": "[PLACEHOLDER]",
-    "end": "[PLACEHOLDER]",
+    "id": "werqwise-it-2023",
+    "company": "Werqwise",
+    "title": "IT Analyst — Workplace Operations Hybrid",
+    "location": "San Francisco, CA",
+    "start": "Jan 2023",
+    "end": "Dec 2023",
     "bullets": [
       {
-        "id": "bridge-1",
-        "short": "[PLACEHOLDER — resume bullet needed]",
+        "id": "werqwise-it-1",
+        "short": "Implemented digital signage system (Optisign), reducing annual costs by $15K while improving workplace communication",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["AV/IT Systems", "Budget Management", "Workplace Operations"],
+        "detail": "Evaluated the existing signage approach and identified an opportunity to replace it with a more cost-effective and flexible digital system. Selected and implemented Optisign across the sites, managing the rollout from vendor selection through deployment. The switch reduced annual costs by $15K while improving the quality and responsiveness of workplace communication."
+      },
+      {
+        "id": "werqwise-it-2",
+        "short": "Leveraged Envoy utilization data to inform space planning and operational decisions across multiple sites",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Workplace Analytics", "Space Planning", "Facilities Management"],
+        "detail": "Used Envoy occupancy and utilization data to move space planning decisions from intuition to evidence — identifying underused areas, peak usage patterns, and mismatches between allocated and actual space use. Translated the data into actionable operational recommendations rather than leaving it in dashboards. This approach informed layout adjustments and resource allocation across multiple sites."
+      }
+    ]
+  },
+  {
+    "id": "werqwise-member-2021",
+    "company": "Werqwise",
+    "title": "Member Experience Associate",
+    "location": "San Francisco, CA",
+    "start": "Aug 2021",
+    "end": "Jan 2023",
+    "bullets": [
+      {
+        "id": "werqwise-mem-1",
+        "short": "Drove member retention to 3.5% churn through proactive engagement strategies and community programming",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Employee Experience", "Event Programming", "Relationship Management"],
+        "detail": "Managed member relationships in a high-volume coworking environment where churn was a direct business metric. Built proactive touchpoints — community events, check-ins, and programming — designed to surface dissatisfaction before it became a cancellation. Churn held at 3.5%, reflecting a retention-first approach to member experience."
+      },
+      {
+        "id": "werqwise-mem-2",
+        "short": "Managed front-of-house operations, logistics, and member services in a high-volume coworking environment",
         "has_detail": false,
-        "detail_needed": "Full role context needed: title, dates, location, and details on the office relocation — scope, vendors managed, timeline, and outcome.",
+        "detail_needed": "Would benefit from: volume figures (members served, daily traffic), a specific operational challenge overcome, or a process improvement implemented.",
+        "skills": ["Workplace Operations", "Facilities Management"],
+        "detail": null
+      }
+    ]
+  },
+  {
+    "id": "connections-2019",
+    "company": "Connections",
+    "title": "Office Manager",
+    "location": "San Francisco, CA",
+    "start": "Jul 2019",
+    "end": "May 2020",
+    "bullets": [
+      {
+        "id": "connections-1",
+        "short": "Led office operations, vendor coordination, and onboarding processes for internal teams",
+        "has_detail": false,
+        "detail_needed": "Need more context: team size supported, vendor types managed, any notable process improvements, or a specific operational challenge resolved.",
+        "skills": ["Workplace Operations", "Vendor Coordination"],
         "detail": null
       }
     ]

@@ -38,47 +38,57 @@
   {
     "id": "klaviyo-office-redesign",
     "icon": "🎨",
-    "title": "Klaviyo Office Redesign",
+    "title": "Klaviyo SF Hub Event Space Redesign",
     "status": "Completed",
     "company": "Klaviyo",
-    "location": "[PLACEHOLDER — city needed]",
-    "role": "[PLACEHOLDER — role title needed]",
-    "description": "[PLACEHOLDER — project description needed]",
-    "tags": ["Space Design", "Vendor Mgmt", "Project Management"],
+    "location": "San Francisco, CA",
+    "role": "Senior Office Coordinator — West Coast Real Estate Operations",
+    "description": "Led the redesign and operational strategy for Klaviyo's SF hub event space, improving usability for high-impact internal and client-facing programming. Delivered the broader office design initiative $30K under budget by sourcing and managing local vendor partnerships.",
+    "tags": ["Space Design", "Vendor Mgmt", "Budget Management"],
     "key_highlights": [
-      "[PLACEHOLDER — key highlights needed]"
+      "Delivered $30K under budget on office design initiative through local vendor sourcing",
+      "Redesigned SF hub event space for dual use: internal programming and client-facing events",
+      "Served as West Coast POC for Global Real Estate Operations, aligning local facilities with global standards",
+      "Built internal service catalog in Freshworks for scalable workplace and facilities request workflows"
     ],
-    "numbers": {},
+    "numbers": {
+      "under_budget": "$30K"
+    },
     "images": {
       "hero": "/assets/images/projects/klaviyo-office-redesign/hero.jpg",
       "before": "/assets/images/projects/klaviyo-office-redesign/before.jpg",
       "after": "/assets/images/projects/klaviyo-office-redesign/after.jpg"
     },
     "photos_needed": [
-      "Before/after shots",
-      "Key design features"
+      "Event space before/after",
+      "Finished space in use for an event"
     ]
   },
   {
     "id": "bridge-office-relocation",
     "icon": "📦",
-    "title": "Bridge Office Relocation",
+    "title": "BRIDGE Housing — Workplace Operations",
     "status": "Completed",
-    "company": "Bridge",
-    "location": "[PLACEHOLDER — city needed]",
-    "role": "[PLACEHOLDER — role title needed]",
-    "description": "[PLACEHOLDER — project description needed]",
-    "tags": ["Relocation", "Logistics", "Vendor Mgmt"],
+    "company": "BRIDGE Housing",
+    "location": "San Francisco, CA",
+    "role": "Office Coordinator — Executive Operations Support",
+    "description": "Owned daily workplace operations supporting executive leadership across CFO, HR, and Development at BRIDGE Housing. Launched an engagement-driven workplace program that increased in-office attendance by 35% and managed full vendor and facilities operations.",
+    "tags": ["Workplace Ops", "Employee Experience", "Facilities"],
     "key_highlights": [
-      "[PLACEHOLDER — key highlights needed]"
+      "Launched workplace program increasing in-office attendance by 35% using engagement insights",
+      "Owned operations for executive leadership (CFO, HR, Development) as the central coordination point",
+      "Managed vendor relationships and service delivery for consistent facility performance",
+      "Led onboarding/offboarding including access control, hardware provisioning, and workspace readiness"
     ],
-    "numbers": {},
+    "numbers": {
+      "attendance_increase": "35%"
+    },
     "images": {
       "hero": "/assets/images/projects/bridge-office-relocation/hero.jpg"
     },
     "photos_needed": [
-      "Before/after shots",
-      "Move-in day photos"
+      "Office environment photos",
+      "Event/programming photos if available"
     ]
   },
   {

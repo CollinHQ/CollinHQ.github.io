@@ -1,17 +1,87 @@
 [
   {
-    "id": "rho-current",
+    "id": "rho-2025",
     "company": "Rho",
     "title": "Workplace Operations Manager",
     "location": "San Francisco, CA",
-    "start": "2024",
+    "start": "Jan 2026",
     "end": "Present",
-    "description": "Leading workplace operations across Rho's SF and NYC offices — managing a multi-floor office build-out, vendor relationships, employee experience programming, and internal communications.",
+    "description": "Leading workplace operations across Rho's SF headquarters — managing a multi-floor office build-out, 15+ vendor relationships, employee experience programming, and internal communications.",
     "highlights": [
       "Managing full build-out of 325 Pacific Ave SF headquarters across 3 floors, coordinating 15+ vendors from demolition through move-in",
       "Built and manage the full vendor lifecycle — onboarding, COI compliance, invoice auditing, and contract negotiation",
       "Designed and execute employee experience programming: events, Slack newsletters, wellness activations, and surprise-and-delight initiatives",
       "Developed repeatable office operations playbooks applied across SF and NYC locations"
+    ]
+  },
+  {
+    "id": "klaviyo-2025",
+    "company": "Klaviyo",
+    "title": "Senior Office Coordinator",
+    "location": "San Francisco, CA",
+    "start": "May 2025",
+    "end": "Dec 2025",
+    "description": "Served as West Coast point of contact for Global Real Estate Operations, aligning local facilities with global workplace standards while leading design and systems initiatives.",
+    "highlights": [
+      "Delivered $30K under budget on office design initiative by sourcing and managing local vendor partnerships",
+      "Led redesign and operational strategy for SF hub event space for internal and client-facing programming",
+      "Built internal service catalog in Freshworks, creating scalable workflows for workplace and facilities requests",
+      "Managed cross-functional onboarding with IT and People Ops, ensuring seamless Day 1 readiness"
+    ]
+  },
+  {
+    "id": "bridge-2024",
+    "company": "BRIDGE Housing",
+    "title": "Office Coordinator",
+    "location": "San Francisco, CA",
+    "start": "May 2024",
+    "end": "May 2025",
+    "description": "Owned daily workplace operations supporting executive leadership across CFO, HR, and Development, acting as the central coordination point across departments.",
+    "highlights": [
+      "Launched workplace program that increased in-office attendance by 35% using engagement insights",
+      "Managed vendor relationships and service delivery ensuring consistent facility performance",
+      "Led onboarding/offboarding operations including access control, hardware provisioning, and workspace readiness"
+    ]
+  },
+  {
+    "id": "werqwise-it-2023",
+    "company": "Werqwise",
+    "title": "IT Analyst — Workplace Operations Hybrid",
+    "location": "San Francisco, CA",
+    "start": "Jan 2023",
+    "end": "Dec 2023",
+    "description": "Managed workplace technology and AV systems across multiple sites while acting as primary liaison with building management.",
+    "highlights": [
+      "Implemented Optisign digital signage system, reducing annual costs by $15K",
+      "Leveraged Envoy utilization data to inform space planning and operational decisions",
+      "Coordinated building maintenance, inspections, and vendor services across sites"
+    ]
+  },
+  {
+    "id": "werqwise-member-2021",
+    "company": "Werqwise",
+    "title": "Member Experience Associate",
+    "location": "San Francisco, CA",
+    "start": "Aug 2021",
+    "end": "Jan 2023",
+    "description": "Drove member retention and community experience in a high-volume coworking environment.",
+    "highlights": [
+      "Drove member retention to 3.5% churn through proactive engagement and community programming",
+      "Planned and executed workplace events strengthening community and brand experience",
+      "Managed front-of-house operations, logistics, and member services"
+    ]
+  },
+  {
+    "id": "connections-2019",
+    "company": "Connections",
+    "title": "Office Manager",
+    "location": "San Francisco, CA",
+    "start": "Jul 2019",
+    "end": "May 2020",
+    "description": "Led office operations, vendor coordination, and onboarding processes for internal teams.",
+    "highlights": [
+      "Resolved escalated operational issues and supported supervisors across departments",
+      "Coordinated company events and internal engagement initiatives"
     ]
   }
 ]
