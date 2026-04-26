@@ -14,83 +14,102 @@ function ChevronIcon({ open }) {
   )
 }
 
-export default function InteractiveResume() {
+export default function InteractiveResume({ pinnedSkill, onClearPin }) {
   const [expandedId, setExpandedId] = useState(null)
   const [hoveredSkill, setHoveredSkill] = useState(null)
+
+  const activeSkill = hoveredSkill || pinnedSkill
 
   const toggle = (id) => setExpandedId(prev => prev === id ? null : id)
 
   const bulletIsHighlighted = (bullet) =>
-    hoveredSkill && bullet.skills?.includes(hoveredSkill) && expandedId !== bullet.id
+    activeSkill &&
+    bullet.skills?.includes(activeSkill) &&
+    expandedId !== bullet.id
 
   return (
-    <div className="space-y-8">
-      {resume.map((role) => (
-        <div key={role.id} className="bg-[#1a2535] rounded-2xl p-8">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
-            <h3 className="font-serif text-xl font-bold text-white">{role.company}</h3>
-            <span className="text-slate-500 text-sm">{role.start} — {role.end}</span>
-          </div>
-          <p className="text-yellow-500 text-sm mb-6">{role.title} · {role.location}</p>
+    <div>
+      {/* Pinned skill banner */}
+      {pinnedSkill && (
+        <div className="flex items-center justify-between bg-yellow-500/10 border border-yellow-600/30 rounded-xl px-5 py-3 mb-6">
+          <p className="text-yellow-500 text-sm">
+            Highlighting bullets tagged with <span className="font-semibold">{pinnedSkill}</span>
+          </p>
+          <button
+            onClick={onClearPin}
+            className="text-slate-400 hover:text-yellow-500 text-xs transition-colors"
+          >
+            Clear ✕
+          </button>
+        </div>
+      )}
 
-          <ul className="space-y-1">
-            {role.bullets.map((bullet) => {
-              const isOpen = expandedId === bullet.id
-              const highlighted = bulletIsHighlighted(bullet)
+      <div className="space-y-8">
+        {resume.map((role) => (
+          <div key={role.id} className="bg-[#1a2535] rounded-2xl p-8">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+              <h3 className="font-serif text-xl font-bold text-white">{role.company}</h3>
+              <span className="text-slate-500 text-sm">{role.start} — {role.end}</span>
+            </div>
+            <p className="text-yellow-500 text-sm mb-6">{role.title} · {role.location}</p>
 
-              return (
-                <li
-                  key={bullet.id}
-                  className={`rounded-lg transition-colors duration-200 ${
-                    highlighted ? 'bg-yellow-500/5 ring-1 ring-yellow-600/30' : ''
-                  }`}
-                >
-                  {/* Bullet row */}
-                  <div className="flex items-start gap-3 px-3 py-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0 mt-2" />
-                    <span className="text-slate-300 text-sm leading-relaxed flex-1">
-                      {bullet.short}
-                    </span>
-                    {bullet.has_detail && (
-                      <button
-                        onClick={() => toggle(bullet.id)}
-                        className="mt-0.5 text-yellow-500 hover:text-yellow-400 transition-colors flex-shrink-0"
-                        title={isOpen ? 'Collapse' : 'Read more'}
-                      >
-                        <ChevronIcon open={isOpen} />
-                      </button>
-                    )}
-                  </div>
+            <ul className="space-y-1">
+              {role.bullets.map((bullet) => {
+                const isOpen = expandedId === bullet.id
+                const highlighted = bulletIsHighlighted(bullet)
 
-                  {/* Inline dropdown */}
-                  {isOpen && bullet.detail && (
-                    <div className="mx-3 mb-3 pl-4 border-l border-yellow-600/30">
-                      <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                        {bullet.detail}
-                      </p>
-                      {bullet.skills?.length > 0 && (
-                        <div className="flex flex-wrap gap-2">
-                          {bullet.skills.map((skill) => (
-                            <Link
-                              key={skill}
-                              to="/skills"
-                              onMouseEnter={() => setHoveredSkill(skill)}
-                              onMouseLeave={() => setHoveredSkill(null)}
-                              className="border border-yellow-600/40 text-yellow-500 bg-slate-800/50 hover:bg-yellow-500/10 rounded-full px-3 py-1 text-xs transition-colors duration-150"
-                            >
-                              {skill}
-                            </Link>
-                          ))}
-                        </div>
+                return (
+                  <li
+                    key={bullet.id}
+                    className={`rounded-lg transition-all duration-200 ${
+                      highlighted ? 'bg-yellow-500/5 ring-1 ring-yellow-600/30' : ''
+                    }`}
+                  >
+                    <div className="flex items-start gap-3 px-3 py-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0 mt-2" />
+                      <span className="text-slate-300 text-sm leading-relaxed flex-1">
+                        {bullet.short}
+                      </span>
+                      {bullet.has_detail && (
+                        <button
+                          onClick={() => toggle(bullet.id)}
+                          className="mt-0.5 text-yellow-500 hover:text-yellow-400 transition-colors flex-shrink-0"
+                          title={isOpen ? 'Collapse' : 'Read more'}
+                        >
+                          <ChevronIcon open={isOpen} />
+                        </button>
                       )}
                     </div>
-                  )}
-                </li>
-              )
-            })}
-          </ul>
-        </div>
-      ))}
+
+                    {isOpen && bullet.detail && (
+                      <div className="mx-3 mb-3 pl-4 border-l border-yellow-600/30">
+                        <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                          {bullet.detail}
+                        </p>
+                        {bullet.skills?.length > 0 && (
+                          <div className="flex flex-wrap gap-2">
+                            {bullet.skills.map((skill) => (
+                              <Link
+                                key={skill}
+                                to="/skills"
+                                onMouseEnter={() => setHoveredSkill(skill)}
+                                onMouseLeave={() => setHoveredSkill(null)}
+                                className="border border-yellow-600/40 text-yellow-500 bg-slate-800/50 hover:bg-yellow-500/10 rounded-full px-3 py-1 text-xs transition-colors duration-150"
+                              >
+                                {skill}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import experience from '../data/experience.json'
 import InteractiveResume from '../components/InteractiveResume'
 
@@ -14,6 +16,16 @@ function scrollTo(e, href) {
 }
 
 export default function ExperiencePage() {
+  const [searchParams, setSearchParams] = useSearchParams()
+  const [pinnedSkill, setPinnedSkill] = useState(
+    () => searchParams.get('skill') || null
+  )
+
+  const clearPin = () => {
+    setPinnedSkill(null)
+    setSearchParams({})
+  }
+
   return (
     <div className="min-h-screen pt-24 pb-24 px-6">
       <div className="max-w-4xl mx-auto">
@@ -74,9 +86,9 @@ export default function ExperiencePage() {
         <section id="interactive-resume" className="mb-28 scroll-mt-24">
           <h2 className="font-serif text-3xl font-bold text-white mb-2">Interactive Resume</h2>
           <p className="text-slate-400 text-sm mb-10">
-            Click the <span className="text-yellow-500">+</span> on any bullet to read the full story behind it.
+            Click the <span className="text-yellow-500">⌄</span> on any bullet to read the full story. Skill tags link back to the Skills page.
           </p>
-          <InteractiveResume />
+          <InteractiveResume pinnedSkill={pinnedSkill} onClearPin={clearPin} />
         </section>
 
         {/* Case Studies */}
