@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import resume from '../data/resume.json'
+import about from '../data/about.json'
 
 function ChevronIcon({ open }) {
   return (
@@ -38,7 +39,17 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
       )}
 
       {/* Resume document */}
-      <div className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+      <div className="bg-white border border-gray-200 rounded shadow-sm overflow-hidden">
+
+        {/* Resume header */}
+        <div className="px-8 pt-6 pb-4 border-b border-gray-100">
+          <h2 className="text-xl font-bold text-gray-900 tracking-tight">{about.name}</h2>
+          <p className="text-amber-600 text-sm font-medium mt-0.5">Workplace Generalist</p>
+          <p className="text-gray-500 text-xs mt-2 leading-relaxed max-w-2xl">
+            {about.one_liner}
+          </p>
+        </div>
+
         {resume.map((role, roleIdx) => (
           <div key={role.id}>
             {/* Position header */}
