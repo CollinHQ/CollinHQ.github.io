@@ -93,9 +93,9 @@ export default function ExperiencePage() {
         </section>
 
         {/* Interactive Resume */}
-        <section id="interactive-resume" className="mb-28 scroll-mt-24">
-          <h2 className="font-serif text-3xl font-bold text-white mb-2 text-center">Interactive Resume</h2>
-          <p className="text-slate-400 text-sm mb-8 text-center">
+        <section id="interactive-resume" className="mb-28 scroll-mt-16">
+          <h2 className="font-serif text-3xl font-bold text-white mb-1 text-center">Interactive Resume</h2>
+          <p className="text-slate-400 text-sm mb-4 text-center">
             Click <span className="text-yellow-500">⌄</span> on any bullet to expand. Skill tags link to the Skills page.
           </p>
           <InteractiveResume pinnedSkill={pinnedSkill} onClearPin={clearPin} />
