@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import experience from '../data/experience.json'
 import InteractiveResume from '../components/InteractiveResume'
@@ -20,6 +20,16 @@ export default function ExperiencePage() {
   const [pinnedSkill, setPinnedSkill] = useState(
     () => searchParams.get('skill') || null
   )
+
+  // Auto-scroll to interactive resume when arriving with a skill param
+  useEffect(() => {
+    if (searchParams.get('skill')) {
+      setTimeout(() => {
+        const el = document.querySelector('#interactive-resume')
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
+  }, [])
 
   const clearPin = () => {
     setPinnedSkill(null)

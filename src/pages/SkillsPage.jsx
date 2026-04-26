@@ -34,7 +34,7 @@ export default function SkillsPage() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-14">
-          {/* Core Skills — pill/tag style, clickable */}
+          {/* Core Skills */}
           <div>
             <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Core Skills</h2>
             <p className="text-slate-500 text-xs mb-5">Click any skill to see where it shows up in my experience.</p>
@@ -55,7 +55,7 @@ export default function SkillsPage() {
             </div>
           </div>
 
-          {/* Tools — bullet list */}
+          {/* Tools */}
           <div>
             <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-6">Tools</h2>
             <ul className="space-y-3">
@@ -69,14 +69,12 @@ export default function SkillsPage() {
           </div>
         </div>
 
-        {/* Matching bullets panel */}
+        {/* Matching bullets — single container */}
         {selectedSkill && (
           <div className="border-t border-yellow-600/20 pt-10">
             <div className="flex items-center justify-between mb-6">
               <div>
-                <p className="text-yellow-500 text-xs uppercase tracking-widest mb-1">
-                  Showing experience for
-                </p>
+                <p className="text-yellow-500 text-xs uppercase tracking-widest mb-1">Showing experience for</p>
                 <h2 className="font-serif text-2xl font-bold text-white">{selectedSkill}</h2>
               </div>
               <Link
@@ -92,9 +90,14 @@ export default function SkillsPage() {
             </div>
 
             {matchingBullets.length > 0 ? (
-              <div className="space-y-3">
-                {matchingBullets.map((bullet) => (
-                  <div key={bullet.id} className="bg-[#1a2535] rounded-xl px-6 py-4 flex items-start gap-4">
+              <div className="bg-[#1a2535] rounded-xl overflow-hidden">
+                {matchingBullets.map((bullet, i) => (
+                  <div
+                    key={bullet.id}
+                    className={`flex items-start gap-4 px-6 py-4 ${
+                      i < matchingBullets.length - 1 ? 'border-b border-slate-700/50' : ''
+                    }`}
+                  >
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0 mt-2" />
                     <div className="flex-1">
                       <p className="text-slate-300 text-sm leading-relaxed">{bullet.short}</p>
