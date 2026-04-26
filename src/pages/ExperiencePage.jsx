@@ -1,4 +1,5 @@
 import experience from '../data/experience.json'
+import InteractiveResume from '../components/InteractiveResume'
 
 const subNav = [
   { label: 'Timeline', href: '#timeline' },
@@ -71,13 +72,11 @@ export default function ExperiencePage() {
 
         {/* Interactive Resume */}
         <section id="interactive-resume" className="mb-28 scroll-mt-24">
-          <h2 className="font-serif text-3xl font-bold text-white mb-4">Interactive Resume</h2>
-          <p className="text-slate-500 text-sm mb-10">
-            Click any bullet point to read more about that experience.
+          <h2 className="font-serif text-3xl font-bold text-white mb-2">Interactive Resume</h2>
+          <p className="text-slate-400 text-sm mb-10">
+            Click the <span className="text-yellow-500">+</span> on any bullet to read the full story behind it.
           </p>
-          <div className="bg-[#1a2535] rounded-2xl p-8 flex items-center justify-center min-h-48">
-            <p className="text-slate-500 text-sm italic">Interactive resume — coming soon</p>
-          </div>
+          <InteractiveResume />
         </section>
 
         {/* Case Studies */}

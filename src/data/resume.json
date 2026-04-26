@@ -1,0 +1,85 @@
+[
+  {
+    "id": "rho-2024",
+    "company": "Rho",
+    "title": "Workplace Operations Manager",
+    "location": "San Francisco, CA",
+    "start": "2024",
+    "end": "Present",
+    "bullets": [
+      {
+        "id": "rho-1",
+        "short": "Led full build-out of Rho's 325 Pacific SF headquarters, coordinating 15+ vendors across 3 concurrent floors from demolition through move-in",
+        "has_detail": true,
+        "detail_needed": null,
+        "detail": {
+          "context": "Rho's SF headquarters at 325 Pacific Ave required a complete multi-floor renovation — electrical, flooring, HVAC, AV, lighting, millwork, and cleaning crews all running concurrently across 3 floors with an aggressive move-in target.",
+          "challenge": "With no general contractor overseeing the full scope, vendor sequencing had to be managed manually. Flooring couldn't start until electrical drilling was phased; lighting couldn't install after flooring was glued due to lift access restrictions. A structural blocker on Floor 3 made the planned electrical approach infeasible mid-project.",
+          "action": "Owned the critical path end-to-end — built a Notion-based tracking system with Granola integration for real-time meeting capture, ran weekly construction syncs with brokers and designers, and resolved the Floor 3 blocker by researching and proposing a surface-mounted Connect Track alternative that kept the timeline intact.",
+          "result": "Project on track for substantial completion the week of May 4, 2026. All 3 floors progressed through concurrent workstreams without a timeline slip attributable to coordination failure.",
+          "skills": ["Vendor Coordination", "Construction Oversight", "Scheduling", "Stakeholder Management"]
+        }
+      },
+      {
+        "id": "rho-2",
+        "short": "Identified and disputed a $9K+ electrical overquote and design firm billing discrepancies through systematic invoice auditing against calendar records",
+        "has_detail": true,
+        "detail_needed": null,
+        "detail": {
+          "context": "With 15+ active vendor relationships and no dedicated finance oversight, invoice accuracy was entirely self-managed. Two separate billing issues emerged within the same project cycle.",
+          "challenge": "A vendor submitted an electrical quote that appeared significantly inflated. Separately, the design firm's invoice included billed meeting hours that didn't match the actual meeting record.",
+          "action": "Cross-referenced the design firm's billed hours against Google Calendar to surface the discrepancy. On the electrical side, flagged the pricing inconsistency directly, pushed for transparency on vendor billing, and identified an additional ~$5K savings opportunity by moving flat mold electrical from ceiling to floor on Floor 3.",
+          "result": "Disputed the ~$9K electrical overquote and surfaced the design firm billing discrepancy. Both issues escalated with documentation rather than absorbed into the budget.",
+          "skills": ["Invoice Auditing", "Budget Management", "Vendor Accountability", "Compliance"]
+        }
+      },
+      {
+        "id": "rho-3",
+        "short": "Managed real-time design and regulatory pivots — including a 44-fixture lighting crisis and a historic district permit rejection — without impacting construction timeline",
+        "has_detail": true,
+        "detail_needed": null,
+        "detail": {
+          "context": "Two high-impact blockers emerged in the same project week, either of which could have pushed the move-in date.",
+          "challenge": "Alcon shipped 44 pendant/indirect-direct fixtures instead of the specified surface-mount configuration, threatening the lighting install timeline and UL certification. Simultaneously, the city rejected the exterior signage permit due to historic district restrictions, leaving the signage scope unresolved.",
+          "action": "Diagnosed the lighting root cause with the vendor and electrician, then scoped a two-part remediation using aircraft cables and a 3-wire cable roll that preserved UL certification at $0 incremental cost. For signage, pivoted from the rejected permit to a no-permit acrylic panel replacement that required no new electrical and unblocked the scope entirely.",
+          "result": "Both blockers resolved within the same week. Pendant install kicked off on schedule; signage scope unblocked with no timeline impact and no added cost on the lighting side.",
+          "skills": ["Problem Solving", "Vendor Escalation", "Regulatory Navigation", "Decision-Making Under Pressure"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "klaviyo",
+    "company": "Klaviyo",
+    "title": "[PLACEHOLDER — title needed]",
+    "location": "[PLACEHOLDER — location needed]",
+    "start": "[PLACEHOLDER]",
+    "end": "[PLACEHOLDER]",
+    "bullets": [
+      {
+        "id": "klaviyo-1",
+        "short": "[PLACEHOLDER — resume bullet needed]",
+        "has_detail": false,
+        "detail_needed": "Full role context needed: title, dates, location, key responsibilities, and at least one project with challenge/action/result to populate a bullet.",
+        "detail": null
+      }
+    ]
+  },
+  {
+    "id": "bridge",
+    "company": "Bridge",
+    "title": "[PLACEHOLDER — title needed]",
+    "location": "[PLACEHOLDER — location needed]",
+    "start": "[PLACEHOLDER]",
+    "end": "[PLACEHOLDER]",
+    "bullets": [
+      {
+        "id": "bridge-1",
+        "short": "[PLACEHOLDER — resume bullet needed]",
+        "has_detail": false,
+        "detail_needed": "Full role context needed: title, dates, location, and details on the office relocation — scope, vendors managed, timeline, and outcome.",
+        "detail": null
+      }
+    ]
+  }
+]
