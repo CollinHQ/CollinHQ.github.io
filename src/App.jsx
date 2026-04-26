@@ -1,19 +1,22 @@
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Experience from './components/Experience'
+import Home from './pages/Home'
+import ProjectsPage from './pages/ProjectsPage'
+import SkillsPage from './pages/SkillsPage'
+import ExperiencePage from './pages/ExperiencePage'
 
 export default function App() {
   return (
-    <main className="bg-[#0d1b2a] min-h-screen">
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-    </main>
+    <HashRouter>
+      <div className="bg-[#0d1b2a] min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/skills" element={<SkillsPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+        </Routes>
+      </div>
+    </HashRouter>
   )
 }

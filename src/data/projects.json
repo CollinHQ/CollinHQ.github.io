@@ -1,5 +1,87 @@
 [
   {
+    "id": "rho-office-redesign",
+    "icon": "🏗️",
+    "title": "Rho HQ Office Redesign — 325 Pacific",
+    "status": "In Progress",
+    "completion_target": "Week of May 4, 2026",
+    "company": "Rho",
+    "location": "San Francisco, CA",
+    "role": "On-site operations lead for multi-floor commercial office construction",
+    "description": "Managing a full office build-out at 325 Pacific Ave, SF — coordinating across general contractors, electricians, flooring crews, design firms, and internal leadership. Own the critical path from demolition through move-in, resolving scheduling conflicts between concurrent workstreams across 3 floors.",
+    "tags": ["Construction", "Vendor Mgmt", "Scheduling", "Space Design"],
+    "key_highlights": [
+      "Coordinating 15+ vendors simultaneously (electrical, flooring, HVAC, AV, lighting, millwork, cleaning)",
+      "Discovered structural blocker on Floor 3 that made planned electrical work infeasible — researched and proposed surface-mounted Connect Track alternative",
+      "Managed vendor dependencies: flooring can't start until electrical drilling is phased; lighting can't install after flooring is glued (no lift access)",
+      "Identified billing discrepancies on design firm invoices by cross-referencing billed meeting hours against calendar records",
+      "Built Notion-based project tracking system with Granola integration for real-time meeting capture"
+    ],
+    "numbers": {
+      "floors_managed": 3,
+      "vendors_coordinated": "15+",
+      "pendant_lights_tracked": 45
+    },
+    "images": {
+      "hero": "/assets/images/projects/rho-office-redesign/hero.jpg",
+      "before": "/assets/images/projects/rho-office-redesign/before.jpg",
+      "after": "/assets/images/projects/rho-office-redesign/after.jpg"
+    },
+    "photos_needed": [
+      "Before/after of each floor",
+      "Kitchen install",
+      "Bathroom renovation",
+      "Cable management fix",
+      "Basement reorganization"
+    ]
+  },
+  {
+    "id": "klaviyo-office-redesign",
+    "icon": "🎨",
+    "title": "Klaviyo Office Redesign",
+    "status": "Completed",
+    "company": "Klaviyo",
+    "location": "[PLACEHOLDER — city needed]",
+    "role": "[PLACEHOLDER — role title needed]",
+    "description": "[PLACEHOLDER — project description needed]",
+    "tags": ["Space Design", "Vendor Mgmt", "Project Management"],
+    "key_highlights": [
+      "[PLACEHOLDER — key highlights needed]"
+    ],
+    "numbers": {},
+    "images": {
+      "hero": "/assets/images/projects/klaviyo-office-redesign/hero.jpg",
+      "before": "/assets/images/projects/klaviyo-office-redesign/before.jpg",
+      "after": "/assets/images/projects/klaviyo-office-redesign/after.jpg"
+    },
+    "photos_needed": [
+      "Before/after shots",
+      "Key design features"
+    ]
+  },
+  {
+    "id": "bridge-office-relocation",
+    "icon": "📦",
+    "title": "Bridge Office Relocation",
+    "status": "Completed",
+    "company": "Bridge",
+    "location": "[PLACEHOLDER — city needed]",
+    "role": "[PLACEHOLDER — role title needed]",
+    "description": "[PLACEHOLDER — project description needed]",
+    "tags": ["Relocation", "Logistics", "Vendor Mgmt"],
+    "key_highlights": [
+      "[PLACEHOLDER — key highlights needed]"
+    ],
+    "numbers": {},
+    "images": {
+      "hero": "/assets/images/projects/bridge-office-relocation/hero.jpg"
+    },
+    "photos_needed": [
+      "Before/after shots",
+      "Move-in day photos"
+    ]
+  },
+  {
     "id": "325-pacific",
     "icon": "🏗️",
     "title": "325 Pacific Office Build-Out",
