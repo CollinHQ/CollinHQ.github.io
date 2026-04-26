@@ -42,10 +42,13 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
       <div className="bg-white border border-gray-200 rounded shadow-sm overflow-hidden">
 
         {/* Resume header */}
-        <div className="px-8 pt-6 pb-4 border-b border-gray-100">
-          <h2 className="text-xl font-bold text-gray-900 tracking-tight">{about.name}</h2>
-          <p className="text-amber-600 text-sm font-medium mt-0.5">Workplace Generalist</p>
-          <p className="text-gray-500 text-xs mt-2 leading-relaxed max-w-2xl">
+        <div className="px-8 pt-5 pb-3 border-b border-gray-100 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 tracking-tight">{about.name}</h2>
+          <p className="text-gray-600 text-sm mt-0.5">Workplace Generalist</p>
+          <p className="text-gray-400 text-xs mt-1">
+            {about.location} • <a href={`mailto:${about.contact.email}`} className="hover:text-amber-500 transition-colors">{about.contact.email}</a> • <a href={about.contact.linkedin} target="_blank" rel="noreferrer" className="hover:text-amber-500 transition-colors">LinkedIn</a>
+          </p>
+          <p className="text-gray-500 text-xs mt-2 leading-relaxed max-w-xl mx-auto">
             {about.one_liner}
           </p>
         </div>
@@ -53,19 +56,19 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
         {resume.map((role, roleIdx) => (
           <div key={role.id}>
             {/* Position header */}
-            <div className={`px-8 ${roleIdx > 0 ? 'pt-2' : 'pt-5'} pb-1`}>
+            <div className={`px-8 ${roleIdx > 0 ? 'pt-1.5' : 'pt-3'} pb-0`}>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
                 <div>
-                  <span className="font-bold text-gray-900 text-base">{role.company}</span>
+                  <span className="font-bold text-gray-900 text-sm">{role.company}</span>
                   <span className="text-gray-500 text-sm"> — {role.title}</span>
                 </div>
-                <span className="text-gray-400 text-sm whitespace-nowrap">{role.start} – {role.end}</span>
+                <span className="text-gray-400 text-xs whitespace-nowrap">{role.start} – {role.end}</span>
               </div>
-              <p className="text-gray-400 text-xs mt-0">{role.location}</p>
+              <p className="text-gray-400 text-xs">{role.location}</p>
             </div>
 
             {/* Bullets */}
-            <ul className="px-8 pb-2">
+            <ul className="px-8 pb-1">
               {role.bullets.map((bullet) => {
                 const isOpen = expandedId === bullet.id
                 const highlighted = bulletIsHighlighted(bullet)
@@ -78,7 +81,7 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
                     }`}
                   >
                     {/* Bullet row */}
-                    <div className="flex items-start gap-2.5 px-2 py-1">
+                    <div className="flex items-start gap-2 px-2 py-0.5">
                       <span className="text-gray-400 mt-1.5 text-xs flex-shrink-0">•</span>
                       <span className="text-gray-700 text-sm leading-relaxed flex-1">
                         {bullet.short}
@@ -96,12 +99,12 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
 
                     {/* Inline dropdown */}
                     {isOpen && bullet.detail && (
-                      <div className="mx-2 mb-2 ml-6 pl-3 border-l-2 border-amber-300">
-                        <p className="text-gray-500 text-sm leading-relaxed mb-3">
+                      <div className="mx-2 mb-1.5 ml-5 pl-3 border-l-2 border-amber-300">
+                        <p className="text-gray-500 text-xs leading-relaxed mb-2">
                           {bullet.detail}
                         </p>
                         {bullet.skills?.length > 0 && (
-                          <div className="flex flex-wrap gap-1.5">
+                          <div className="flex flex-wrap gap-1.5 mb-1">
                             {bullet.skills.map((skill) => (
                               <Link
                                 key={skill}

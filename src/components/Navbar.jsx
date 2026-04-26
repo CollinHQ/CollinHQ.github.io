@@ -68,11 +68,11 @@ export default function Navbar() {
           ))}
           <a
             href={about.contact.resume_pdf || '#'}
-            download
-            title="Download Resume"
-            className="text-slate-300 hover:text-yellow-500 transition-colors duration-200 flex items-center"
+            download="Collin Brown Resume.pdf"
+            className="text-slate-300 hover:text-yellow-500 transition-colors duration-200 flex items-center gap-1.5 text-sm"
           >
             <DownloadIcon />
+            Resume
           </a>
         </div>
       </div>
