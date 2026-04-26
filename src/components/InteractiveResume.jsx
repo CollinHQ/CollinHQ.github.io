@@ -5,7 +5,7 @@ import resume from '../data/resume.json'
 function ChevronIcon({ open }) {
   return (
     <svg
-      width="14" height="14" viewBox="0 0 24 24" fill="none"
+      width="13" height="13" viewBox="0 0 24 24" fill="none"
       stroke="currentColor" strokeWidth="2.5"
       className={`flex-shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
     >
@@ -19,41 +19,42 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
   const [hoveredSkill, setHoveredSkill] = useState(null)
 
   const activeSkill = hoveredSkill || pinnedSkill
-
   const toggle = (id) => setExpandedId(prev => prev === id ? null : id)
 
   const bulletIsHighlighted = (bullet) =>
-    activeSkill &&
-    bullet.skills?.includes(activeSkill) &&
-    expandedId !== bullet.id
+    activeSkill && bullet.skills?.includes(activeSkill)
 
   return (
     <div>
-      {/* Pinned skill banner */}
       {pinnedSkill && (
         <div className="flex items-center justify-between bg-yellow-500/10 border border-yellow-600/30 rounded-xl px-5 py-3 mb-6">
           <p className="text-yellow-500 text-sm">
             Highlighting bullets tagged with <span className="font-semibold">{pinnedSkill}</span>
           </p>
-          <button
-            onClick={onClearPin}
-            className="text-slate-400 hover:text-yellow-500 text-xs transition-colors"
-          >
+          <button onClick={onClearPin} className="text-slate-400 hover:text-yellow-500 text-xs transition-colors">
             Clear ✕
           </button>
         </div>
       )}
 
-      <div className="space-y-8">
-        {resume.map((role) => (
-          <div key={role.id} className="bg-[#1a2535] rounded-2xl p-8">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
-              <h3 className="font-serif text-xl font-bold text-white">{role.company}</h3>
-              <span className="text-slate-500 text-sm">{role.start} — {role.end}</span>
+      {/* Resume document */}
+      <div className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+        {resume.map((role, roleIdx) => (
+          <div key={role.id}>
+            {/* Position header */}
+            <div className={`px-8 pt-6 pb-3 ${roleIdx > 0 ? 'border-t border-gray-100' : ''}`}>
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                <div>
+                  <span className="font-bold text-gray-900 text-base">{role.company}</span>
+                  <span className="text-gray-500 text-sm"> — {role.title}</span>
+                </div>
+                <span className="text-gray-400 text-sm whitespace-nowrap">{role.start} – {role.end}</span>
+              </div>
+              <p className="text-gray-400 text-xs mt-0.5">{role.location}</p>
             </div>
-            <p className="text-yellow-500 text-sm mb-6">{role.title} · {role.location}</p>
 
-            <ul className="space-y-1">
+            {/* Bullets */}
+            <ul className="px-8 pb-5">
               {role.bullets.map((bullet) => {
                 const isOpen = expandedId === bullet.id
                 const highlighted = bulletIsHighlighted(bullet)
@@ -61,19 +62,20 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
                 return (
                   <li
                     key={bullet.id}
-                    className={`rounded-lg transition-all duration-200 ${
-                      highlighted ? 'bg-yellow-500/5 ring-1 ring-yellow-600/30' : ''
+                    className={`rounded transition-colors duration-150 -mx-2 ${
+                      highlighted ? 'bg-amber-50 ring-1 ring-amber-200' : ''
                     }`}
                   >
-                    <div className="flex items-start gap-3 px-3 py-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0 mt-2" />
-                      <span className="text-slate-300 text-sm leading-relaxed flex-1">
+                    {/* Bullet row */}
+                    <div className="flex items-start gap-2.5 px-2 py-1.5">
+                      <span className="text-gray-400 mt-1.5 text-xs flex-shrink-0">•</span>
+                      <span className="text-gray-700 text-sm leading-relaxed flex-1">
                         {bullet.short}
                       </span>
                       {bullet.has_detail && (
                         <button
                           onClick={() => toggle(bullet.id)}
-                          className="mt-0.5 text-yellow-500 hover:text-yellow-400 transition-colors flex-shrink-0"
+                          className="mt-1 text-amber-500 hover:text-amber-600 transition-colors flex-shrink-0"
                           title={isOpen ? 'Collapse' : 'Read more'}
                         >
                           <ChevronIcon open={isOpen} />
@@ -81,20 +83,21 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
                       )}
                     </div>
 
+                    {/* Inline dropdown */}
                     {isOpen && bullet.detail && (
-                      <div className="mx-3 mb-3 pl-4 border-l border-yellow-600/30">
-                        <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                      <div className="mx-2 mb-2 ml-6 pl-3 border-l-2 border-amber-300">
+                        <p className="text-gray-500 text-sm leading-relaxed mb-3">
                           {bullet.detail}
                         </p>
                         {bullet.skills?.length > 0 && (
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-1.5">
                             {bullet.skills.map((skill) => (
                               <Link
                                 key={skill}
                                 to="/skills"
                                 onMouseEnter={() => setHoveredSkill(skill)}
                                 onMouseLeave={() => setHoveredSkill(null)}
-                                className="border border-yellow-600/40 text-yellow-500 bg-slate-800/50 hover:bg-yellow-500/10 rounded-full px-3 py-1 text-xs transition-colors duration-150"
+                                className="border border-amber-300 text-amber-600 bg-amber-50 hover:bg-amber-100 rounded-full px-2.5 py-0.5 text-xs transition-colors duration-150"
                               >
                                 {skill}
                               </Link>
