@@ -42,7 +42,7 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
         {resume.map((role, roleIdx) => (
           <div key={role.id}>
             {/* Position header */}
-            <div className={`px-8 pt-6 pb-3 ${roleIdx > 0 ? 'border-t border-gray-100' : ''}`}>
+            <div className={`px-8 ${roleIdx > 0 ? 'pt-2' : 'pt-5'} pb-1`}>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
                 <div>
                   <span className="font-bold text-gray-900 text-base">{role.company}</span>
@@ -50,11 +50,11 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
                 </div>
                 <span className="text-gray-400 text-sm whitespace-nowrap">{role.start} – {role.end}</span>
               </div>
-              <p className="text-gray-400 text-xs mt-0.5">{role.location}</p>
+              <p className="text-gray-400 text-xs mt-0">{role.location}</p>
             </div>
 
             {/* Bullets */}
-            <ul className="px-8 pb-5">
+            <ul className="px-8 pb-2">
               {role.bullets.map((bullet) => {
                 const isOpen = expandedId === bullet.id
                 const highlighted = bulletIsHighlighted(bullet)
@@ -67,7 +67,7 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
                     }`}
                   >
                     {/* Bullet row */}
-                    <div className="flex items-start gap-2.5 px-2 py-1.5">
+                    <div className="flex items-start gap-2.5 px-2 py-1">
                       <span className="text-gray-400 mt-1.5 text-xs flex-shrink-0">•</span>
                       <span className="text-gray-700 text-sm leading-relaxed flex-1">
                         {bullet.short}
