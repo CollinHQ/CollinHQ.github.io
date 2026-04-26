@@ -1,0 +1,73 @@
+[
+  {
+    "id": "325-pacific",
+    "project_name": "325 Pacific Office Build-Out",
+    "status": "active",
+    "icon": "🏗️",
+    "tags": ["Construction", "Vendor Mgmt", "Scheduling"],
+    "stats": {
+      "floors": 3,
+      "vendors": 15,
+      "offices_built": 2,
+      "detail_count": 45
+    },
+    "narrative": {
+      "challenge": "",
+      "solution": "",
+      "result": ""
+    },
+    "images": {
+      "hero": "/assets/images/projects/325-pacific/hero.jpg",
+      "before": "/assets/images/projects/325-pacific/before.jpg",
+      "after": "/assets/images/projects/325-pacific/after.jpg"
+    }
+  },
+  {
+    "id": "vendor-budget-ops",
+    "project_name": "Vendor & Budget Operations",
+    "status": "active",
+    "icon": "📊",
+    "tags": ["Finance", "Compliance", "Auditing"],
+    "stats": {},
+    "narrative": {
+      "challenge": "",
+      "solution": "",
+      "result": ""
+    },
+    "images": {
+      "hero": "/assets/images/projects/vendor-budget-ops/hero.jpg"
+    }
+  },
+  {
+    "id": "internal-comms",
+    "project_name": "Internal Comms & Culture",
+    "status": "active",
+    "icon": "📣",
+    "tags": ["Comms", "Events", "Slack"],
+    "stats": {},
+    "narrative": {
+      "challenge": "",
+      "solution": "",
+      "result": ""
+    },
+    "images": {
+      "hero": "/assets/images/projects/internal-comms/hero.jpg"
+    }
+  },
+  {
+    "id": "office-ops-playbook",
+    "project_name": "Office Ops Playbook",
+    "status": "active",
+    "icon": "📦",
+    "tags": ["Process", "Documentation"],
+    "stats": {},
+    "narrative": {
+      "challenge": "",
+      "solution": "",
+      "result": ""
+    },
+    "images": {
+      "hero": "/assets/images/projects/office-ops-playbook/hero.jpg"
+    }
+  }
+]
