@@ -1,0 +1,60 @@
+[
+  {
+    "id": "ai-workflow-automation",
+    "icon": "🤖",
+    "title": "AI Tooling & Personal Workflow Automation",
+    "status": "Active",
+    "summary": "Self-built operations stack — Claude + Gumloop + Notion + Granola + Slack — running unattended automations for portfolio updates and capture workflows.",
+    "highlights": [
+      "Built the Brave Captain Gumloop agent — runs every Friday at 4 PM PT, auto-updates the Capture Hub and portfolio brief without manual intervention",
+      "Custom Notion-integrated skills powering ops workflows (vendor sync, weekly construction updates, portfolio capture)",
+      "Claude-powered agents handle multi-tool orchestration across Gmail, Calendar, Slack, Notion, Granola, and Drive",
+      "Full ops automation stack with no engineering support"
+    ],
+    "tools_used": ["Claude AI", "Gumloop", "Notion", "Granola", "Slack", "Gmail", "Google Calendar"],
+    "skills_demonstrated": ["AI Tooling for Operations", "Workflow Automation", "Self-Service Engineering"]
+  },
+  {
+    "id": "vendor-directory-automation",
+    "icon": "🌐",
+    "title": "Multi-Office Vendor Directory Automation",
+    "status": "Live",
+    "summary": "Designed and deployed an automated Gmail-to-Notion vendor sync working across SF, NYC, and SLC offices.",
+    "highlights": [
+      "Auto-assigns contacts to the right office based on which team member is CC'd or by email signature address",
+      "Includes duplicate detection against the existing Notion vendor database",
+      "Captures Company, Email, Phone, Address, and Website per contact",
+      "Filters out cold contacts by checking prior correspondence history"
+    ],
+    "tools_used": ["Gmail", "Notion", "Claude AI"],
+    "skills_demonstrated": ["Process Automation", "Cross-Office Operations", "Data Architecture"],
+    "scope": ["SF", "NYC", "SLC"]
+  },
+  {
+    "id": "lease-compliance",
+    "icon": "⚖️",
+    "title": "Lease & Code Compliance Judgment",
+    "status": "Resolved",
+    "summary": "Identified a roof egress safety issue and used lease provisions to assign liability correctly.",
+    "highlights": [
+      "Flagged that locking the roof would remove a required means of egress for 28 occupants",
+      "Cited Lease Section 11.3(b) — landlord responsibility for code compliance in common areas",
+      "Recommended formal landlord escalation with paper trail; offered fire department loop-in as backup",
+      "Demonstrated risk/liability analysis beyond standard ops execution"
+    ],
+    "skills_demonstrated": ["Lease Interpretation", "Risk Analysis", "Code Compliance", "Stakeholder Pushback"]
+  },
+  {
+    "id": "stakeholder-transition",
+    "icon": "🤝",
+    "title": "Stakeholder Transition Stewardship",
+    "status": "Resolved",
+    "summary": "Kept critical-path decisions moving when a key broker stepped back mid-project.",
+    "highlights": [
+      "Routed outstanding decisions through the backup stakeholder after primary broker stepped back",
+      "Maintained continuity on construction approvals without a stakeholder gap",
+      "Managed handoff without escalation to leadership"
+    ],
+    "skills_demonstrated": ["Stakeholder Management", "Continuity Planning", "Independent Judgment"]
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "name": "Collin Brown",
+  "title": "Workplace Generalist / Office Operations Lead",
+  "location": "San Francisco, CA",
+  "company": "Rho",
+  "one_liner": "I build offices, streamline operations, and keep cross-functional teams aligned — from blueprint to move-in day.",
+  "bio": "I'm an operations-focused workplace generalist who manages the full lifecycle of office environments — from construction build-outs and vendor negotiations to employee experience programming and internal communications. Currently leading the multi-floor renovation of Rho's SF headquarters at 325 Pacific Ave, coordinating 15+ vendors across electrical, flooring, HVAC, AV, and millwork while hitting aggressive timelines. I also plan office events, manage supply chains, and build repeatable playbooks so future offices can launch faster.",
+  "hero_tags": ["SF & NYC", "Office Build-Outs", "Vendor Ops"],
+  "tools": [
+    "Notion",
+    "Slack",
+    "Granola",
+    "Claude AI",
+    "Google Workspace",
+    "Gumloop",
+    "Figma / Canva"
+  ],
+  "skills": [
+    "Project Management",
+    "Vendor Coordination",
+    "Construction Oversight",
+    "Budget Management",
+    "Invoice Auditing",
+    "Internal Communications",
+    "Event Planning",
+    "Process Documentation",
+    "Stakeholder Communication",
+    "AI Tooling for Operations"
+  ],
+  "contact": {
+    "email": "",
+    "linkedin": "",
+    "resume_pdf": ""
+  }
+}

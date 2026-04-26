@@ -1,73 +1,181 @@
 [
   {
     "id": "325-pacific",
-    "project_name": "325 Pacific Office Build-Out",
-    "status": "active",
     "icon": "🏗️",
+    "title": "325 Pacific Office Build-Out",
+    "status": "In Progress",
+    "completion_target": "Week of May 4, 2026",
+    "role": "On-site operations lead for multi-floor commercial office construction",
+    "description": "Managing a full office build-out at 325 Pacific Ave, SF — coordinating across general contractors, electricians, flooring crews, design firms (OTS/Tangible Space), and internal leadership. Own the critical path from demolition through move-in, resolving scheduling conflicts between concurrent workstreams across 3 floors.",
     "tags": ["Construction", "Vendor Mgmt", "Scheduling"],
-    "stats": {
-      "floors": 3,
-      "vendors": 15,
-      "offices_built": 2,
-      "detail_count": 45
-    },
-    "narrative": {
-      "challenge": "",
-      "solution": "",
-      "result": ""
+    "key_highlights": [
+      "Coordinating 15+ vendors simultaneously (electrical, flooring, HVAC, AV, lighting, millwork, cleaning)",
+      "Discovered structural blocker on Floor 3 that made planned electrical work infeasible — researched and proposed surface-mounted Connect Track alternative",
+      "Managed vendor dependencies: flooring can't start until electrical drilling is phased; lighting can't install after flooring is glued (no lift access)",
+      "Identified billing discrepancies on design firm invoices by cross-referencing billed meeting hours against calendar records",
+      "Built Notion-based project tracking system with Granola integration for real-time meeting capture"
+    ],
+    "milestones_completed": [
+      "Kitchen cabinets installed (3rd floor)",
+      "Basement fully reorganized into categorized sections",
+      "Phone booth chairs built and staged",
+      "Cable management completed (fire hazard resolved)",
+      "Bathroom vanity sinks and towel dispensers installed (1st floor)",
+      "LED work lighting installed",
+      "HVAC thermostat installation scheduled",
+      "Floor 3 poke-through blocker resolved — holes drilled, cleanup done",
+      "Conference table poke-through resolved — alternate route through floor joist",
+      "Floor plugs demolished on Floor 1 (cleared for flooring)",
+      "Bathroom flooring demo completed",
+      "First floor flooring demo completed (both areas)",
+      "Danny's flooring crew on-site and actively working",
+      "Basement circuit tracing complete — two dedicated circuits identified",
+      "Conference room power upgrade underway — two dedicated circuits from panel",
+      "New engineered lighting drawings received (improved circuit load distribution)",
+      "Cafe table spec changed from hardwired to plug-in undermount receptacles",
+      "GE Profile Opal 2.0 ice machine ordered (sub-$1K appliance spend)"
+    ],
+    "numbers": {
+      "floors_managed": 3,
+      "vendors_coordinated": "15+",
+      "pendant_lights_tracked": 45
     },
     "images": {
       "hero": "/assets/images/projects/325-pacific/hero.jpg",
       "before": "/assets/images/projects/325-pacific/before.jpg",
       "after": "/assets/images/projects/325-pacific/after.jpg"
-    }
+    },
+    "photos_needed": [
+      "Before/after of each floor",
+      "Kitchen install",
+      "Bathroom renovation",
+      "Cable management fix",
+      "Basement reorganization"
+    ]
   },
   {
     "id": "vendor-budget-ops",
-    "project_name": "Vendor & Budget Operations",
-    "status": "active",
     "icon": "📊",
+    "title": "Vendor & Budget Operations",
+    "status": "Ongoing",
+    "role": "Vendor operations and compliance lead",
+    "description": "Built and manage the full vendor lifecycle — from onboarding and insurance/COI compliance to invoice auditing and contract negotiation. Created accountability systems that caught billing discrepancies and saved budget.",
     "tags": ["Finance", "Compliance", "Auditing"],
-    "stats": {},
-    "narrative": {
-      "challenge": "",
-      "solution": "",
-      "result": ""
+    "key_highlights": [
+      "Audited design firm invoice (#1581) by cross-referencing billed meeting hours against actual calendar events",
+      "Reviewed office lease to extract COI/insurance requirements and building rules",
+      "Negotiated vendor contracts: Bevy sparkling water (sub-$500/mo), Commonwealth Joe cold brew kegerator",
+      "Bevi Stand Up 2.0 sparkling water trial negotiated and contract sent via IntelAgree (7-day trial, 8 flavors)",
+      "Built vendor database in Notion for tracking contacts, contracts, and compliance status"
+    ],
+    "milestones_completed": [],
+    "numbers": {
+      "active_vendor_relationships": "15+",
+      "invoice_dispute_identified": true,
+      "vendor_onboarding_checklist_created": true
     },
     "images": {
       "hero": "/assets/images/projects/vendor-budget-ops/hero.jpg"
-    }
+    },
+    "photos_needed": [
+      "Screenshots of Notion vendor tracker (anonymized)",
+      "Contract/process docs"
+    ]
   },
   {
     "id": "internal-comms",
-    "project_name": "Internal Comms & Culture",
-    "status": "active",
     "icon": "📣",
-    "tags": ["Comms", "Events", "Slack"],
-    "stats": {},
-    "narrative": {
-      "challenge": "",
-      "solution": "",
-      "result": ""
-    },
+    "title": "Internal Comms & Employee Experience",
+    "status": "Ongoing",
+    "role": "Internal communications and workplace culture lead",
+    "description": "Design and execute employee experience programming including events, internal newsletters, wellness initiatives, and surprise-and-delight activations across global offices.",
+    "tags": ["Comms", "Events", "Culture"],
+    "key_highlights": [
+      "Created 'Rhoice' internal Slack newsletter for AI tips initiative ($100 incentive per tip shared)",
+      "Organized SF team happy hour at Moongate Lounge, Chinatown",
+      "Planned themed office activations: World Health Day, Earth Day, Pretzel Day",
+      "Executed Global Health Day activation — pressed juice shots + self-care bags",
+      "Executed weekly treat drops (churro tots with signage/labels)",
+      "Coordinated Global Health Challenge / Strava step competition across offices (pushed to June)",
+      "Weekly surprise-and-delight treat program for office culture"
+    ],
+    "milestones_completed": [],
+    "numbers": {},
     "images": {
       "hero": "/assets/images/projects/internal-comms/hero.jpg"
-    }
+    },
+    "photos_needed": [
+      "Event photos",
+      "Slack screenshots of newsletter/announcements (anonymized)",
+      "Graphics created"
+    ]
   },
   {
     "id": "office-ops-playbook",
-    "project_name": "Office Ops Playbook",
-    "status": "active",
-    "icon": "📦",
-    "tags": ["Process", "Documentation"],
-    "stats": {},
-    "narrative": {
-      "challenge": "",
-      "solution": "",
-      "result": ""
-    },
+    "icon": "🗂️",
+    "title": "Office Operations Playbook",
+    "status": "In Progress",
+    "role": "Process builder for scalable office operations",
+    "description": "Developing repeatable processes and documentation for standing up new office locations — covering shipping, building policies, vendor setup, and space planning. Applied across SF and NYC offices.",
+    "tags": ["Process", "Documentation", "Scalability"],
+    "key_highlights": [
+      "Created SF Building Policies guide with regulations and step-by-step instructions",
+      "Built shipping instructions documentation per office location",
+      "Established construction sync cadence with leadership (weekly calls + Slack updates)",
+      "Notion-based project tracking with multiple database views (tasks, projects, status board)"
+    ],
+    "milestones_completed": [],
+    "numbers": {},
     "images": {
       "hero": "/assets/images/projects/office-ops-playbook/hero.jpg"
-    }
+    },
+    "photos_needed": [
+      "Screenshots of Notion playbook pages (anonymized)",
+      "Process flow diagrams"
+    ]
+  },
+  {
+    "id": "aesthetic-space-design",
+    "icon": "🎨",
+    "title": "Aesthetic & Space Design",
+    "status": "In Progress",
+    "role": "Space planning and design coordination lead",
+    "description": "Coordinated the complete aesthetic transformation of Rho's 325 Pacific office across 3 floors — translating design firm concepts into actionable contractor specs and on-the-ground execution. Managed material selections, fixture specifications, lighting design, branding elements, and spatial layout decisions while balancing budget constraints and aggressive construction timelines.",
+    "tags": ["Design", "Space Planning", "Branding"],
+    "key_highlights": [
+      "Designed open office floor plan on Floor 3: sales floor, conference rooms, kitchen, phone booths",
+      "Transformed Floor 1 into communal co-working/client event space featuring exposed brick walls",
+      "Selected and coordinated 45 pendant light fixtures with Lutron Vive wireless 4-zone switch system",
+      "Chose perforated black metal panels (1/8\" round hole pattern) for glass partitions — balancing privacy and transparency",
+      "Managed kitchen design: white modern cabinetry, dark countertops, blue accent lighting, stainless appliances",
+      "Coordinated building signage: illuminated blade sign (exterior), metal Rho logo with LED backlighting (interior), vinyl on partitions",
+      "Placed 7 phone booths around existing furniture layout",
+      "Selected vinyl flooring (rubber vinyl overlay) across all floors",
+      "Made on-site material and placement decisions in real-time when design firm wasn't present"
+    ],
+    "milestones_completed": [],
+    "numbers": {
+      "floors_redesigned": 3,
+      "people_served": "~25",
+      "pendant_lights": 45,
+      "lutron_zones": 4,
+      "phone_booths": 7
+    },
+    "images": {
+      "hero": "/assets/images/projects/aesthetic-space-design/hero.jpg",
+      "before": "/assets/images/projects/aesthetic-space-design/before.jpg",
+      "after": "/assets/images/projects/aesthetic-space-design/after.jpg"
+    },
+    "photos_needed": [
+      "Exposed brick",
+      "Pendant lights",
+      "Kitchen",
+      "Metal panels",
+      "Signage",
+      "Phone booths",
+      "Vinyl flooring",
+      "Plants",
+      "Before/after wide shots"
+    ]
   }
 ]
