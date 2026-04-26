@@ -39,7 +39,7 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
       )}
 
       {/* Resume document */}
-      <div className="bg-white border border-gray-200 rounded shadow-sm overflow-hidden">
+      <div className="bg-white border border-gray-200 rounded shadow-md overflow-hidden">
 
         {/* Resume header */}
         <div className="px-8 pt-5 pb-3 border-b border-gray-100 text-center">
@@ -68,7 +68,7 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
             </div>
 
             {/* Bullets */}
-            <ul className="px-8 pb-1">
+            <ul className={`px-8 ${roleIdx === resume.length - 1 ? 'pb-5' : 'pb-1'}`}>
               {role.bullets.map((bullet) => {
                 const isOpen = expandedId === bullet.id
                 const highlighted = bulletIsHighlighted(bullet)
