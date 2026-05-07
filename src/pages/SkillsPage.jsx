@@ -16,14 +16,8 @@ function getMatchingBullets(skill) {
   return matches
 }
 
-function buildSummary(skill, bullets) {
-  if (!bullets.length) return null
-  const companies = [...new Set(bullets.map(b => b.company))]
-  const companyText = companies.length === 1
-    ? companies[0]
-    : companies.slice(0, -1).join(', ') + ' and ' + companies[companies.length - 1]
-  return `${skill} shows up across ${bullets.length} resume bullet${bullets.length > 1 ? 's' : ''} at ${companyText}. Select any entry below to read the full context, or click "View in Resume" to see them highlighted alongside the rest of my experience.`
-}
+// Only show skills that have at least 1 tagged bullet
+const skillsWithBullets = about.skills.filter(skill => getMatchingBullets(skill).length > 0)
 
 function DocumentIcon() {
   return (
@@ -40,7 +34,7 @@ function DocumentIcon() {
 export default function SkillsPage() {
   const [selectedSkill, setSelectedSkill] = useState(null)
   const matchingBullets = getMatchingBullets(selectedSkill)
-  const summary = buildSummary(selectedSkill, matchingBullets)
+  const description = selectedSkill ? about.skill_descriptions?.[selectedSkill] : null
 
   const handleSkillClick = (skill) => {
     setSelectedSkill(prev => prev === skill ? null : skill)
@@ -56,11 +50,12 @@ export default function SkillsPage() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-14">
+          {/* Core Skills — only those with tagged bullets */}
           <div>
             <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Core Skills</h2>
             <p className="text-slate-500 text-xs mb-5">Click any skill to see where it shows up in my experience.</p>
             <div className="flex flex-wrap gap-3">
-              {about.skills.map((skill) => (
+              {skillsWithBullets.map((skill) => (
                 <button
                   key={skill}
                   onClick={() => handleSkillClick(skill)}
@@ -76,6 +71,7 @@ export default function SkillsPage() {
             </div>
           </div>
 
+          {/* Tools */}
           <div>
             <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-6">Tools</h2>
             <ul className="space-y-3">
@@ -89,6 +85,7 @@ export default function SkillsPage() {
           </div>
         </div>
 
+        {/* Selected skill panel */}
         {selectedSkill && (
           <div className="border-t border-yellow-600/20 pt-10">
             <div className="flex items-start justify-between mb-4">
@@ -96,20 +93,24 @@ export default function SkillsPage() {
                 <p className="text-yellow-500 text-xs uppercase tracking-widest mb-1">Showing experience for</p>
                 <h2 className="font-serif text-2xl font-bold text-white">{selectedSkill}</h2>
               </div>
-              <Link
-                to={`/experience?skill=${encodeURIComponent(selectedSkill)}`}
-                className="flex items-center gap-2 text-sm text-slate-400 hover:text-yellow-500 transition-colors border border-slate-700 hover:border-yellow-600/40 rounded-full px-4 py-2 whitespace-nowrap"
-              >
-                <DocumentIcon />
-                View in Resume
-              </Link>
+              {/* Only show "View in Resume" if there are matching bullets */}
+              {matchingBullets.length > 0 && (
+                <Link
+                  to={`/experience?skill=${encodeURIComponent(selectedSkill)}`}
+                  className="flex items-center gap-2 text-sm text-slate-400 hover:text-yellow-500 transition-colors border border-slate-700 hover:border-yellow-600/40 rounded-full px-4 py-2 whitespace-nowrap"
+                >
+                  <DocumentIcon />
+                  View in Resume
+                </Link>
+              )}
             </div>
 
-            {/* Dynamic summary */}
-            {summary && (
-              <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-2xl">{summary}</p>
+            {/* Skill description */}
+            {description && (
+              <p className="text-slate-300 text-sm leading-relaxed mb-6 max-w-2xl">{description}</p>
             )}
 
+            {/* Matching bullets — single container */}
             {matchingBullets.length > 0 ? (
               <div className="bg-[#1a2535] rounded-xl overflow-hidden">
                 {matchingBullets.map((bullet, i) => (

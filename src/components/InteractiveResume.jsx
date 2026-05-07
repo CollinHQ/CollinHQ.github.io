@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import resume from '../data/resume.json'
 import about from '../data/about.json'
 
-// Pre-compute skill occurrence counts across all bullets
 const skillCounts = {}
 resume.forEach(role => role.bullets.forEach(bullet =>
   (bullet.skills || []).forEach(s => { skillCounts[s] = (skillCounts[s] || 0) + 1 })
@@ -28,12 +27,12 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
   const [hoveredSkill, setHoveredSkill] = useState(null)
 
   const activeSkill = hoveredSkill || pinnedSkill
-  const toggle = (id) => setExpandedId(prev => prev === id ? null : id)
   const bulletIsHighlighted = (bullet) => activeSkill && bullet.skills?.includes(activeSkill)
 
-  const handleSkillEnter = (skill) => {
+  const toggle = (id) => {
+    // Clear pin when user expands any bullet
     if (pinnedSkill) onClearPin()
-    setHoveredSkill(skill)
+    setExpandedId(prev => prev === id ? null : id)
   }
 
   return (
@@ -70,7 +69,6 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
               const isOpen = expandedId === bullet.id
               const highlighted = bulletIsHighlighted(bullet)
 
-              // Split tags into skills vs tools, only include if count > 1
               const skillTags = (bullet.skills || []).filter(s => !isToolTag(s) && skillCounts[s] > 1)
               const toolTags  = (bullet.skills || []).filter(s =>  isToolTag(s) && skillCounts[s] > 1)
               const hasAnyTag = skillTags.length > 0 || toolTags.length > 0
@@ -99,15 +97,15 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
                       <p className="text-gray-500 text-xs leading-relaxed mb-2">{bullet.detail}</p>
 
                       {hasAnyTag && (
-                        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-1">
+                        <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-1">
                           {skillTags.length > 0 && (
                             <div className="flex flex-wrap items-center gap-1.5">
-                              <span className="text-gray-400 text-xs mr-0.5">Skills</span>
+                              <span className="text-gray-400 text-xs">Skills</span>
                               {skillTags.map(skill => (
                                 <Link
                                   key={skill}
                                   to="/skills"
-                                  onMouseEnter={() => handleSkillEnter(skill)}
+                                  onMouseEnter={() => setHoveredSkill(skill)}
                                   onMouseLeave={() => setHoveredSkill(null)}
                                   className="border border-amber-300 text-amber-600 bg-amber-50 hover:bg-amber-100 rounded-full px-2.5 py-0.5 text-xs transition-colors"
                                 >
@@ -118,12 +116,12 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
                           )}
                           {toolTags.length > 0 && (
                             <div className="flex flex-wrap items-center gap-1.5">
-                              <span className="text-gray-400 text-xs mr-0.5">Tools</span>
+                              <span className="text-gray-400 text-xs">Tools</span>
                               {toolTags.map(tool => (
                                 <Link
                                   key={tool}
                                   to="/skills"
-                                  onMouseEnter={() => handleSkillEnter(tool)}
+                                  onMouseEnter={() => setHoveredSkill(tool)}
                                   onMouseLeave={() => setHoveredSkill(null)}
                                   className="border border-slate-300 text-slate-500 bg-slate-50 hover:bg-slate-100 rounded-full px-2.5 py-0.5 text-xs transition-colors"
                                 >
