@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import ProjectsPage from './pages/ProjectsPage'
@@ -7,7 +7,7 @@ import ExperiencePage from './pages/ExperiencePage'
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="bg-[#0d1b2a] min-h-screen">
         <Navbar />
         <Routes>
@@ -17,6 +17,6 @@ export default function App() {
           <Route path="/experience" element={<ExperiencePage />} />
         </Routes>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
