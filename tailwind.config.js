@@ -10,7 +10,7 @@ export default {
         },
       },
       fontFamily: {
-        serif: ['"Cormorant Garant"', 'Georgia', 'serif'],
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
     },

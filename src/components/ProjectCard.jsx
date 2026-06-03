@@ -11,21 +11,20 @@ export default function ProjectCard({ project }) {
 
   return (
     <div
-      className="cursor-pointer"
-      style={{ perspective: '1000px', minHeight: '280px' }}
+      className="cursor-pointer h-full min-h-[18rem]"
+      style={{ perspective: '1000px' }}
       onClick={() => setFlipped(f => !f)}
     >
       <div
-        className="relative w-full h-full transition-transform duration-500"
+        className="relative w-full h-full grid grid-cols-1 grid-rows-1 transition-transform duration-500"
         style={{
           transformStyle: 'preserve-3d',
           transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-          minHeight: '280px',
         }}
       >
         {/* Front */}
         <div
-          className="absolute inset-0 bg-[#1a2535] rounded-2xl p-6 flex flex-col gap-4"
+          className="col-start-1 row-start-1 bg-[#1a2535] rounded-2xl p-6 flex flex-col gap-4"
           style={{ backfaceVisibility: 'hidden' }}
         >
           <div className="flex items-start justify-between">
@@ -64,7 +63,7 @@ export default function ProjectCard({ project }) {
 
         {/* Back */}
         <div
-          className="absolute inset-0 bg-[#1f2d40] rounded-2xl p-6 flex flex-col gap-4"
+          className="col-start-1 row-start-1 bg-[#1f2d40] rounded-2xl p-6 flex flex-col gap-4"
           style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
         >
           <h3 className="font-serif text-lg font-bold text-white">{title}</h3>
@@ -78,7 +77,7 @@ export default function ProjectCard({ project }) {
             ))}
           </ul>
 
-          <div className="flex flex-wrap gap-2 mt-auto">
+          <div className="flex flex-wrap gap-2">
             {tags.map((tag) => (
               <Link
                 key={tag}
