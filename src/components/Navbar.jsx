@@ -27,8 +27,28 @@ function LinkedInIcon() {
   )
 }
 
+function HamburgerIcon({ open }) {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+      {open ? (
+        <>
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </>
+      ) : (
+        <>
+          <line x1="3" y1="6"  x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </>
+      )}
+    </svg>
+  )
+}
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
 
@@ -38,8 +58,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [location.pathname])
+
   const handleAboutClick = (e) => {
     e.preventDefault()
+    setMenuOpen(false)
     if (location.pathname === '/') {
       document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })
     } else {
@@ -55,49 +81,45 @@ export default function Navbar() {
     return location.pathname === href
   }
 
+  const renderLink = (link, mobile = false) => {
+    const baseClass = mobile
+      ? `block py-3 text-base tracking-wide transition-colors duration-200 ${isActive(link.href) ? 'text-yellow-500' : 'text-slate-200 hover:text-yellow-500'}`
+      : `text-sm tracking-wide transition-colors duration-200 ${isActive(link.href) ? 'text-yellow-500' : 'text-slate-300 hover:text-yellow-500'}`
+
+    return link.scroll ? (
+      <a key={link.href} href={link.href} onClick={handleAboutClick} className={baseClass}>
+        {link.label}
+      </a>
+    ) : (
+      <Link key={link.href} to={link.href} onClick={() => setMenuOpen(false)} className={baseClass}>
+        {link.label}
+      </Link>
+    )
+  }
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-[#0d1b2a]/95 backdrop-blur border-b border-yellow-600/20' : 'bg-transparent'
+      scrolled || menuOpen ? 'bg-[#0d1b2a]/95 backdrop-blur border-b border-yellow-600/20' : 'bg-transparent'
     }`}>
       <div className="max-w-5xl mx-auto px-6 h-12 flex items-center justify-between">
         <Link to="/" className="font-serif text-white text-base font-semibold tracking-wide hover:text-yellow-500 transition-colors">
           Collin Brown
         </Link>
 
-        <div className="flex items-center gap-7">
-          {links.map((link) => (
-            link.scroll ? (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={handleAboutClick}
-                className={`text-sm tracking-wide transition-colors duration-200 ${isActive(link.href) ? 'text-yellow-500' : 'text-slate-300 hover:text-yellow-500'}`}
-              >
-                {link.label}
-              </a>
-            ) : (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={`text-sm tracking-wide transition-colors duration-200 ${isActive(link.href) ? 'text-yellow-500' : 'text-slate-300 hover:text-yellow-500'}`}
-              >
-                {link.label}
-              </Link>
-            )
-          ))}
+        {/* Desktop nav */}
+        <div className="hidden md:flex items-center gap-7">
+          {links.map(link => renderLink(link, false))}
 
-          {/* LinkedIn */}
           <a
             href={about.contact.linkedin}
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
             className="text-slate-300 hover:text-yellow-500 transition-colors duration-200"
-            title="LinkedIn"
           >
             <LinkedInIcon />
           </a>
 
-          {/* Resume download */}
           <a
             href={about.contact.resume_pdf || '#'}
             download="Collin Brown Resume.pdf"
@@ -107,7 +129,49 @@ export default function Navbar() {
             Resume
           </a>
         </div>
+
+        {/* Mobile hamburger */}
+        <button
+          onClick={() => setMenuOpen(o => !o)}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+          className="md:hidden text-slate-200 hover:text-yellow-500 transition-colors"
+        >
+          <HamburgerIcon open={menuOpen} />
+        </button>
       </div>
+
+      {/* Mobile menu panel */}
+      {menuOpen && (
+        <div className="md:hidden border-t border-yellow-600/10 bg-[#0d1b2a]/95 backdrop-blur">
+          <div className="max-w-5xl mx-auto px-6 py-2">
+            {links.map(link => renderLink(link, true))}
+
+            <div className="flex items-center gap-6 pt-3 pb-2 border-t border-yellow-600/10 mt-2">
+              <a
+                href={about.contact.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                onClick={() => setMenuOpen(false)}
+                className="text-slate-300 hover:text-yellow-500 transition-colors duration-200 flex items-center gap-2 text-sm"
+              >
+                <LinkedInIcon />
+                LinkedIn
+              </a>
+              <a
+                href={about.contact.resume_pdf || '#'}
+                download="Collin Brown Resume.pdf"
+                onClick={() => setMenuOpen(false)}
+                className="text-slate-300 hover:text-yellow-500 transition-colors duration-200 flex items-center gap-2 text-sm"
+              >
+                <DownloadIcon />
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   )
 }
