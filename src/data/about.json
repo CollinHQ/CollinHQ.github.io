@@ -6,6 +6,12 @@
   "one_liner": "Workplace Operations professional with 7+ years building scalable systems, optimizing vendor performance, and leading office environments across high-growth companies.",
   "bio": "I manage the full lifecycle of office environments — from construction build-outs and vendor negotiations to employee experience programming and internal communications. I'm known for building scalable systems, optimizing vendor performance, and using operational data to improve workplace strategy, reduce costs, and enhance in-office engagement. Currently leading the multi-floor renovation of Rho's SF headquarters at 325 Pacific Ave, coordinating 15+ vendors across electrical, flooring, HVAC, AV, and millwork.",
   "hero_tags": ["SF & NYC", "Office Build-Outs", "Vendor Ops"],
+  "stats": [
+    { "value": "7+",   "label": "Years in Workplace Ops" },
+    { "value": "15+",  "label": "Vendors Coordinated" },
+    { "value": "$30K", "label": "Delivered Under Budget" },
+    { "value": "35%",  "label": "In-Office Attendance Lift" }
+  ],
   "tools": [
     "Freshworks",
     "Envoy",

@@ -1,10 +1,13 @@
 import projects from '../data/projects.json'
 import ProjectCard from '../components/ProjectCard'
+import usePageTitle from '../hooks/usePageTitle'
 
 const featured = ['rho-office-redesign', 'klaviyo-office-redesign', 'bridge-office-relocation']
 const featuredProjects = featured.map(id => projects.find(p => p.id === id)).filter(Boolean)
 
 export default function ProjectsPage() {
+  usePageTitle('Projects')
+
   return (
     <div className="min-h-screen pt-24 pb-24 px-6">
       <div className="max-w-5xl mx-auto">

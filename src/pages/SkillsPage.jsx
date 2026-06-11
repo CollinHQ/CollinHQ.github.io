@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import about from '../data/about.json'
 import resume from '../data/resume.json'
+import usePageTitle from '../hooks/usePageTitle'
 
 function getMatchingBullets(skill) {
   if (!skill) return []
@@ -32,6 +33,7 @@ function DocumentIcon() {
 }
 
 export default function SkillsPage() {
+  usePageTitle('Skills')
   const [selectedSkill, setSelectedSkill] = useState(null)
   const matchingBullets = getMatchingBullets(selectedSkill)
   const description = selectedSkill ? about.skill_descriptions?.[selectedSkill] : null

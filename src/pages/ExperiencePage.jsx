@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import experience from '../data/experience.json'
 import InteractiveResume from '../components/InteractiveResume'
 import Timeline from '../components/Timeline'
+import usePageTitle from '../hooks/usePageTitle'
 
 const subNav = [
   { label: 'Interactive Resume', href: '#interactive-resume' },
@@ -15,6 +16,7 @@ function scrollTo(e, href) {
 }
 
 export default function ExperiencePage() {
+  usePageTitle('Experience')
   const [searchParams, setSearchParams] = useSearchParams()
   const [pinnedSkill, setPinnedSkill] = useState(() => searchParams.get('skill') || null)
   const [showScrollTop, setShowScrollTop] = useState(false)
