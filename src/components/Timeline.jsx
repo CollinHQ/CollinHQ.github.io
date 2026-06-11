@@ -5,7 +5,7 @@ const companyDomains = {
   'Klaviyo':        'klaviyo.com',
   'BRIDGE Housing': 'bridgehousing.com',
   'Werqwise':       'werqwise.com',
-  'Connections':    null,
+  'ConnectionsSF':  null,
 }
 
 function LogoCircle({ company }) {

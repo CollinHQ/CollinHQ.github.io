@@ -1,17 +1,17 @@
 [
   {
-    "id": "rho-2025",
+    "id": "rho-2026",
     "company": "Rho",
     "title": "Workplace Generalist",
     "location": "San Francisco, CA",
-    "start": "Jan 2026",
+    "start": "Mar 2026",
     "end": "Present",
-    "description": "Leading workplace operations across Rho's SF headquarters — managing a multi-floor office build-out, 15+ vendor relationships, employee experience programming, and internal communications.",
+    "description": "Helping lead the ground-up build-out of Rho's SF headquarters while designing and executing the full workplace experience across 3 floors with no general contractor.",
     "highlights": [
-      "Managing full build-out of 325 Pacific Ave SF headquarters across 3 floors, coordinating 15+ vendors from demolition through move-in",
-      "Built and manage the full vendor lifecycle — onboarding, COI compliance, invoice auditing, and contract negotiation",
-      "Designed and execute employee experience programming: events, Slack newsletters, wellness activations, and surprise-and-delight initiatives",
-      "Developed repeatable office operations playbooks applied across SF and NYC locations"
+      "Lead on the ground-up build-out across 3 floors — construction sequencing, space layout, and amenity program, coordinating 15+ vendors and contractors",
+      "Designing the full SF workplace experience: space planning, kitchen and amenity installation, AV, signage, and furniture — shell to fully operational",
+      "Driving cost optimization through contractor negotiations, consistently coming in under estimates and eliminating unnecessary change orders",
+      "Primary liaison between executive leadership (including CEO walkthroughs), contractors, building management, AV, and signage vendors"
     ]
   },
   {
@@ -21,12 +21,12 @@
     "location": "San Francisco, CA",
     "start": "May 2025",
     "end": "Dec 2025",
-    "description": "Served as West Coast point of contact for Global Real Estate Operations, aligning local facilities with global workplace standards while leading design and systems initiatives.",
+    "description": "Led design and operational strategy for Klaviyo's SF office and event space while managing an enterprise vendor portfolio and internal service systems.",
     "highlights": [
-      "Delivered $30K under budget on office design initiative by sourcing and managing local vendor partnerships",
-      "Led redesign and operational strategy for SF hub event space for internal and client-facing programming",
-      "Built internal service catalog in Freshworks, creating scalable workflows for workplace and facilities requests",
-      "Managed cross-functional onboarding with IT and People Ops, ensuring seamless Day 1 readiness"
+      "Led end-to-end remodel of a modular event space, delivered $30K under budget; supports All-Hands, off-sites, and client events for 200+ employees",
+      "Secured City of San Francisco electrical permits and sourced furniture via cross-country travel to complete the build",
+      "Designed the SF office with art curation and a full plant program for a biophilic, brand-aligned workplace",
+      "Managed enterprise vendor portfolio (CBRE, Knotel, WeWork) and built an internal service catalog in Freshworks and Jira"
     ]
   },
   {
@@ -36,11 +36,12 @@
     "location": "San Francisco, CA",
     "start": "May 2024",
     "end": "May 2025",
-    "description": "Owned daily workplace operations supporting executive leadership across CFO, HR, and Development, acting as the central coordination point across departments.",
+    "description": "Served as central workplace point of contact and concierge for executive leadership and 500+ employees across corporate and property management staff.",
     "highlights": [
-      "Launched workplace program that increased in-office attendance by 35% using engagement insights",
-      "Managed vendor relationships and service delivery ensuring consistent facility performance",
-      "Led onboarding/offboarding operations including access control, hardware provisioning, and workspace readiness"
+      "Central point of contact and concierge for executive leadership (CFO, HR, Marketing) and 500+ employees",
+      "Launched a break-room concessions program and engagement initiatives that increased on-site attendance by 35%",
+      "Managed vendor relationships and outside contractors for facility services, security, and safety",
+      "Partnered with IT via Jira to streamline service ticket submission and reduce operational redundancies"
     ]
   },
   {
@@ -50,11 +51,11 @@
     "location": "San Francisco, CA",
     "start": "Jan 2023",
     "end": "Dec 2023",
-    "description": "Managed workplace technology and AV systems across multiple sites while acting as primary liaison with building management.",
+    "description": "Owned AV and IT infrastructure across two sites while serving as primary liaison with building management, security, and safety teams.",
     "highlights": [
-      "Implemented Optisign digital signage system, reducing annual costs by $15K",
-      "Leveraged Envoy utilization data to inform space planning and operational decisions",
-      "Coordinated building maintenance, inspections, and vendor services across sites"
+      "Implemented Optisign digital signage, reducing annual spend by $15K; adopted company-wide across all locations",
+      "Owned AV and IT infrastructure for all conference rooms and Zoom spaces across two sites (SF and San Mateo)",
+      "Primary liaison with building management, security, and safety — maintenance, inspections, and real-time incident response"
     ]
   },
   {
@@ -63,25 +64,24 @@
     "title": "Member Experience Associate",
     "location": "San Francisco, CA",
     "start": "Aug 2021",
-    "end": "Jan 2023",
-    "description": "Drove member retention and community experience in a high-volume coworking environment.",
+    "end": "Dec 2022",
+    "description": "Drove member retention and ran front-of-house operations in a high-volume coworking environment.",
     "highlights": [
-      "Drove member retention to 3.5% churn through proactive engagement and community programming",
-      "Planned and executed workplace events strengthening community and brand experience",
-      "Managed front-of-house operations, logistics, and member services"
+      "Drove member retention from open churn to 3.5% through proactive engagement programming and on-site events",
+      "Managed front-desk operations: reception, concierge, visitor handling, shipping logistics, and member CRM (Nexudus)"
     ]
   },
   {
     "id": "connections-2019",
-    "company": "Connections",
+    "company": "ConnectionsSF",
     "title": "Office Manager",
     "location": "San Francisco, CA",
-    "start": "Jul 2019",
-    "end": "May 2020",
-    "description": "Led office operations, vendor coordination, and onboarding processes for internal teams.",
+    "start": "Jun 2019",
+    "end": "Apr 2020",
+    "description": "Led full office operations for a multi-team organization, from vendor management to onboarding and events.",
     "highlights": [
-      "Resolved escalated operational issues and supported supervisors across departments",
-      "Coordinated company events and internal engagement initiatives"
+      "Led full office operations: vendor management, onboarding/offboarding, account reconciliation, and document management",
+      "Served as escalation point for supervisors across departments and ran member events including seasonal parties"
     ]
   }
 ]
