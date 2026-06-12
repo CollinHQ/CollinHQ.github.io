@@ -4,8 +4,32 @@
   "location": "San Francisco, CA",
   "company": "Rho",
   "one_liner": "Workplace Operations professional with 7+ years building scalable systems, optimizing vendor performance, and leading office environments across high-growth companies.",
-  "bio": "I'm a Workplace Operations and Office Manager with 7+ years of San Francisco experience owning daily facilities, vendor and contractor management, internal events, onboarding, and concierge-level employee experience across tech, nonprofit, and coworking environments. I'm known for building scalable systems, optimizing vendor performance, and using operational judgment to reduce costs and improve how it feels to come into the office. Currently I'm helping lead the ground-up build-out of Rho's SF headquarters at 325 Pacific Ave — coordinating 15+ vendors and contractors across construction, AV, signage, and amenities while taking the space from empty shell to fully operational.",
+  "bio": "I'm a Workplace Operations and Office Manager with 7+ years of San Francisco experience owning daily facilities, vendor and contractor management, internal events, onboarding, and concierge-level employee experience across tech, nonprofit, and coworking environments. I'm known for building scalable systems, optimizing vendor performance, and using operational judgment to reduce costs and improve how it feels to come into the office. Currently I'm directing on-the-ground execution and vendor operations for the build-out of Rho's SF headquarters at 325 Pacific Ave — coordinating 15+ vendors and contractors across construction, AV, signage, and amenities while taking the space from empty shell to fully operational.",
   "hero_tags": ["SF & NYC", "Office Build-Outs", "Vendor Ops"],
+  "currently": "Currently building Rho's SF headquarters — 3 floors, 15+ vendors, shell to move-in",
+  "headshot": "/assets/images/headshot/headshot.jpg",
+  "value_props": [
+    {
+      "icon": "🏢",
+      "title": "Day-One Ready Offices",
+      "text": "Onboarding, access, hardware, desk setup — new hires walk into a finished experience, not a punch list."
+    },
+    {
+      "icon": "🤝",
+      "title": "Vendor & Budget Stewardship",
+      "text": "I negotiate, audit, and hold vendors accountable — $30K under budget at Klaviyo, a $9K overquote caught and disputed at Rho."
+    },
+    {
+      "icon": "✨",
+      "title": "Engagement People Notice",
+      "text": "Concessions, events, and programming that lifted in-office attendance 35% — because culture is operational."
+    },
+    {
+      "icon": "🔨",
+      "title": "Builds, Moves & Renovations",
+      "text": "From permit to pendant light: a 3-floor build-out with no general contractor, delivered on a timeline."
+    }
+  ],
   "stats": [
     { "value": "7+",   "label": "Years in Workplace Ops" },
     { "value": "15+",  "label": "Vendors Coordinated" },

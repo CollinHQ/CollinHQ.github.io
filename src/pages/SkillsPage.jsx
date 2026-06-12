@@ -17,8 +17,10 @@ function getMatchingBullets(skill) {
   return matches
 }
 
-// Only show skills that have at least 1 tagged bullet
-const skillsWithBullets = about.skills.filter(skill => getMatchingBullets(skill).length > 0)
+// Only show skills that have at least 1 tagged bullet, with their counts
+const skillsWithBullets = about.skills
+  .map(skill => ({ skill, count: getMatchingBullets(skill).length }))
+  .filter(({ count }) => count > 0)
 
 function DocumentIcon() {
   return (
@@ -57,7 +59,7 @@ export default function SkillsPage() {
             <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Core Skills</h2>
             <p className="text-slate-500 text-xs mb-5">Click any skill to see where it shows up in my experience.</p>
             <div className="flex flex-wrap gap-3">
-              {skillsWithBullets.map((skill) => (
+              {skillsWithBullets.map(({ skill, count }) => (
                 <button
                   key={skill}
                   onClick={() => handleSkillClick(skill)}
@@ -67,7 +69,7 @@ export default function SkillsPage() {
                       : 'border-yellow-600/40 text-yellow-500 bg-slate-800/50 hover:bg-yellow-500/10'
                   }`}
                 >
-                  {skill}
+                  {skill} <span className="text-yellow-600/70 ml-1">{count}</span>
                 </button>
               ))}
             </div>
