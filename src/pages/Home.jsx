@@ -1,6 +1,5 @@
 import Hero from '../components/Hero'
 import StatsBar from '../components/StatsBar'
-import WhatIBring from '../components/WhatIBring'
 import About from '../components/About'
 import FeaturedWork from '../components/FeaturedWork'
 import Testimonials from '../components/Testimonials'
@@ -15,7 +14,6 @@ export default function Home() {
     <>
       <Hero />
       <Reveal><StatsBar /></Reveal>
-      <Reveal><WhatIBring /></Reveal>
       <Reveal><About /></Reveal>
       <Reveal><FeaturedWork /></Reveal>
       <Reveal><Testimonials /></Reveal>
