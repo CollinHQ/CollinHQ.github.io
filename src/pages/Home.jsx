@@ -3,6 +3,7 @@ import StatsBar from '../components/StatsBar'
 import WhatIBring from '../components/WhatIBring'
 import About from '../components/About'
 import FeaturedWork from '../components/FeaturedWork'
+import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
 import Reveal from '../components/Reveal'
 import usePageTitle from '../hooks/usePageTitle'
@@ -17,6 +18,7 @@ export default function Home() {
       <Reveal><WhatIBring /></Reveal>
       <Reveal><About /></Reveal>
       <Reveal><FeaturedWork /></Reveal>
+      <Reveal><Testimonials /></Reveal>
       <Reveal><Contact /></Reveal>
     </>
   )
