@@ -8,7 +8,7 @@
     "company": "Rho",
     "location": "San Francisco, CA",
     "role": "On-site operations lead for multi-floor commercial office construction",
-    "description": "Managing a full office build-out for Rho's SF headquarters, coordinating across general contractors, electricians, flooring crews, design firms, and internal leadership. Own the critical path from demolition through move-in, resolving scheduling conflicts between concurrent workstreams across 3 floors.",
+    "description": "Driving the build-out of Rho's SF headquarters across 3 floors, coordinating contractors, vendors, and design firms from demolition through move-in.",
     "tags": [
       "Construction",
       "Vendor Mgmt",
@@ -16,11 +16,11 @@
       "Space Design"
     ],
     "key_highlights": [
-      "Coordinating 15+ vendors simultaneously (electrical, flooring, HVAC, AV, lighting, millwork, cleaning)",
-      "Discovered structural blocker on Floor 3 that made planned electrical work infeasible — researched and proposed surface-mounted Connect Track alternative",
-      "Managed vendor dependencies: flooring can't start until electrical drilling is phased; lighting can't install after flooring is glued (no lift access)",
-      "Identified billing discrepancies on design firm invoices by cross-referencing billed meeting hours against calendar records",
-      "Built Notion-based project tracking system with Granola integration for real-time meeting capture"
+      "Driving 15+ vendors at once across electrical, flooring, HVAC, AV, lighting, and millwork",
+      "Solved a Floor 3 structural blocker by proposing a surface-mounted ConnecTrac alternative",
+      "Sequenced vendor dependencies to keep concurrent workstreams from colliding",
+      "Caught billing discrepancies by auditing design firm invoices against the calendar",
+      "Built a Notion tracker with Granola integration for real-time meeting capture"
     ],
     "numbers": {
       "floors_managed": 3,
