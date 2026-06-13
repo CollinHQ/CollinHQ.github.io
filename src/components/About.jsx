@@ -19,9 +19,25 @@ export default function About() {
             className="w-48 h-48 rounded-2xl object-cover border-2 border-yellow-600/30 flex-shrink-0 mx-auto md:mx-0"
           />
         )}
-        <p className="text-slate-300 text-lg leading-relaxed flex-1">
-          {about.bio}
-        </p>
+        <div className="flex-1">
+          <p className="text-slate-300 text-lg leading-relaxed">
+            {about.bio}
+          </p>
+
+          {about.hospitality_line && (
+            <blockquote className="border-l-2 border-yellow-500 pl-5 my-8">
+              <p className="font-serif text-2xl text-white italic leading-snug">
+                “{about.hospitality_line}”
+              </p>
+            </blockquote>
+          )}
+
+          {about.network_line && (
+            <p className="text-slate-400 text-base leading-relaxed">
+              {about.network_line}
+            </p>
+          )}
+        </div>
       </div>
     </section>
   )
