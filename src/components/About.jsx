@@ -20,12 +20,6 @@ export default function About() {
           <p className="text-slate-300 text-lg leading-relaxed">
             {about.bio}
           </p>
-
-          {about.network_line && (
-            <p className="text-slate-400 text-base leading-relaxed mt-6">
-              {about.network_line}
-            </p>
-          )}
         </div>
       </div>
     </section>

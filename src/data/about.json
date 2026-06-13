@@ -4,10 +4,9 @@
   "location": "San Francisco, CA",
   "company": "Rho",
   "one_liner": "Workplace Operations professional with 7+ years building scalable systems, optimizing vendor performance, and leading office environments across high-growth companies.",
-  "bio": "I'm a Workplace Operations and Office Manager with 7+ years of San Francisco experience owning daily facilities, vendor and contractor management, internal events, onboarding, and concierge-level employee experience across tech, nonprofit, and coworking environments. I'm known for building scalable systems, optimizing vendor performance, and using operational judgment to reduce costs and improve how it feels to come into the office. Currently I'm directing on-the-ground execution and vendor operations for the build-out of Rho's SF headquarters at 325 Pacific Ave — coordinating 15+ vendors and contractors across construction, AV, signage, and amenities while taking the space from empty shell to fully operational.",
+  "bio": "I've spent 7+ years running offices across San Francisco's tech, nonprofit, and coworking spaces, and what keeps me in this work is how much a space shapes the people in it. I care about offices that are easy to use, genuinely welcoming, and quietly efficient, which means owning the details most people never notice: facilities, vendors, budgets, onboarding, and the events that make a place feel alive. Having run projects all over the city, I've built up a network of trusted Bay Area vendors and contractors I can lean on to move quickly. Right now I'm directing the ground-up build-out of Rho's SF headquarters, coordinating 15+ vendors and contractors and taking the space from an empty shell to somewhere people actually want to be.",
   "hero_tags": ["SF & NYC", "Office Build-Outs", "Vendor Ops"],
-  "currently": "Currently building Rho's SF headquarters — 3 floors, 15+ vendors, shell to move-in",
-  "network_line": "I bring a network of trusted Bay Area vendors and contractors — electricians, movers, signage shops, caterers, plant programs, and furniture sources — built across 7+ years of San Francisco workplace operations.",
+  "currently": "Currently building Rho's SF headquarters: 3 floors, 15+ vendors, shell to move-in",
   "headshot": "/assets/images/headshot/headshot.jpg",
   "value_props": [
     {
@@ -32,10 +31,10 @@
     }
   ],
   "stats": [
-    { "value": "7+",   "label": "Years in Workplace Ops",     "story": "Across tech, nonprofit, and coworking environments in San Francisco — from front desk to ground-up HQ build-out." },
-    { "value": "15+",  "label": "Vendors Coordinated",        "story": "Coordinated simultaneously while building the headquarters for a fintech company from the ground up." },
-    { "value": "$30K", "label": "Delivered Under Budget",     "story": "Klaviyo event-space remodel — AV install, city electrical permits, and cross-country furniture sourcing, delivered under budget for 200+ employees." },
-    { "value": "35%",  "label": "In-Office Attendance Lift",  "story": "At BRIDGE Housing — a break-room concessions program and engagement initiatives built from what actually brought people in." }
+    { "value": "7+",   "label": "Years in Workplace Ops",     "story": "Across tech, nonprofit, and coworking environments in San Francisco, from front desk to ground-up HQ build-out." },
+    { "value": "15+",  "label": "Vendors Coordinated",        "story": "Driving both the build and the day-to-day experience of a new fintech headquarters, from construction and AV to the way the finished space actually runs." },
+    { "value": "$30K", "label": "Delivered Under Budget",     "story": "A Klaviyo event-space remodel covering AV install, city electrical permits, and cross-country furniture sourcing, delivered under budget for 200+ employees." },
+    { "value": "35%",  "label": "In-Office Attendance Lift",  "story": "At BRIDGE Housing, a break-room concessions program and engagement initiatives built from what actually brought people in." }
   ],
   "tools": [
     "Jira",

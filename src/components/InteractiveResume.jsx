@@ -41,8 +41,7 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
       {/* Header */}
       <div className="px-8 pt-5 pb-3 border-b border-gray-100 text-center">
         <h2 className="text-2xl font-bold text-gray-900 tracking-tight">{about.name}</h2>
-        <p className="text-gray-600 text-sm mt-0.5">Workplace Generalist</p>
-        <p className="text-gray-400 text-xs mt-1">
+        <p className="text-gray-400 text-xs mt-1.5">
           {about.location} •{' '}
           <a href={`mailto:${about.contact.email}`} className="hover:text-amber-500 transition-colors">{about.contact.email}</a>
           {' '}•{' '}
