@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import experience from '../data/experience.json'
 import InteractiveResume from '../components/InteractiveResume'
 import Timeline from '../components/Timeline'
+import Testimonials from '../components/Testimonials'
 import usePageTitle from '../hooks/usePageTitle'
 
 export default function ExperiencePage() {
@@ -59,6 +60,9 @@ export default function ExperiencePage() {
           </p>
           <InteractiveResume pinnedSkill={pinnedSkill} onClearPin={clearPin} />
         </section>
+
+        {/* Endorsements */}
+        <Testimonials />
 
       </div>
 

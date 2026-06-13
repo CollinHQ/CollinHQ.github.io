@@ -34,7 +34,7 @@ const svg = `
 
   <!-- Title -->
   <text x="100" y="360" fill="#cbd5e1" font-family="Georgia, serif" font-size="34" font-style="italic">
-    Workplace Operations Manager
+    Workplace Operations Professional
   </text>
 
   <!-- One-liner -->

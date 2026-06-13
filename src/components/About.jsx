@@ -6,10 +6,7 @@ export default function About() {
   const hasPhoto = about.headshot && !photoFailed
 
   return (
-    <section id="about" className="px-6 py-24 max-w-4xl mx-auto scroll-mt-16">
-      <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">About</p>
-      <h2 className="font-serif text-4xl font-bold text-white mb-8">Who I Am</h2>
-
+    <section id="about" className="px-6 pt-12 pb-20 max-w-4xl mx-auto scroll-mt-16">
       <div className={hasPhoto ? 'flex flex-col md:flex-row gap-10 items-start' : ''}>
         {hasPhoto && (
           <img
@@ -24,16 +21,8 @@ export default function About() {
             {about.bio}
           </p>
 
-          {about.hospitality_line && (
-            <blockquote className="border-l-2 border-yellow-500 pl-5 my-8">
-              <p className="font-serif text-2xl text-white italic leading-snug">
-                “{about.hospitality_line}”
-              </p>
-            </blockquote>
-          )}
-
           {about.network_line && (
-            <p className="text-slate-400 text-base leading-relaxed">
+            <p className="text-slate-400 text-base leading-relaxed mt-6">
               {about.network_line}
             </p>
           )}
