@@ -1,20 +1,20 @@
 import { useState } from 'react'
 
-const companyDomains = {
-  'Rho':            'rho.co',
-  'Klaviyo':        'klaviyo.com',
-  'BRIDGE Housing': 'bridgehousing.com',
-  'Werqwise':       'werqwise.com',
-  'ConnectionsSF':  null,
+const companyLogos = {
+  'Rho':            '/assets/images/logos/rho.png',
+  'Klaviyo':        '/assets/images/logos/klaviyo.png',
+  'BRIDGE Housing': '/assets/images/logos/bridge.png',
+  'Werqwise':       '/assets/images/logos/werqwise.png',
+  'ConnectionsSF':  '/assets/images/logos/connectionssf.png',
 }
 
 function LogoCircle({ company, small = false }) {
   const [failed, setFailed] = useState(false)
-  const domain = companyDomains[company]
+  const logo = companyLogos[company]
   const initial = company.charAt(0).toUpperCase()
   const sizeClass = small ? 'w-10 h-10' : 'w-14 h-14'
 
-  if (!domain || failed) {
+  if (!logo || failed) {
     return (
       <div className={`${sizeClass} rounded-full border-2 border-yellow-500 bg-[#1a2535] flex items-center justify-center flex-shrink-0`}>
         <span className={`text-yellow-500 font-bold ${small ? 'text-sm' : 'text-lg'}`}>{initial}</span>
@@ -23,12 +23,14 @@ function LogoCircle({ company, small = false }) {
   }
 
   return (
-    <img
-      src={`https://logo.clearbit.com/${domain}`}
-      alt={company}
-      onError={() => setFailed(true)}
-      className={`${sizeClass} rounded-full border-2 border-yellow-500 object-cover bg-white flex-shrink-0`}
-    />
+    <div className={`${sizeClass} rounded-full border-2 border-yellow-500 bg-white flex items-center justify-center flex-shrink-0 overflow-hidden`}>
+      <img
+        src={logo}
+        alt={`${company} logo`}
+        onError={() => setFailed(true)}
+        className="w-[70%] h-[70%] object-contain"
+      />
+    </div>
   )
 }
 
