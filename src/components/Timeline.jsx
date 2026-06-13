@@ -8,15 +8,16 @@ const companyDomains = {
   'ConnectionsSF':  null,
 }
 
-function LogoCircle({ company }) {
+function LogoCircle({ company, small = false }) {
   const [failed, setFailed] = useState(false)
   const domain = companyDomains[company]
   const initial = company.charAt(0).toUpperCase()
+  const sizeClass = small ? 'w-10 h-10' : 'w-14 h-14'
 
   if (!domain || failed) {
     return (
-      <div className="w-14 h-14 rounded-full border-2 border-yellow-500 bg-[#1a2535] flex items-center justify-center flex-shrink-0">
-        <span className="text-yellow-500 font-bold text-lg">{initial}</span>
+      <div className={`${sizeClass} rounded-full border-2 border-yellow-500 bg-[#1a2535] flex items-center justify-center flex-shrink-0`}>
+        <span className={`text-yellow-500 font-bold ${small ? 'text-sm' : 'text-lg'}`}>{initial}</span>
       </div>
     )
   }
@@ -26,7 +27,7 @@ function LogoCircle({ company }) {
       src={`https://logo.clearbit.com/${domain}`}
       alt={company}
       onError={() => setFailed(true)}
-      className="w-14 h-14 rounded-full border-2 border-yellow-500 object-cover bg-white flex-shrink-0"
+      className={`${sizeClass} rounded-full border-2 border-yellow-500 object-cover bg-white flex-shrink-0`}
     />
   )
 }
@@ -39,8 +40,8 @@ export default function Timeline({ experience }) {
         return (
           <div key={role.id} className="flex gap-0">
 
-            {/* Left column — logo + vertical line */}
-            <div className="flex flex-col items-center" style={{ minWidth: '5rem' }}>
+            {/* Left column — logo + vertical line (desktop only) */}
+            <div className="hidden sm:flex flex-col items-center" style={{ minWidth: '5rem' }}>
               <LogoCircle company={role.company} />
               <p className="text-slate-500 text-xs mt-1 text-center leading-tight whitespace-nowrap">
                 {role.start}
@@ -50,15 +51,26 @@ export default function Timeline({ experience }) {
               )}
             </div>
 
-            {/* Horizontal connector */}
-            <div className="flex items-start pt-7">
+            {/* Horizontal connector (desktop only) */}
+            <div className="hidden sm:flex items-start pt-7">
               <div className="w-6 border-t border-yellow-600/20 mt-0" />
             </div>
 
             {/* Right column — card */}
-            <div className="flex-1 pb-8 pt-1">
+            <div className="flex-1 pb-6 sm:pb-8 sm:pt-1">
               <div className="border border-yellow-600/20 rounded-lg p-5 bg-[#0d1b2a]">
-                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+                {/* Mobile header — logo inline with company */}
+                <div className="flex sm:hidden items-center gap-3 mb-3">
+                  <LogoCircle company={role.company} small />
+                  <div>
+                    <h3 className="text-yellow-500 font-bold tracking-wide" style={{ fontSize: '1.05rem', letterSpacing: '0.05em' }}>
+                      {role.company}
+                    </h3>
+                    <span className="text-slate-500 text-xs">{role.start} – {role.end}</span>
+                  </div>
+                </div>
+
+                <div className="hidden sm:flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
                   <h3
                     className="text-yellow-500 font-bold tracking-wide"
                     style={{ fontSize: '1.05rem', letterSpacing: '0.05em' }}

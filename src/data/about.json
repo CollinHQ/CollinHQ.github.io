@@ -33,10 +33,10 @@
     }
   ],
   "stats": [
-    { "value": "7+",   "label": "Years in Workplace Ops" },
-    { "value": "15+",  "label": "Vendors Coordinated" },
-    { "value": "$30K", "label": "Delivered Under Budget" },
-    { "value": "35%",  "label": "In-Office Attendance Lift" }
+    { "value": "7+",   "label": "Years in Workplace Ops",     "story": "Across tech, nonprofit, and coworking environments in San Francisco — from front desk to ground-up HQ build-out." },
+    { "value": "15+",  "label": "Vendors Coordinated",        "story": "Simultaneously, on Rho's 3-floor headquarters build — electrical, flooring, HVAC, AV, signage, and millwork, with no general contractor." },
+    { "value": "$30K", "label": "Delivered Under Budget",     "story": "Klaviyo event-space remodel — AV install, city electrical permits, and cross-country furniture sourcing, delivered under budget for 200+ employees." },
+    { "value": "35%",  "label": "In-Office Attendance Lift",  "story": "At BRIDGE Housing — a break-room concessions program and engagement initiatives built from what actually brought people in." }
   ],
   "tools": [
     "Jira",
