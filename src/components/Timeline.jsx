@@ -12,7 +12,7 @@ function LogoCircle({ company, small = false }) {
   const [failed, setFailed] = useState(false)
   const logo = companyLogos[company]
   const initial = company.charAt(0).toUpperCase()
-  const sizeClass = small ? 'w-10 h-10' : 'w-14 h-14'
+  const sizeClass = small ? 'w-11 h-11' : 'w-16 h-16'
 
   if (!logo || failed) {
     return (
@@ -28,7 +28,7 @@ function LogoCircle({ company, small = false }) {
         src={logo}
         alt={`${company} logo`}
         onError={() => setFailed(true)}
-        className="w-[70%] h-[70%] object-contain"
+        className="w-[88%] h-[88%] object-contain"
       />
     </div>
   )
