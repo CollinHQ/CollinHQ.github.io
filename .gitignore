@@ -1,3 +1,6 @@
+# Internal handoff/context doc — not for publishing
+HANDOFF.md
+
 # Dependencies
 node_modules/
 .pnp
