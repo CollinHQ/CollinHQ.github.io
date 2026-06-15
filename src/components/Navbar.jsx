@@ -135,7 +135,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(o => !o)}
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
-          className="md:hidden text-slate-200 hover:text-yellow-500 transition-colors"
+          className="md:hidden p-2 -mr-2 text-slate-200 hover:text-yellow-500 transition-colors"
         >
           <HamburgerIcon open={menuOpen} />
         </button>

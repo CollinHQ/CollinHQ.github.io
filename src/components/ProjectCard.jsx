@@ -20,6 +20,16 @@ export default function ProjectCard({ project }) {
       className="cursor-pointer h-full min-h-[18rem]"
       style={{ perspective: '1000px' }}
       onClick={() => setFlipped(f => !f)}
+      role="button"
+      tabIndex={0}
+      aria-pressed={flipped}
+      aria-label={`${title} — ${flipped ? 'show summary' : 'show details'}`}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          setFlipped(f => !f)
+        }
+      }}
     >
       <div
         className="relative w-full h-full grid grid-cols-1 grid-rows-1 transition-transform duration-500"
@@ -112,6 +122,7 @@ export default function ProjectCard({ project }) {
                 key={tag}
                 to="/skills"
                 onClick={e => e.stopPropagation()}
+                tabIndex={flipped ? 0 : -1}
                 className="border border-yellow-600/40 text-yellow-500 bg-slate-800/50 hover:bg-yellow-500/10 rounded-full px-3 py-1 text-xs transition-colors"
               >
                 {tag}

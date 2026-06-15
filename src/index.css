@@ -6,4 +6,22 @@
   body {
     @apply bg-[#0d1b2a] text-white font-sans;
   }
+
+  /* Visible keyboard-focus indicator (gold on navy ≈ 9:1) */
+  :focus-visible {
+    outline: 2px solid #eab308;
+    outline-offset: 2px;
+  }
+}
+
+/* Respect users who prefer reduced motion: neutralize looping + 3D animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

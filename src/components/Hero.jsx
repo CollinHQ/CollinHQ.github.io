@@ -31,7 +31,7 @@ export default function Hero() {
         </p>
       )}
 
-      <h1 className="font-serif text-7xl md:text-8xl font-bold text-white mb-3">
+      <h1 className="font-serif text-6xl sm:text-7xl md:text-8xl font-bold text-white mb-3">
         {about.name}
       </h1>
       <p className="text-yellow-500 text-sm uppercase tracking-widest mb-8">
