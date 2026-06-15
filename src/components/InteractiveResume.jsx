@@ -14,7 +14,7 @@ const isToolTag = (tag) => toolSet.has(tag.toLowerCase())
 function ChevronIcon({ open }) {
   return (
     <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" strokeWidth="2.5"
+      stroke="currentColor" strokeWidth="2.5" aria-hidden="true" focusable="false"
       className={`flex-shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
     >
       <polyline points="6 9 12 15 18 9" />
@@ -85,6 +85,8 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
                         onClick={() => toggle(bullet.id)}
                         className="mt-1 text-amber-500 hover:text-amber-600 transition-colors flex-shrink-0"
                         title={isOpen ? 'Collapse' : 'Read more'}
+                        aria-label={isOpen ? 'Collapse detail' : 'Expand detail'}
+                        aria-expanded={isOpen}
                       >
                         <ChevronIcon open={isOpen} />
                       </button>

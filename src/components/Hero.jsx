@@ -59,7 +59,7 @@ export default function Hero() {
 
       {/* Scroll cue */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-yellow-600/50 animate-bounce">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" focusable="false">
           <polyline points="6 9 12 15 18 9" />
         </svg>
       </div>

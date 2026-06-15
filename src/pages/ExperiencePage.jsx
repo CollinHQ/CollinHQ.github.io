@@ -72,7 +72,7 @@ export default function ExperiencePage() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="fixed bottom-6 right-6 flex items-center gap-2 bg-[#1a2535] border border-yellow-600/30 text-slate-400 hover:text-yellow-500 hover:border-yellow-500 text-xs px-4 py-2 rounded-full shadow-lg transition-all duration-200"
         >
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true" focusable="false">
             <polyline points="18 15 12 9 6 15" />
           </svg>
           Back to top
