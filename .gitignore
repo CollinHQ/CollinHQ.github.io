@@ -1,6 +1,9 @@
 # Internal handoff/context doc — not for publishing
 HANDOFF.md
 
+# Local Claude agents and configs — internal, not for publishing
+.claude/
+
 # Dependencies
 node_modules/
 .pnp
