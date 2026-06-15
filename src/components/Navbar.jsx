@@ -123,7 +123,7 @@ export default function Navbar() {
           <a
             href={about.contact.resume_pdf || '#'}
             download="Collin Brown Resume.pdf"
-            className="text-slate-300 hover:text-yellow-500 transition-colors duration-200 flex items-center gap-1.5 text-sm"
+            className="border border-yellow-600/40 text-yellow-500 hover:bg-yellow-500/10 transition-colors duration-200 flex items-center gap-1.5 text-sm rounded-full px-3 py-1"
           >
             <DownloadIcon />
             Resume

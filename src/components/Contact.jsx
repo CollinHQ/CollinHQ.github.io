@@ -58,7 +58,7 @@ export default function Contact() {
           <a
             href={about.contact.resume_pdf}
             download="Collin Brown Resume.pdf"
-            className="flex items-center gap-2 border border-slate-700 text-slate-300 hover:text-yellow-500 hover:border-yellow-600/40 text-sm rounded-full px-6 py-3 transition-colors"
+            className="flex items-center gap-2 border border-yellow-600/40 text-yellow-500 hover:bg-yellow-500/10 text-sm rounded-full px-6 py-3 transition-colors"
           >
             <DownloadIcon />
             Download Resume

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
 const companyLogos = {
-  'Rho':            '/assets/images/logos/rho.png',
   'Klaviyo':        '/assets/images/logos/klaviyo.png',
   'BRIDGE Housing': '/assets/images/logos/bridge.png',
   'Werqwise':       '/assets/images/logos/werqwise.png',

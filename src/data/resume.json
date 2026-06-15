@@ -1,7 +1,7 @@
 [
   {
     "id": "rho-2026",
-    "company": "Rho",
+    "company": "Fintech Startup",
     "title": "Workplace Generalist",
     "location": "San Francisco, CA",
     "start": "Mar 2026",
@@ -9,11 +9,11 @@
     "bullets": [
       {
         "id": "rho-1",
-        "short": "Directing on-the-ground execution and vendor operations for Rho's SF headquarters — driving the physical transformation from shell to operational through real-time site adjustments, design compliance, and stakeholder walkthroughs",
+        "short": "Directing on-the-ground execution and vendor operations for a fintech startup's SF headquarters, driving the physical transformation from shell to operational through real-time site adjustments, design compliance, and stakeholder walkthroughs",
         "has_detail": true,
         "detail_needed": null,
         "skills": ["Workplace Operations", "Vendor & Contractor Management", "Space Planning", "Stakeholder Management"],
-        "detail": "Rho's SF headquarters required a complete build-out across three floors with no general contractor overseeing the work, so vendor sequencing and dependency management were owned internally. I direct the on-the-ground execution — coordinating 15+ vendors and contractors, managing real-time site adjustments, and keeping the build aligned with design intent. When a structural blocker on Floor 3 made the planned electrical approach infeasible, I researched and proposed a surface-mounted alternative that preserved the timeline. The project is on track for substantial completion with concurrent workstreams progressing without coordination-driven delays."
+        "detail": "A fintech startup's SF headquarters required a complete build-out across three floors with no general contractor overseeing the work, so vendor sequencing and dependency management were owned internally. I direct the on-the-ground execution, coordinating 15+ vendors and contractors, managing real-time site adjustments, and keeping the build aligned with design intent. When a structural blocker on Floor 3 made the planned electrical approach infeasible, I researched and proposed a surface-mounted alternative that preserved the timeline. The project is on track for substantial completion with concurrent workstreams progressing without coordination-driven delays."
       },
       {
         "id": "rho-2",

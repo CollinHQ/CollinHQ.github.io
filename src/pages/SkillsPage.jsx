@@ -57,7 +57,7 @@ export default function SkillsPage() {
           {/* Core Skills — only those with tagged bullets */}
           <div>
             <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Core Skills</h2>
-            <p className="text-slate-500 text-xs mb-5">Click any skill to see where it shows up in my experience.</p>
+            <p className="text-slate-400 text-xs mb-5">Click any skill to see where it shows up in my experience.</p>
             <div className="flex flex-wrap gap-3">
               {skillsWithBullets.map(({ skill, count }) => (
                 <button
@@ -69,7 +69,7 @@ export default function SkillsPage() {
                       : 'border-yellow-600/40 text-yellow-500 bg-slate-800/50 hover:bg-yellow-500/10'
                   }`}
                 >
-                  {skill} <span className="text-yellow-600/70 ml-1">{count}</span>
+                  {skill} <span className="text-yellow-500/80 ml-1">{count}</span>
                 </button>
               ))}
             </div>

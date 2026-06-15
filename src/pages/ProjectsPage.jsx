@@ -14,7 +14,7 @@ export default function ProjectsPage() {
         <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Portfolio</p>
         <h1 className="font-serif text-5xl font-bold text-white mb-4">Projects</h1>
         <p className="text-slate-400 text-lg mb-14 max-w-2xl">
-          A selection of workplace operations projects — office build-outs, redesigns, and relocations managed from planning through completion.
+          A selection of workplace operations work: office build-outs, redesigns, relocations, and the everyday systems and programs that keep a workplace running, driven from planning through completion.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredProjects.map((project) => (

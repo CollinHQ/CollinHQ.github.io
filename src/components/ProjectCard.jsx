@@ -60,7 +60,7 @@ export default function ProjectCard({ project }) {
                 status === 'In Progress'
                   ? 'border-yellow-600/40 text-yellow-500'
                   : status === 'Ongoing'
-                  ? 'border-teal-600/40 text-teal-400'
+                  ? 'border-yellow-600/40 text-yellow-500/80'
                   : 'border-slate-600/40 text-slate-400'
               }`}>
                 {status}
@@ -96,7 +96,7 @@ export default function ProjectCard({ project }) {
               </div>
             )}
 
-            <p className="text-slate-600 text-xs mt-auto">Click for more →</p>
+            <p className="text-slate-400 text-xs mt-auto">Click for more →</p>
           </div>
         </div>
 
@@ -105,7 +105,7 @@ export default function ProjectCard({ project }) {
           className="col-start-1 row-start-1 bg-[#1f2d40] rounded-2xl p-6 flex flex-col gap-4"
           style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
         >
-          <h3 className="font-serif text-lg font-bold text-white">{title}</h3>
+          <h3 className="font-serif text-xl font-bold text-white">{title}</h3>
 
           <ul className="space-y-2 flex-1">
             {(key_highlights || []).slice(0, 4).map((h, i) => (
@@ -130,7 +130,7 @@ export default function ProjectCard({ project }) {
             ))}
           </div>
 
-          <p className="text-slate-600 text-xs">Click to flip back</p>
+          <p className="text-slate-400 text-xs">Click to flip back</p>
         </div>
       </div>
     </div>

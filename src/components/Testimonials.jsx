@@ -21,7 +21,7 @@ export default function Testimonials() {
                 <p className="text-white font-semibold text-sm">{name}</p>
                 <p className="text-slate-400 text-xs mt-0.5">{title} · {company}</p>
                 {relationship && (
-                  <p className="text-yellow-600/70 text-xs mt-1">{relationship}</p>
+                  <p className="text-yellow-500/80 text-xs mt-1">{relationship}</p>
                 )}
               </figcaption>
             </figure>

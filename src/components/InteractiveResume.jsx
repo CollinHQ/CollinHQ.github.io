@@ -41,7 +41,7 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
       {/* Header */}
       <div className="px-8 pt-5 pb-3 border-b border-gray-100 text-center">
         <h2 className="text-2xl font-bold text-gray-900 tracking-tight">{about.name}</h2>
-        <p className="text-gray-400 text-xs mt-1.5">
+        <p className="text-gray-500 text-xs mt-1.5">
           {about.location} •{' '}
           <a href={`mailto:${about.contact.email}`} className="hover:text-amber-500 transition-colors">{about.contact.email}</a>
           {' '}•{' '}
@@ -58,7 +58,7 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
                 <span className="font-bold text-gray-900 text-sm">{role.company}</span>
                 <span className="text-gray-500 text-sm"> — {role.title}</span>
               </div>
-              <span className="text-gray-400 text-xs whitespace-nowrap">{role.start} – {role.end}</span>
+              <span className="text-gray-500 text-xs whitespace-nowrap">{role.start} – {role.end}</span>
             </div>
             <p className="text-gray-400 text-xs">{role.location}</p>
           </div>
@@ -108,7 +108,7 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
                                   to="/skills"
                                   onMouseEnter={() => setHoveredSkill(skill)}
                                   onMouseLeave={() => setHoveredSkill(null)}
-                                  className="border border-amber-300 text-amber-600 bg-amber-50 hover:bg-amber-100 rounded-full px-2.5 py-0.5 text-xs transition-colors"
+                                  className="border border-amber-300 text-amber-700 bg-amber-50 hover:bg-amber-100 rounded-full px-2.5 py-0.5 text-xs transition-colors"
                                 >
                                   {skill}
                                 </Link>

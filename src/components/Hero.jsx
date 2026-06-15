@@ -17,7 +17,7 @@ export default function Hero() {
           src={about.headshot}
           alt={about.name}
           onError={() => setPhotoFailed(true)}
-          className="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover ring-2 ring-yellow-600/40 shadow-xl shadow-black/40 mb-8"
+          className="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover ring-4 ring-yellow-500/60 shadow-xl shadow-black/40 mb-8"
         />
       )}
 
@@ -44,18 +44,31 @@ export default function Hero() {
       <div className="flex flex-wrap justify-center gap-4">
         <Link
           to="/projects"
-          className="bg-yellow-500 hover:bg-yellow-400 text-[#0d1b2a] font-semibold text-sm rounded-full px-7 py-3 transition-colors"
+          className="bg-yellow-500 hover:bg-yellow-400 text-[#0d1b2a] font-semibold text-sm rounded-full px-6 py-3 transition-colors"
         >
           View My Work →
         </Link>
         <a
           href="#contact"
           onClick={scrollToContact}
-          className="border border-yellow-600/40 text-yellow-500 hover:bg-yellow-500/10 text-sm rounded-full px-7 py-3 transition-colors"
+          className="border border-yellow-600/40 text-yellow-500 hover:bg-yellow-500/10 text-sm rounded-full px-6 py-3 transition-colors"
         >
           Get in Touch
         </a>
       </div>
+
+      <a
+        href={about.contact.resume_pdf}
+        download="Collin Brown Resume.pdf"
+        className="mt-5 inline-flex items-center gap-1.5 text-slate-400 hover:text-yellow-500 text-sm transition-colors"
+      >
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        Download Resume
+      </a>
 
       {/* Scroll cue */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-yellow-600/50 animate-bounce">
