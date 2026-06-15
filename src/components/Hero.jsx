@@ -1,14 +1,26 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import about from '../data/about.json'
 
 export default function Hero() {
+  const [photoFailed, setPhotoFailed] = useState(false)
+
   const scrollToContact = (e) => {
     e.preventDefault()
     document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center pt-16 relative">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center pt-24 pb-16 relative">
+      {about.headshot && !photoFailed && (
+        <img
+          src={about.headshot}
+          alt={about.name}
+          onError={() => setPhotoFailed(true)}
+          className="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover ring-2 ring-yellow-600/40 shadow-xl shadow-black/40 mb-8"
+        />
+      )}
+
       {about.currently && (
         <p className="flex items-center gap-2 border border-yellow-600/30 bg-yellow-500/5 text-slate-300 text-xs rounded-full px-4 py-1.5 mb-8">
           <span className="relative flex h-2 w-2">
