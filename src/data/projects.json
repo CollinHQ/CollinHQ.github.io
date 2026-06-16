@@ -16,7 +16,7 @@
       "Space Design"
     ],
     "key_highlights": [
-      "Driving 15+ vendors at once across electrical, flooring, HVAC, AV, lighting, and millwork",
+      "Driving 10-15 construction vendors at once across electrical, flooring, HVAC, AV, lighting, and millwork",
       "Solved a Floor 3 structural blocker by proposing a surface-mounted ConnecTrac alternative",
       "Sequenced vendor dependencies to keep concurrent workstreams from colliding",
       "Caught billing discrepancies by auditing design firm invoices against the calendar",
@@ -24,9 +24,10 @@
     ],
     "numbers": {
       "floors_managed": 3,
-      "vendors_coordinated": "15+",
+      "construction_vendors": "10-15",
       "light_fixtures_coordinated": 45
     },
+    "outcome_headline": { "value": "13,000", "label": "Sq ft built out" },
     "images": {
       "hero": "/assets/images/projects/fintech-hq-build-out/hero.jpg",
       "before": "/assets/images/projects/fintech-hq-build-out/before.jpg",

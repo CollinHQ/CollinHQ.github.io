@@ -75,16 +75,10 @@ export default function CaseStudyPage() {
         {/* Hero */}
         <Photo src={images.hero} label="Add hero photo — the finished space, or a striking in-progress shot" className="w-full h-64 md:h-80 mb-8" />
 
-        {/* Metrics */}
+        {/* Metrics — headline leads, supporting numbers follow */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
-          {statEntries.map(([k, v]) => (
-            <div key={k} className="bg-[#1a2535] rounded-lg p-4 text-center">
-              <div className="font-serif text-3xl font-bold text-yellow-500">{v}</div>
-              <div className="text-slate-400 text-xs uppercase tracking-wider mt-1">{prettify(k)}</div>
-            </div>
-          ))}
           {outcome_headline ? (
-            <div className="bg-[#1a2535] rounded-lg p-4 text-center">
+            <div className="bg-[#1a2535] rounded-lg p-4 text-center ring-1 ring-yellow-600/40">
               <div className="font-serif text-3xl font-bold text-yellow-500">{outcome_headline.value}</div>
               <div className="text-slate-400 text-xs uppercase tracking-wider mt-1">{outcome_headline.label}</div>
             </div>
@@ -94,6 +88,12 @@ export default function CaseStudyPage() {
               <div className="text-slate-300 text-xs mt-1 leading-tight">Headline result — add one</div>
             </div>
           )}
+          {statEntries.map(([k, v]) => (
+            <div key={k} className="bg-[#1a2535] rounded-lg p-4 text-center">
+              <div className="font-serif text-3xl font-bold text-yellow-500">{v}</div>
+              <div className="text-slate-400 text-xs uppercase tracking-wider mt-1">{prettify(k)}</div>
+            </div>
+          ))}
         </div>
 
         {/* The brief */}
