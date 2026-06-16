@@ -1,6 +1,6 @@
 [
   {
-    "id": "rho-office-redesign",
+    "id": "fintech-hq-build-out",
     "icon": "🏗️",
     "title": "Fintech HQ Office Build-Out",
     "status": "In Progress",
@@ -28,9 +28,9 @@
       "pendant_lights_tracked": 45
     },
     "images": {
-      "hero": "/assets/images/projects/rho-office-redesign/hero.jpg",
-      "before": "/assets/images/projects/rho-office-redesign/before.jpg",
-      "after": "/assets/images/projects/rho-office-redesign/after.jpg"
+      "hero": "/assets/images/projects/fintech-hq-build-out/hero.jpg",
+      "before": "/assets/images/projects/fintech-hq-build-out/before.jpg",
+      "after": "/assets/images/projects/fintech-hq-build-out/after.jpg"
     },
     "photos_needed": [
       "Before/after of each floor",

@@ -1,6 +1,6 @@
 [
   {
-    "id": "rho-2026",
+    "id": "fintech-2026",
     "company": "Fintech Startup",
     "title": "Workplace Generalist",
     "location": "San Francisco, CA",
@@ -8,7 +8,7 @@
     "end": "Present",
     "bullets": [
       {
-        "id": "rho-1",
+        "id": "fintech-1",
         "short": "Directing on-the-ground execution and vendor operations for a fintech startup's SF headquarters, driving the physical transformation from shell to operational through real-time site adjustments, design compliance, and stakeholder walkthroughs",
         "has_detail": true,
         "detail_needed": null,
@@ -16,7 +16,7 @@
         "detail": "A fintech startup's SF headquarters required a complete build-out across three floors with no general contractor overseeing the work, so vendor sequencing and dependency management were owned internally. I direct the on-the-ground execution, coordinating 15+ vendors and contractors, managing real-time site adjustments, and keeping the build aligned with design intent. When a structural blocker on Floor 3 made the planned electrical approach infeasible, I researched and proposed a surface-mounted alternative that preserved the timeline. The project is on track for substantial completion with concurrent workstreams progressing without coordination-driven delays."
       },
       {
-        "id": "rho-2",
+        "id": "fintech-2",
         "short": "Designing and executing the full SF workplace experience — space planning, kitchen and amenity installation, AV infrastructure, signage, and furniture coordination — taking the office from shell to fully operational",
         "has_detail": true,
         "detail_needed": null,
@@ -24,7 +24,7 @@
         "detail": "Beyond construction, I own the experiential layer of the office: how the space looks, feels, and functions on day one. That spans space planning, kitchen and amenity installation, AV infrastructure, signage, and furniture coordination — translating design intent into installed reality. I make on-the-ground material and placement decisions in real time when the design firm isn't present, keeping the build moving. The result is an office built from empty shell to fully operational without a dedicated project-management firm."
       },
       {
-        "id": "rho-3",
+        "id": "fintech-3",
         "short": "Driving cost optimization through contractor negotiations and creative problem-solving on build issues, consistently bringing proposals in under initial estimates and eliminating unnecessary change orders",
         "has_detail": true,
         "detail_needed": null,
@@ -32,7 +32,7 @@
         "detail": "With 15+ vendors and no dedicated finance oversight, controlling spend was a core part of the role rather than an afterthought. I disputed a ~$9K electrical overquote by pushing for pricing transparency and identified ~$5K in savings by relocating electrical work on Floor 3. I also resolved a 44-fixture lighting delivery error with the vendor and electrician at no incremental cost while preserving UL certification. Across the project I consistently brought proposals in under initial estimates and eliminated unnecessary change orders."
       },
       {
-        "id": "rho-4",
+        "id": "fintech-4",
         "short": "Serving as primary liaison between executive leadership (including CEO walkthroughs), contractors, building management, AV teams, and signage vendors, providing regular project updates and managing timeline to completion",
         "has_detail": false,
         "detail_needed": "Would benefit from a specific example — e.g. how a CEO walkthrough was prepped, or a moment where liaison work unblocked a stalled decision.",

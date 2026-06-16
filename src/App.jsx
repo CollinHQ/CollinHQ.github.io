@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import ProjectsPage from './pages/ProjectsPage'
+import CaseStudyPage from './pages/CaseStudyPage'
 import SkillsPage from './pages/SkillsPage'
 import ExperiencePage from './pages/ExperiencePage'
 
@@ -21,6 +22,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            {/* Hidden, unlinked case-study route — reachable only by direct URL for review */}
+            <Route path="/projects/:id" element={<CaseStudyPage />} />
             <Route path="/skills" element={<SkillsPage />} />
             <Route path="/experience" element={<ExperiencePage />} />
           </Routes>

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import projects from '../data/projects.json'
 import ProjectCard from './ProjectCard'
 
-const featured = ['rho-office-redesign', 'klaviyo-office-redesign', 'bridge-office-relocation']
+const featured = ['fintech-hq-build-out', 'klaviyo-office-redesign', 'bridge-office-relocation']
 const featuredProjects = featured.map(id => projects.find(p => p.id === id)).filter(Boolean)
 
 export default function FeaturedWork() {
