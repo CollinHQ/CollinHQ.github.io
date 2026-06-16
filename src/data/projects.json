@@ -25,7 +25,7 @@
     "numbers": {
       "floors_managed": 3,
       "vendors_coordinated": "15+",
-      "pendant_lights_tracked": 45
+      "light_fixtures_coordinated": 45
     },
     "images": {
       "hero": "/assets/images/projects/fintech-hq-build-out/hero.jpg",
@@ -40,24 +40,13 @@
       "Basement reorganization"
     ],
     "milestones_completed": [
-      "Kitchen cabinets installed (3rd floor)",
-      "Basement fully reorganized into categorized sections",
-      "Phone booth chairs built and staged",
-      "Cable management completed (fire hazard resolved)",
-      "Bathroom vanity sinks and towel dispensers installed (1st floor)",
-      "LED work lighting installed",
-      "HVAC thermostat installation scheduled",
-      "Floor 3 poke-through blocker resolved — holes drilled, cleanup done",
-      "Conference table poke-through resolved — alternate route through floor joist",
-      "Floor plugs demolished on Floor 1 (cleared for flooring)",
-      "Bathroom flooring demo completed",
-      "First floor flooring demo completed (both areas)",
-      "Danny's flooring crew on-site and actively working",
-      "Basement circuit tracing complete — two dedicated circuits identified",
-      "Conference room power upgrade underway — two dedicated circuits from panel",
-      "New engineered lighting drawings received (improved circuit load distribution)",
-      "Cafe table spec changed from hardwired to plug-in undermount receptacles",
-      "GE Profile Opal 2.0 ice machine ordered (sub-$1K appliance spend)"
+      "Resolved 2 structural poke-through blockers (Floor 3 and the conference room) by sourcing alternate routes, keeping the timeline on track",
+      "Eliminated a cable-management fire hazard across the build",
+      "Completed the Floor 3 kitchen build, from cabinets to appliances",
+      "Cleared and demo'd flooring across all of Floor 1 and the bathrooms to prep for new install",
+      "Coordinated a hired electrician to add 2 dedicated conference-room power circuits, traced from the basement panel",
+      "Reorganized the basement into categorized storage sections",
+      "Re-specced the cafe table from hardwired to plug-in receptacles for a simpler, cheaper install"
     ]
   },
   {
