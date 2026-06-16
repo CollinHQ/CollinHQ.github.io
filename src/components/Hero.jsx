@@ -17,7 +17,7 @@ export default function Hero() {
           src={about.headshot}
           alt={about.name}
           onError={() => setPhotoFailed(true)}
-          className="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover ring-4 ring-yellow-500/60 shadow-xl shadow-black/40 mb-8"
+          className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover ring-4 ring-yellow-500/60 shadow-xl shadow-black/40 mb-8"
         />
       )}
 
