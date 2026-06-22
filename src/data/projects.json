@@ -53,7 +53,7 @@
   {
     "id": "klaviyo-office-redesign",
     "icon": "🎨",
-    "title": "Klaviyo SF Hub Event Space Redesign",
+    "title": "Klaviyo SF Hub Event Space Remodel",
     "status": "Completed",
     "company": "Klaviyo",
     "location": "San Francisco, CA",
@@ -84,34 +84,165 @@
     ]
   },
   {
-    "id": "bridge-office-relocation",
+    "id": "bridge-hq-relocation",
     "icon": "📦",
-    "title": "BRIDGE Housing — Workplace Operations",
+    "title": "BRIDGE Housing HQ Relocation",
     "status": "Completed",
     "company": "BRIDGE Housing",
     "location": "San Francisco, CA",
-    "role": "Office Coordinator — Executive Operations Support",
-    "description": "Owned daily workplace operations supporting executive leadership across CFO, HR, and Development at BRIDGE Housing. Launched an amenity and engagement program that increased in-office attendance by 35%, and managed full vendor and facilities operations.",
+    "role": "On-site lead, ~300-person corporate office relocation",
+    "description": "Relocated BRIDGE Housing's ~300-person headquarters from 550 to 350 California with zero downtime, delivered 17% under budget, by sequencing the vendor workstreams around a hard return-to-office date.",
     "tags": [
-      "Workplace Ops",
-      "Employee Experience",
-      "Facilities"
+      "Office Move",
+      "Vendor & Contractor Management",
+      "Budget Management",
+      "Space Planning"
     ],
+    "outcome_headline": { "value": "17%", "label": "Under budget" },
     "key_highlights": [
-      "Launched an amenity program that increased in-office attendance by 35%, built from engagement insights",
-      "Owned operations for executive leadership (CFO, HR, Development) as the central coordination point",
-      "Managed vendor relationships and service delivery for consistent facility performance",
-      "Led onboarding/offboarding including access control, hardware provisioning, and workspace readiness"
+      "Acted as the hub keeping the vendor workstreams sequenced: One Workplace (furniture), Crown (the move), and IT (network)",
+      "Ran one master timeline in Excel plus a Monday.com board so every vendor saw status in real time",
+      "Sequenced dependencies so desks were built before move day: IT pre-set Wi-Fi, then furniture delivered and installed, then the move scheduled",
+      "On-site lead on move day, directing movers and coordinating the new building's security and engineering teams",
+      "Built the internal department map that routed every labeled box to its destination",
+      "Kept the loading dock open late with an extra security guard so the ~20-person crew finished in one day, a key driver of the 17%-under result",
+      "Brought the team back to a fully finished space, then capped the move with a custom property puzzle the team built and signed"
     ],
     "numbers": {
-      "attendance_increase": "35%"
+      "people_moved": "~300",
+      "downtime": "Zero",
+      "move_window": "1 day"
     },
+    "milestones_completed": [
+      "IT pre-set Wi-Fi at 350 California ahead of move day",
+      "Day-before walkthrough with Crown; everything wrapped and prepped",
+      "One Workplace delivered and built all workstations before the move",
+      "Move day: on-site at 550 California directing movers, building security, and engineering",
+      "Loading dock kept open late so the ~20-person crew finished in a single day",
+      "Team returned Monday to fully set-up desks and live Wi-Fi: zero downtime"
+    ],
     "images": {
-      "hero": "/assets/images/projects/bridge-office-relocation/hero.jpg"
+      "hero": "/assets/images/projects/bridge-hq-relocation/hero.jpg",
+      "before": "/assets/images/projects/bridge-hq-relocation/before.jpg",
+      "after": "/assets/images/projects/bridge-hq-relocation/after.jpg"
     },
     "photos_needed": [
-      "Office environment photos",
+      "Before/after of the new 350 California office",
+      "Move day / staged desks",
+      "The custom property puzzle"
+    ]
+  },
+  {
+    "id": "bridge-amenity-program",
+    "icon": "✨",
+    "title": "BRIDGE Amenity & Engagement Program",
+    "status": "Completed",
+    "company": "BRIDGE Housing",
+    "location": "San Francisco, CA",
+    "role": "Office Coordinator — Employee Experience & Amenities",
+    "description": "Built BRIDGE Housing's break-room and engagement program from the ground up: concessions, events, and the everyday touches that make people want to come in. It lifted in-office attendance 35%, and the kitchen culture is still used today.",
+    "tags": [
+      "Employee Experience",
+      "Events",
+      "Workplace Ops"
+    ],
+    "outcome_headline": { "value": "35%", "label": "In-office attendance lift" },
+    "key_highlights": [
+      "Launched a break-room concessions program and engagement initiatives that lifted in-office attendance 35%",
+      "Caught the snack vendor marking up Costco goods ~3x and switched to buying direct, tripling the value of a flat budget",
+      "Built a kitchen 'water-cooler' culture the team still uses today",
+      "Ran the program end-to-end: sourcing, setup, and the weekly touches that keep people engaged"
+    ],
+    "numbers": {},
+    "images": {
+      "hero": "/assets/images/projects/bridge-amenity-program/hero.jpg"
+    },
+    "photos_needed": [
+      "Break-room / kitchen photos",
       "Event/programming photos if available"
+    ]
+  },
+  {
+    "id": "bridge-records-migration",
+    "icon": "🗄️",
+    "title": "Records Migration: Iron Mountain → Corodata",
+    "status": "Completed",
+    "company": "BRIDGE Housing",
+    "location": "San Francisco, CA",
+    "role": "Operational lead on a CFO-sponsored records-vendor migration",
+    "description": "Assigned by the CFO to a records-management overhaul (the CTO led digitization; the special projects manager and I co-sourced the vendor), I owned the migration: ran the Iron Mountain exit and moved decades of BRIDGE's sensitive records to Corodata, a SOC 2 / HIPAA-certified provider, cutting annual records-storage spend by more than half.",
+    "tags": [
+      "Vendor & Contractor Management",
+      "Budget Management",
+      "Building Security & Safety",
+      "Process Documentation"
+    ],
+    "outcome_headline": { "value": "50%+", "label": "Records spend cut" },
+    "key_highlights": [
+      "Co-sourced and vetted Corodata with the special projects manager as the Iron Mountain alternative; CFO signed, CTO approved for future needs",
+      "Owned the Iron Mountain exit: audited the contract, inventoried storage, and priced the cost to leave, a six-figure decision that needed CFO sign-off",
+      "Reviewed the exit invoice line by line and negotiated about 10% off",
+      "Ran the secure transfer of decades of sensitive records (resident files, building records, blueprints) and verified the new facility met compliance for that data",
+      "Stood up tiered portal access: leadership plus department and team leads who could request and submit records directly",
+      "Turned the savings into a second win, partnering with the director of compliance to pull scattered Iron Mountain and property boxes from every site into Corodata and free up admin space",
+      "Moved site-level shredding off Iron Mountain to Shred-it"
+    ],
+    "numbers": {
+      "negotiated_discount": "10%",
+      "compliance": "SOC 2 / HIPAA",
+      "sites_consolidated": "All"
+    },
+    "milestones_completed": [
+      "Co-sourced and vetted Corodata; special projects manager reviewed, CFO signed, CTO approved",
+      "Audited the Iron Mountain contract and inventory; priced the cost to leave and got CFO sign-off",
+      "Reviewed the exit invoice line by line and negotiated about 10% off",
+      "Worked with Corodata to securely transfer the records from Iron Mountain",
+      "Verified Corodata's facility met compliance requirements for sensitive resident and building records",
+      "Set up tiered portal access for leadership and department/team leads",
+      "Consolidated scattered records from every property into Corodata with the director of compliance",
+      "Switched site-level shredding to Shred-it"
+    ],
+    "images": {
+      "hero": "/assets/images/projects/bridge-records-migration/hero.jpg"
+    },
+    "photos_needed": [
+      "Corodata portal screenshot (anonymized)",
+      "Before/after property storage rooms"
+    ]
+  },
+  {
+    "id": "optisign-werqwise",
+    "icon": "🖥️",
+    "title": "OptiSigns Digital Signage Rollout",
+    "status": "Completed",
+    "company": "Werqwise",
+    "location": "San Francisco, CA",
+    "role": "Self-directed signage and digital-experience overhaul",
+    "description": "Spotted a clunky, overpriced digital-signage setup at Werqwise, assigned myself the fix, and ran it solo: chose OptiSigns, ended shared logins, integrated the tools the team actually used, and documented it so anyone could run it. Saved about $15K a year and scaled from SF to San Mateo and the UK.",
+    "tags": [
+      "AV/IT Systems",
+      "Vendor & Contractor Management",
+      "Process Documentation"
+    ],
+    "outcome_headline": { "value": "~$15K", "label": "Saved per year" },
+    "key_highlights": [
+      "Spotted the overspend and clunky UX unprompted, raised it, and assigned myself the project",
+      "Sourced and compared options, chose OptiSigns, and gave everyone individual accounts to end shared logins",
+      "Integrated the tools the team actually used (Google, Teams, Zoom) and wrote a knowledge base so anyone could run it",
+      "Saved about $15K a year and scaled the system from SF to San Mateo and the UK",
+      "Repurposed old touchscreens into Matterport digital twins of each office with a lead-capture form, driving a tracked 10%+ lift in sales tours"
+    ],
+    "numbers": {
+      "sales_tour_lift": "10%+",
+      "locations_scaled": "3"
+    },
+    "milestones_completed": [],
+    "images": {
+      "hero": "/assets/images/projects/optisign-werqwise/hero.jpg"
+    },
+    "photos_needed": [
+      "Signage / kiosk screens in the space",
+      "Matterport digital-twin screenshot"
     ]
   },
   {

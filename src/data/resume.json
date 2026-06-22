@@ -114,6 +114,22 @@
         "detail_needed": "Would benefit from specifics — number of vendors managed, or a redundancy that was eliminated and its impact.",
         "skills": ["Vendor & Contractor Management", "Building Security & Safety", "Facilities Management"],
         "detail": null
+      },
+      {
+        "id": "bridge-4",
+        "short": "Led BRIDGE's ~300-person HQ relocation from 550 to 350 California, delivered 17% under budget with zero downtime",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Vendor & Contractor Management", "Budget Management", "Space Planning", "Stakeholder Management"],
+        "detail": "I was the hub keeping the move's workstreams sequenced, One Workplace on furniture, Crown on the physical move, and IT on the network, against a hard return-to-office date. I ran one master timeline in Excel plus a Monday.com board so everyone saw status, and I sequenced the dependencies so desks were built before move day: IT pre-set the Wi-Fi, then One Workplace delivered and installed the furniture, then the move was scheduled. On move day I was on-site at 550 California directing the movers and coordinating the new building's security and engineering, and I kept the loading dock open late so the crew finished in a single day. The team came back Monday to fully set-up desks and live Wi-Fi: zero downtime, and the move came in 17% under budget."
+      },
+      {
+        "id": "bridge-5",
+        "short": "Owned the migration that moved BRIDGE off Iron Mountain to Corodata (a SOC 2/HIPAA-certified provider), cutting annual records-storage spend by more than half",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Building Security & Safety", "Budget Management", "Vendor & Contractor Management"],
+        "detail": "The CFO assigned me to a records-management overhaul: the CTO led digitization, the special projects manager and I co-sourced Corodata, and I owned the vendor migration. I audited our Iron Mountain contract and inventory, priced and negotiated the exit (about 10% off after a line-by-line invoice review), then ran the secure transfer of decades of sensitive records, resident files, building records, and blueprints, and verified the new facility met compliance for that data. It cut annual records-storage spend by more than half, and the savings were big enough that we then consolidated scattered records from every property into the new provider. I would rather over-respect that kind of sensitivity than under-respect it."
       }
     ]
   },
