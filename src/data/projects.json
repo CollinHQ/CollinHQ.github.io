@@ -84,6 +84,39 @@
     ]
   },
   {
+    "id": "klaviyo-coi-tracker",
+    "icon": "🛡️",
+    "title": "Automated COI Compliance Tracker",
+    "status": "Completed",
+    "company": "Klaviyo",
+    "location": "San Francisco, CA",
+    "role": "Built a self-running compliance system for global real-estate ops",
+    "description": "Klaviyo's global real-estate team tracked vendor certificates of insurance by hand across many offices, so a lapse was always one missed date away. I built a self-running Monday.com system that chases renewals and files them itself, then rolled it out to 8+ offices worldwide, eliminating manual tracking.",
+    "tags": [
+      "Vendor & Contractor Management",
+      "Process Documentation",
+      "Building Security & Safety"
+    ],
+    "outcome_headline": { "value": "8+", "label": "Global offices automated" },
+    "key_highlights": [
+      "Diagnosed the bottleneck: the expiration data existed, it just wasn't doing anything on its own",
+      "Built three chained Monday.com automations: a nearing expiration auto-emails the vendor, the vendor's reply updates the record, and the new certificate files itself into the right category",
+      "Rolled it out from SF to 8+ global offices (London, Singapore, Sydney, and more)",
+      "Turned compliance from an always-one-missed-date-away task into a system that self-corrects and just runs"
+    ],
+    "numbers": {
+      "manual_tracking": "Zero",
+      "chained_automations": "3"
+    },
+    "milestones_completed": [],
+    "images": {
+      "hero": "/assets/images/projects/klaviyo-coi-tracker/hero.jpg"
+    },
+    "photos_needed": [
+      "Monday.com board / automation screenshot (anonymized)"
+    ]
+  },
+  {
     "id": "bridge-hq-relocation",
     "icon": "📦",
     "title": "BRIDGE Housing HQ Relocation",

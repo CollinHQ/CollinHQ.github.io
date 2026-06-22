@@ -29,7 +29,7 @@
         "has_detail": true,
         "detail_needed": null,
         "skills": ["Budget Management", "Vendor & Contractor Management"],
-        "detail": "With 15+ vendors and no dedicated finance oversight, controlling spend was a core part of the role rather than an afterthought. I disputed a ~$9K electrical overquote by pushing for pricing transparency and identified ~$5K in savings by relocating electrical work on Floor 3. I also resolved a 44-fixture lighting delivery error with the vendor and electrician at no incremental cost while preserving UL certification. Across the project I consistently brought proposals in under initial estimates and eliminated unnecessary change orders."
+        "detail": "With 15+ vendors and no dedicated finance oversight, controlling spend was a core part of the role rather than an afterthought. I disputed a ~$9K electrical overquote by pushing for pricing transparency and identified ~$5K in savings by relocating electrical work on Floor 3. I also resolved a 44-fixture lighting delivery error with the vendor and electrician at no incremental cost while preserving UL certification, and caught a ~$1K overcharge by counting the actual meeting minutes in our Granola notes against the design firm's invoice and having it corrected. Across the project I consistently brought proposals in under initial estimates and eliminated unnecessary change orders."
       },
       {
         "id": "fintech-4",
@@ -75,11 +75,19 @@
       },
       {
         "id": "klaviyo-4",
-        "short": "Built and implemented an internal service catalog in Freshworks and Jira, partnering with IT to eliminate redundant workflows and improve service ticket response times",
-        "has_detail": false,
-        "detail_needed": "Would benefit from a before/after metric — e.g. response time reduction or ticket volume handled.",
-        "skills": ["Process Documentation", "Workplace Operations"],
-        "detail": null
+        "short": "Restructured facilities ticketing in Jira into a single intake that cut Office Support tickets ~20%, and documented the office's core processes in a written SOP others followed",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Process Documentation", "Workplace Operations", "AV/IT Systems"],
+        "detail": "Office Support and Maintenance were auto-routing into each other in our Jira portal, so one request often created two tickets and volume looked nearly double what it was. I tracked the pattern, sat with our IT lead to map how the routing was configured, and made Office Support the single front door I triage and route, while re-pointing Maintenance straight to the building team. That cut Office Support tickets by about 20% and gave everyone one obvious place to submit anything. I also captured the office's core processes (onboarding, moves and setup, vendor and COI, and ticket intake) in a written SOP so the work didn't live only in my head."
+      },
+      {
+        "id": "klaviyo-5",
+        "short": "Built an automated COI compliance tracker in Monday.com that auto-chases vendor renewals and files certificates itself, then scaled it to 8+ global offices, eliminating manual tracking",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Vendor & Contractor Management", "Process Documentation", "Building Security & Safety"],
+        "detail": "Klaviyo's global real-estate team tracked vendor certificates of insurance by hand across many offices, so a lapse was always one missed date away. I diagnosed that the data existed but wasn't doing anything on its own, and built a self-running system in Monday.com: when a certificate nears expiration it auto-emails the vendor, the vendor's reply updates the record, and the new certificate files itself into the right category. I rolled it out from SF to 8+ offices worldwide, and it ran autonomously with no manual chasing."
       }
     ]
   },
@@ -159,11 +167,11 @@
       },
       {
         "id": "werqwise-it-3",
-        "short": "Served as primary liaison with building management, security, and safety teams, coordinating maintenance, inspections, vendor services, and real-time incident response",
-        "has_detail": false,
-        "detail_needed": "Would benefit from an example of a real-time incident handled or an inspection coordinated under pressure.",
+        "short": "Served as primary liaison with building management, security, and safety teams, coordinating maintenance, inspections, vendor services, and real-time incident response, including a solo elevator emergency during a paid event",
+        "has_detail": true,
+        "detail_needed": null,
         "skills": ["Building Security & Safety", "Vendor & Contractor Management"],
-        "detail": null
+        "detail": "I was the liaison with building management, security, and safety, coordinating maintenance, inspections, vendor services, and real-time incidents. The sharpest example: during a paid member event, an Otis elevator broke down with no technician available. I went to the elevator room, got Otis on the phone, and when one car's alarm was blocking the second, I manually overrode and shut off the stuck car to free the working one, so the event kept running without interruption."
       }
     ]
   },
