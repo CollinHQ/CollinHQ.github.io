@@ -2,37 +2,15 @@
   "name": "Collin Brown",
   "title": "Workplace Experience Manager",
   "location": "San Francisco, CA",
-  "company": "Fintech Startup",
+  "company": "Cushman & Wakefield",
   "one_liner": "7+ years turning empty shells into offices people are genuinely glad to walk into. Most recently a 13,000 sq ft, 3-floor SF build-out run with no general contractor, plus the vendors, budgets, and everyday details that make a space work for the people in it.",
   "bio": "What keeps me in this work is simple: a good workplace changes how people feel and what they're able to do. When a space is easy to use, well stocked, and actually feels good to be in, people have what they need to focus, do their best work, and want to be there. Over 7+ years across San Francisco's tech, nonprofit, and coworking offices, I've learned that comes down to owning the details most people only notice when they're missing: facilities, vendors, budgets, onboarding, and the small touches and events that make a place feel alive. To me the physical space and the culture are the same job: take care of both, and people can do more and be more.",
   "hero_tags": ["SF & NYC", "Office Build-Outs", "Vendor Ops"],
-  "currently": "Currently building a fintech startup's SF headquarters: 3 floors, 15+ vendors, shell to move-in",
+  "currently": "Currently running workplace experience for a security-compliance company's SF headquarters with Cushman & Wakefield, including an HQ relocation",
   "headshot": "/assets/images/headshot/headshot.jpg",
-  "value_props": [
-    {
-      "icon": "🏢",
-      "title": "Day-One Ready Offices",
-      "text": "Onboarding, access, hardware, desk setup — new hires walk into a finished experience, not a punch list."
-    },
-    {
-      "icon": "🤝",
-      "title": "Vendor & Budget Stewardship",
-      "text": "I negotiate, audit, and hold vendors accountable — $30K under budget at Klaviyo, a $9K overquote caught and disputed at a fintech startup."
-    },
-    {
-      "icon": "✨",
-      "title": "Engagement People Notice",
-      "text": "Concessions, events, and programming that lifted in-office attendance 35% — because culture is operational."
-    },
-    {
-      "icon": "🔨",
-      "title": "Builds, Moves & Renovations",
-      "text": "From permit to pendant light: a 3-floor build-out with no general contractor, delivered on a timeline."
-    }
-  ],
   "stats": [
     { "value": "7+",   "label": "Years in Workplace Ops",     "story": "Across tech, nonprofit, and coworking environments in San Francisco, from front desk to ground-up HQ build-out." },
-    { "value": "15+",  "label": "Vendors Coordinated",        "story": "Driving both the build and the day-to-day experience of a new fintech headquarters, from construction and AV to the way the finished space actually runs." },
+    { "value": "~300", "label": "People Moved, Zero Downtime", "story": "BRIDGE Housing's HQ relocation from 550 to 350 California: dependencies sequenced so the team returned Monday to finished desks and live Wi-Fi, 17% under budget." },
     { "value": "$30K", "label": "Delivered Under Budget",     "story": "A Klaviyo event-space remodel covering AV install, city electrical permits, and cross-country furniture sourcing, delivered under budget for 200+ employees." },
     { "value": "35%",  "label": "In-Office Attendance Lift",  "story": "At BRIDGE Housing, a break-room concessions program and engagement initiatives built from what actually brought people in." }
   ],
@@ -42,17 +20,23 @@
     "Freshworks",
     "Envoy",
     "Nexudus",
-    "Optisign",
+    "OptiSigns",
+    "Matterport",
     "Google Workspace",
     "Microsoft 365",
+    "Excel",
     "Slack",
     "Zoom",
     "Notion",
     "Navan",
     "Brex",
+    "Ramp",
+    "Zip",
+    "Greenhouse",
+    "Ashby",
     "Granola",
-    "Gum Loop",
-    "Generative AI"
+    "Gumloop",
+    "Claude & Generative AI"
   ],
   "skills": [
     "Workplace Operations",

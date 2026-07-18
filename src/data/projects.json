@@ -3,12 +3,12 @@
     "id": "fintech-hq-build-out",
     "icon": "🏗️",
     "title": "Fintech HQ Office Build-Out",
-    "status": "In Progress",
-    "completion_target": "July 1, 2026",
+    "status": "Completed",
+    "completion_target": "Contract wrapped July 2026",
     "company": "Fintech Startup",
     "location": "San Francisco, CA",
     "role": "On-site operations lead for multi-floor commercial office construction",
-    "description": "Driving the build-out of a fintech startup's SF headquarters across 3 floors, coordinating contractors, vendors, and design firms from demolition through move-in.",
+    "description": "Drove the build-out of a fintech startup's SF headquarters across 3 floors, coordinating contractors, vendors, and design firms from demolition through move-in.",
     "tags": [
       "Construction",
       "Vendor Mgmt",
@@ -52,6 +52,7 @@
   },
   {
     "id": "klaviyo-office-redesign",
+    "case_study_ready": true,
     "icon": "🎨",
     "title": "Klaviyo SF Hub Event Space Remodel",
     "status": "Completed",
@@ -101,7 +102,7 @@
     "key_highlights": [
       "Diagnosed the bottleneck: the expiration data existed, it just wasn't doing anything on its own",
       "Built three chained Monday.com automations: a nearing expiration auto-emails the vendor, the vendor's reply updates the record, and the new certificate files itself into the right category",
-      "Rolled it out from SF to 8+ global offices (London, Singapore, Sydney, and more)",
+      "Rolled it out from SF to 8+ global offices worldwide",
       "Turned compliance from an always-one-missed-date-away task into a system that self-corrects and just runs"
     ],
     "numbers": {
@@ -276,6 +277,40 @@
     "photos_needed": [
       "Signage / kiosk screens in the space",
       "Matterport digital-twin screenshot"
+    ]
+  },
+  {
+    "id": "events-culture",
+    "icon": "🎉",
+    "title": "Events & Culture Programming",
+    "status": "Ongoing",
+    "location": "San Francisco, CA",
+    "role": "Event planning and culture programming across five companies",
+    "description": "Events are where a team actually feels taken care of. From a 428-guest Halloween flagship to a $5,000 holiday party that punched above its budget, I plan, produce, and run workplace events end-to-end, then tighten them year over year like any other system.",
+    "tags": [
+      "Event Programming",
+      "Employee Experience",
+      "Workplace Ops"
+    ],
+    "outcome_headline": { "value": "428", "label": "Guests, flagship event" },
+    "key_highlights": [
+      "Werqwise Halloween party: 428 guests across 3 floors; owned food & beverage end-to-end, led layout execution on the night, and emcee'd, as part of the team that ran it",
+      "BRIDGE holiday party on a $5,000 budget for ~200 invited: brought it in-house with trusted bartenders, crowd-sourced catering, a photo booth, and a theme",
+      "Pulled event permits in person with a consultant and booked a headline DJ (green room, sound engineer, full AV) for a startup HQ launch",
+      "Ran member events end-to-end at Werqwise, from food to close-down reset; started a Klaviyo end-of-day happy hour that still runs today",
+      "Currently planning a ~300-guest company holiday party end-to-end, from venue sourcing through production"
+    ],
+    "numbers": {
+      "flagship_guests": "428",
+      "holiday_budget": "$5K",
+      "companies": "5"
+    },
+    "milestones_completed": [],
+    "images": {
+      "hero": "/assets/images/projects/events-culture/hero.jpg"
+    },
+    "photos_needed": [
+      "Event photos (Halloween, holiday parties, member events)"
     ]
   },
   {

@@ -1,16 +1,32 @@
 [
   {
+    "id": "cushman-2026",
+    "company": "Cushman & Wakefield",
+    "title": "Workplace Coordinator",
+    "location": "San Francisco, CA",
+    "start": "Jul 2026",
+    "end": "Present",
+    "description": "Embedded on-site workplace coordinator at a high-growth security-compliance company's SF headquarters, running daily workplace operations under a global facilities contract spanning 5 offices.",
+    "highlights": [
+      "Coordinating the client's SF headquarters relocation end-to-end: mover and installation bids (~100 workstation monitors), building logistics, and move-day sequencing, the third HQ move of my career",
+      "Own the vendor and spend stack for the office: pantry and snack program, procurement approvals, and corporate-card spend",
+      "Built the daily space-readiness routine: recurring walkthroughs with a formal SOP checklist covering every floor",
+      "Planning a ~300-guest company holiday party end-to-end, from venue sourcing through production"
+    ]
+  },
+  {
     "id": "fintech-2026",
     "company": "Fintech Startup",
     "title": "Workplace Generalist",
     "location": "San Francisco, CA",
     "start": "Mar 2026",
-    "end": "Present",
-    "description": "Directing on-the-ground execution and vendor operations for the build-out of a fintech startup's SF headquarters, driving the physical transformation from shell to operational across 3 floors with no general contractor.",
+    "end": "Jul 2026",
+    "description": "Directed on-the-ground execution and vendor operations for the build-out of a fintech startup's SF headquarters, driving the physical transformation from shell to operational across 3 floors with no general contractor.",
     "highlights": [
-      "Directing on-the-ground execution and vendor operations — real-time site adjustments, design compliance, and stakeholder walkthroughs across 3 floors with 15+ vendors",
-      "Designing the full SF workplace experience: space planning, kitchen and amenity installation, AV, signage, and furniture — shell to fully operational",
-      "Driving cost optimization through contractor negotiations, consistently coming in under estimates and eliminating unnecessary change orders",
+      "Directed on-the-ground execution and vendor operations — real-time site adjustments, design compliance, and stakeholder walkthroughs across 3 floors with 15+ vendors",
+      "Designed the full SF workplace experience: space planning, kitchen and amenity installation, AV, signage, and furniture — shell to fully operational",
+      "Drove cost optimization through contractor negotiations, consistently coming in under estimates and eliminating unnecessary change orders",
+      "Owned the new-hire arrival experience end to end: I-9 verification, equipment and desk setup, welcome materials, and day-one hosting",
       "Primary liaison between executive leadership (including CEO walkthroughs), contractors, building management, AV, and signage vendors"
     ]
   },
@@ -21,13 +37,14 @@
     "location": "San Francisco, CA",
     "start": "May 2025",
     "end": "Dec 2025",
-    "description": "Led design and operational strategy for Klaviyo's SF office and event space while managing an enterprise vendor portfolio and internal service systems.",
+    "description": "Stood up a brand-new SF office from scratch, sourcing and negotiating every vendor contract, then led design and operational strategy for the office and event space alongside an enterprise vendor portfolio and internal service systems.",
     "highlights": [
+      "Stood up the SF office from scratch: sourced every vendor, negotiated every contract, and commissioned custom art in the company's brand colors",
       "Led end-to-end remodel of a modular event space, delivered $30K under budget; supports All-Hands, off-sites, and client events for 200+ employees",
       "Secured City of San Francisco electrical permits and sourced furniture via cross-country travel to complete the build",
-      "Designed the SF office with art curation and a full plant program for a biophilic, brand-aligned workplace",
       "Managed enterprise vendor portfolio (CBRE, Knotel, WeWork) and restructured facilities ticketing in Jira into a single intake, cutting Office Support tickets ~20%",
-      "Built an automated COI compliance tracker in Monday.com and scaled it to 8+ global offices, eliminating manual tracking"
+      "Built an automated COI compliance tracker in Monday.com and scaled it to 8+ global offices, eliminating manual tracking",
+      "Started an end-of-day happy hour ritual that still runs today, and kept the office stocked weekly down to the restroom amenities people remember"
     ]
   },
   {
@@ -44,6 +61,7 @@
       "Launched a break-room concessions program and engagement initiatives that increased on-site attendance by 35%",
       "Owned the records-vendor migration off Iron Mountain to Corodata (SOC 2/HIPAA-certified), cutting annual records-storage spend by more than half",
       "Managed vendor relationships and outside contractors for facility services, security, and safety",
+      "Supported board-of-directors meetings: room setup with the EA, lunch coordination, and a full pre-meeting IT test with live standby support",
       "Partnered with IT via Jira to streamline service ticket submission and reduce operational redundancies"
     ]
   },
@@ -56,8 +74,9 @@
     "end": "Dec 2023",
     "description": "Owned AV and IT infrastructure across two sites while serving as primary liaison with building management, security, and safety teams.",
     "highlights": [
-      "Implemented Optisign digital signage, reducing annual spend by $15K; adopted company-wide across all locations",
+      "Implemented OptiSigns digital signage, reducing annual spend by $15K; adopted company-wide across all locations",
       "Owned AV and IT infrastructure for all conference rooms and Zoom spaces across two sites (SF and San Mateo)",
+      "Built a QR-code asset check-in/check-out system tied to member CRM records, reconciling exactly what went out vs. came back at lease end",
       "Primary liaison with building management, security, and safety, coordinating maintenance, inspections, and real-time incident response, including a solo elevator emergency kept running during a paid event"
     ]
   },
@@ -85,6 +104,19 @@
     "highlights": [
       "Led full office operations: vendor management, onboarding/offboarding, account reconciliation, and document management",
       "Served as escalation point for supervisors across departments and ran member events including seasonal parties"
+    ]
+  },
+  {
+    "id": "hospitality-2017",
+    "company": "Holiday Inn Express · Staybridge Suites · NFC Amenity Management",
+    "title": "Hospitality Foundation: Front Desk to Night Manager to Lead Concierge",
+    "location": "Oregon → Sacramento → San Francisco",
+    "start": "Jul 2017",
+    "end": "Jun 2019",
+    "description": "Where the team-is-my-customer instinct comes from: hotel and concierge work on every side of a property before moving into workplace operations.",
+    "highlights": [
+      "Holiday Inn Express: breakfast bar, housekeeping, then front desk administration, learning service from every side of a property",
+      "Night Manager at Staybridge Suites, then Lead Concierge with NFC Amenity Management in San Francisco: guest services that became the template for treating employees like guests"
     ]
   }
 ]

@@ -1,31 +1,65 @@
 [
   {
+    "id": "cushman-2026",
+    "company": "Cushman & Wakefield",
+    "title": "Workplace Coordinator",
+    "location": "San Francisco, CA",
+    "start": "Jul 2026",
+    "end": "Present",
+    "bullets": [
+      {
+        "id": "cushman-1",
+        "short": "Embedded on-site workplace coordinator at a high-growth security-compliance company's SF headquarters, running daily operations under a global facilities contract spanning 5 offices",
+        "has_detail": false,
+        "detail_needed": "New role: add specifics as milestones land (move completion, programs launched).",
+        "skills": ["Workplace Operations", "Facilities Management", "Stakeholder Management"],
+        "detail": null
+      },
+      {
+        "id": "cushman-2",
+        "short": "Coordinating the client's SF headquarters relocation end-to-end: mover and installation bids (~100 workstation monitors), building management logistics, and move-day sequencing, the third HQ move of my career",
+        "has_detail": false,
+        "detail_needed": "Detail to be written once the move completes.",
+        "skills": ["Vendor & Contractor Management", "Space Planning", "Workplace Operations"],
+        "detail": null
+      },
+      {
+        "id": "cushman-3",
+        "short": "Own vendor and spend operations for the office, from the pantry and snack program to procurement approvals and corporate-card spend, and planning a ~300-guest company holiday party end-to-end",
+        "has_detail": false,
+        "detail_needed": null,
+        "skills": ["Budget Management", "Event Programming", "Vendor & Contractor Management"],
+        "detail": null
+      }
+    ]
+  },
+  {
     "id": "fintech-2026",
     "company": "Fintech Startup",
     "title": "Workplace Generalist",
     "location": "San Francisco, CA",
     "start": "Mar 2026",
-    "end": "Present",
+    "end": "Jul 2026",
     "bullets": [
       {
         "id": "fintech-1",
-        "short": "Directing on-the-ground execution and vendor operations for a fintech startup's SF headquarters, driving the physical transformation from shell to operational through real-time site adjustments, design compliance, and stakeholder walkthroughs",
+        "short": "Directed on-the-ground execution and vendor operations for a fintech startup's SF headquarters, driving the physical transformation from shell to operational through real-time site adjustments, design compliance, and stakeholder walkthroughs",
         "has_detail": true,
         "detail_needed": null,
         "skills": ["Workplace Operations", "Vendor & Contractor Management", "Space Planning", "Stakeholder Management"],
-        "detail": "A fintech startup's SF headquarters required a complete build-out across three floors with no general contractor overseeing the work, so vendor sequencing and dependency management were owned internally. I direct the on-the-ground execution, coordinating 15+ vendors and contractors, managing real-time site adjustments, and keeping the build aligned with design intent. When a structural blocker on Floor 3 made the planned electrical approach infeasible, I researched and proposed a surface-mounted alternative that preserved the timeline. The project is on track for substantial completion with concurrent workstreams progressing without coordination-driven delays."
+        "detail": "A fintech startup's SF headquarters required a complete build-out across three floors with no general contractor overseeing the work, so vendor sequencing and dependency management were owned internally. I directed the on-the-ground execution, coordinating 15+ vendors and contractors, managing real-time site adjustments, and keeping the build aligned with design intent. When a structural blocker on Floor 3 made the planned electrical approach infeasible, I researched and proposed a surface-mounted alternative that preserved the timeline. Concurrent workstreams progressed without coordination-driven delays through the end of my contract in July 2026."
       },
       {
         "id": "fintech-2",
-        "short": "Designing and executing the full SF workplace experience — space planning, kitchen and amenity installation, AV infrastructure, signage, and furniture coordination — taking the office from shell to fully operational",
+        "short": "Designed and executed the full SF workplace experience — space planning, kitchen and amenity installation, AV infrastructure, signage, and furniture coordination — taking the office from shell to fully operational",
         "has_detail": true,
         "detail_needed": null,
         "skills": ["Space Planning", "AV/IT Systems", "Workplace Operations"],
-        "detail": "Beyond construction, I own the experiential layer of the office: how the space looks, feels, and functions on day one. That spans space planning, kitchen and amenity installation, AV infrastructure, signage, and furniture coordination — translating design intent into installed reality. I make on-the-ground material and placement decisions in real time when the design firm isn't present, keeping the build moving. The result is an office built from empty shell to fully operational without a dedicated project-management firm."
+        "detail": "Beyond construction, I owned the experiential layer of the office: how the space looks, feels, and functions on day one. That spans space planning, kitchen and amenity installation, AV infrastructure, signage, and furniture coordination — translating design intent into installed reality. I made on-the-ground material and placement decisions in real time when the design firm wasn't present, keeping the build moving. The result was an office built from empty shell to fully operational without a dedicated project-management firm."
       },
       {
         "id": "fintech-3",
-        "short": "Driving cost optimization through contractor negotiations and creative problem-solving on build issues, consistently bringing proposals in under initial estimates and eliminating unnecessary change orders",
+        "short": "Drove cost optimization through contractor negotiations and creative problem-solving on build issues, consistently bringing proposals in under initial estimates and eliminating unnecessary change orders",
         "has_detail": true,
         "detail_needed": null,
         "skills": ["Budget Management", "Vendor & Contractor Management"],
@@ -33,10 +67,26 @@
       },
       {
         "id": "fintech-4",
-        "short": "Serving as primary liaison between executive leadership (including CEO walkthroughs), contractors, building management, AV teams, and signage vendors, providing regular project updates and managing timeline to completion",
+        "short": "Served as primary liaison between executive leadership (including CEO walkthroughs), contractors, building management, AV teams, and signage vendors, providing regular project updates and managing timeline to completion",
         "has_detail": false,
         "detail_needed": "Would benefit from a specific example — e.g. how a CEO walkthrough was prepped, or a moment where liaison work unblocked a stalled decision.",
         "skills": ["Stakeholder Management"],
+        "detail": null
+      },
+      {
+        "id": "fintech-5",
+        "short": "Owned the new-hire arrival experience end to end: I-9 verification, equipment and desk setup, welcome materials, and day-one hosting",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Onboarding & Offboarding", "Employee Experience"],
+        "detail": "Day one sets the tone for everything after it, so I owned the full arrival experience: I-9 verification, equipment and workspace setup, welcome bag, desk, and name tags, then hosting each new hire through their first day. New hires walked into a finished experience rather than a punch list."
+      },
+      {
+        "id": "fintech-6",
+        "short": "Managed corporate expense operations across Brex and the company's own spend platform, and built automation workflows with Claude and other AI tools to streamline recurring processes",
+        "has_detail": false,
+        "detail_needed": null,
+        "skills": ["Budget Management", "Process Documentation"],
         "detail": null
       }
     ]
@@ -67,11 +117,11 @@
       },
       {
         "id": "klaviyo-3",
-        "short": "Managed enterprise vendor portfolio including CBRE, Knotel, and WeWork; oversaw outside contractors and partnered with building security and safety teams on access, inspections, and response protocols",
+        "short": "Stood up a brand-new SF office from scratch, sourcing and negotiating every vendor contract; managed an enterprise portfolio including CBRE, Knotel, and WeWork and partnered with building security and safety teams on access, inspections, and response protocols",
         "has_detail": true,
         "detail_needed": null,
         "skills": ["Vendor & Contractor Management", "Building Security & Safety"],
-        "detail": "Operating inside an enterprise real-estate footprint meant managing relationships with major landlords and operators — CBRE, Knotel, and WeWork — alongside Klaviyo's own contractors. I oversaw outside contractors and partnered with building security and safety teams on access control, inspections, and emergency response protocols. This is the less visible side of workplace operations: keeping the building's systems and the company's needs aligned."
+        "detail": "The SF office was mine to stand up from scratch: I sourced every vendor, negotiated every contract, and commissioned custom art in the company's brand colors. Operating inside an enterprise real-estate footprint meant managing relationships with major landlords and operators (CBRE, Knotel, WeWork) alongside Klaviyo's own contractors. I oversaw outside contractors and partnered with building security and safety teams on access control, inspections, and emergency response protocols: the less visible side of workplace operations that keeps the building's systems and the company's needs aligned."
       },
       {
         "id": "klaviyo-4",
@@ -88,6 +138,14 @@
         "detail_needed": null,
         "skills": ["Vendor & Contractor Management", "Process Documentation", "Building Security & Safety"],
         "detail": "Klaviyo's global real-estate team tracked vendor certificates of insurance by hand across many offices, so a lapse was always one missed date away. I diagnosed that the data existed but wasn't doing anything on its own, and built a self-running system in Monday.com: when a certificate nears expiration it auto-emails the vendor, the vendor's reply updates the record, and the new certificate files itself into the right category. I rolled it out from SF to 8+ offices worldwide, and it ran autonomously with no manual chasing."
+      },
+      {
+        "id": "klaviyo-6",
+        "short": "Kept the office stocked on a weekly cadence down to the restroom amenities people still mention, and started an end-of-day happy hour ritual that still runs today",
+        "has_detail": false,
+        "detail_needed": null,
+        "skills": ["Employee Experience", "Workplace Operations"],
+        "detail": null
       }
     ]
   },
@@ -118,10 +176,18 @@
       {
         "id": "bridge-3",
         "short": "Managed vendor relationships, supervised outside contractors for facility services, security, and safety, and partnered with IT via Jira to streamline service ticket submission and reduce operational redundancies",
-        "has_detail": false,
-        "detail_needed": "Would benefit from specifics — number of vendors managed, or a redundancy that was eliminated and its impact.",
+        "has_detail": true,
+        "detail_needed": null,
         "skills": ["Vendor & Contractor Management", "Building Security & Safety", "Facilities Management"],
-        "detail": null
+        "detail": "Vendor accountability at BRIDGE meant reading the paper, not just managing the relationship. The clearest example: our snack-and-drink vendor charged a flat $2,000 a month, and when I read the invoices line by line I found they were buying from Costco and marking it up roughly 3x. I switched us to buying direct on the same budget, tripling the value and creating a kitchen culture the team still uses. Day to day, I supervised outside contractors for facility services, security, and safety, and partnered with IT in Jira to streamline ticket intake."
+      },
+      {
+        "id": "bridge-6",
+        "short": "Supported board-of-directors meetings end-to-end: room setup with the executive assistant, lunch coordination, and full pre-meeting IT testing with live standby support",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Stakeholder Management", "Event Programming", "AV/IT Systems"],
+        "detail": "Board meetings are zero-mistake events. I set the room with the EA, coordinated the lunches, and ran a full IT test beforehand with someone on standby during the meeting in case a board member needed help live. The goal was for leadership to never have to think about logistics: they walked into a room that simply worked."
       },
       {
         "id": "bridge-4",
@@ -151,11 +217,11 @@
     "bullets": [
       {
         "id": "werqwise-it-1",
-        "short": "Implemented Optisign digital signage system, reducing annual spend by $15K while delivering expanded features; the company adopted the solution across all locations",
+        "short": "Implemented OptiSigns digital signage system, reducing annual spend by $15K while delivering expanded features; the company adopted the solution across all locations",
         "has_detail": true,
         "detail_needed": null,
         "skills": ["AV/IT Systems", "Budget Management"],
-        "detail": "The existing signage approach was both costly and limited, so I evaluated alternatives and selected Optisign as a more flexible, lower-cost system. I managed the rollout from vendor selection through deployment, delivering expanded features alongside the savings. The switch reduced annual spend by $15K and worked well enough that the company adopted it across all locations."
+        "detail": "The existing signage approach was both costly and limited, so I evaluated alternatives and selected OptiSigns as a more flexible, lower-cost system. I managed the rollout from vendor selection through deployment, delivering expanded features alongside the savings. The switch reduced annual spend by $15K and worked well enough that the company adopted it across all locations."
       },
       {
         "id": "werqwise-it-2",
@@ -172,6 +238,14 @@
         "detail_needed": null,
         "skills": ["Building Security & Safety", "Vendor & Contractor Management"],
         "detail": "I was the liaison with building management, security, and safety, coordinating maintenance, inspections, vendor services, and real-time incidents. The sharpest example: during a paid member event, an Otis elevator broke down with no technician available. I went to the elevator room, got Otis on the phone, and when one car's alarm was blocking the second, I manually overrode and shut off the stuck car to free the working one, so the event kept running without interruption."
+      },
+      {
+        "id": "werqwise-it-4",
+        "short": "Became the unofficial asset manager: built a QR-code check-in/check-out system with a scanner, tying asset records to member CRM profiles for lease-end reconciliation and theft prevention",
+        "has_detail": true,
+        "detail_needed": null,
+        "skills": ["Process Documentation", "AV/IT Systems", "Workplace Operations"],
+        "detail": "Equipment was leaving with members at lease end and nobody could prove what went out versus what came back. I built my own fix: a QR-code check-in/check-out system with a scanner, with asset records tied to each member in our CRM. When a lease ended I could reconcile exactly what was outstanding. It started as a side project and made me the de facto asset manager for the space."
       }
     ]
   },
@@ -194,10 +268,10 @@
       {
         "id": "werqwise-mem-2",
         "short": "Managed front-desk operations including reception, concierge services, visitor handling, shipping logistics, and member CRM (Nexudus) for a high-volume coworking environment",
-        "has_detail": false,
-        "detail_needed": "Would benefit from volume figures — daily visitor or member counts — or a specific operational challenge overcome.",
+        "has_detail": true,
+        "detail_needed": null,
         "skills": ["Workplace Operations", "Facilities Management"],
-        "detail": null
+        "detail": "Front desk at a high-volume coworking space is really a concierge business. Daily mail and package receiving ran through Envoy: scan the label, the member gets auto-notified, and the hand-off happens at the front. I onboarded new member groups and built the location guide (emergency exits, photos, the details people actually need on day one), and members used our team like their EAs for calendar management, meeting-room logistics, and lunch orders on the fly."
       }
     ]
   },
