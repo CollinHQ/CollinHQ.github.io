@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function ProjectCard({ project }) {
   const [flipped, setFlipped] = useState(false)
   const [imgFailed, setImgFailed] = useState(false)
-  const { icon, title, status, description, tags, numbers, key_highlights, images } = project
+  const { id, icon, title, status, description, tags, numbers, key_highlights, images, case_study_ready } = project
 
   const heroImg = images?.hero
   const showImg = heroImg && !imgFailed
@@ -96,7 +96,21 @@ export default function ProjectCard({ project }) {
               </div>
             )}
 
-            <p className="text-slate-400 text-xs mt-auto">Click for more →</p>
+            {case_study_ready ? (
+              <div className="mt-auto flex items-center justify-between gap-2">
+                <Link
+                  to={`/projects/${id}`}
+                  onClick={e => e.stopPropagation()}
+                  tabIndex={flipped ? -1 : 0}
+                  className="text-yellow-500 hover:text-yellow-400 text-xs font-semibold transition-colors"
+                >
+                  View case study →
+                </Link>
+                <span className="text-slate-500 text-xs">Flip for details</span>
+              </div>
+            ) : (
+              <p className="text-slate-400 text-xs mt-auto">Click for more →</p>
+            )}
           </div>
         </div>
 
@@ -130,7 +144,19 @@ export default function ProjectCard({ project }) {
             ))}
           </div>
 
-          <p className="text-slate-400 text-xs">Click to flip back</p>
+          <div className="flex items-center justify-between gap-2">
+            <p className="text-slate-400 text-xs">Click to flip back</p>
+            {case_study_ready && (
+              <Link
+                to={`/projects/${id}`}
+                onClick={e => e.stopPropagation()}
+                tabIndex={flipped ? 0 : -1}
+                className="text-yellow-500 hover:text-yellow-400 text-xs font-semibold transition-colors"
+              >
+                View case study →
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>
