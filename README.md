@@ -1,6 +1,6 @@
 # Collin Brown
 
-**Workplace Operations Manager**  
+**Workplace Experience Manager**  
 Live site: [collinhq.github.io](https://collinhq.github.io)
 
 ---
