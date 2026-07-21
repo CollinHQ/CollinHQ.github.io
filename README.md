@@ -11,6 +11,11 @@ Portfolio for Collin Brown — San Francisco workplace operations across office 
 
 See [`EDITING.md`](./EDITING.md) for which JSON files power each section.
 
+## Improvements log
+
+Full changelog, research notes, photo shopping list, and Notion wins plan:  
+[`docs/PORTFOLIO-IMPROVEMENTS.md`](./docs/PORTFOLIO-IMPROVEMENTS.md)
+
 ## Auto-track wins (Notion → site)
 
 Log accomplishments in Notion → check **Publish** → weekly Action updates the home page **Recent wins** feed.

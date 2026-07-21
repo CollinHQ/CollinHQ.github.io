@@ -4,30 +4,48 @@ import projects from '../data/projects.json'
 import about from '../data/about.json'
 import usePageTitle from '../hooks/usePageTitle'
 
-function PhotoIcon() {
+// Show the image when it loads; hide entirely if missing/broken (no dashed WIP boxes).
+function Photo({ src, label, className = '', onStatus }) {
+  const [failed, setFailed] = useState(false)
+  if (!src || failed) return null
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#eab308" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
-      <rect x="3" y="3" width="18" height="18" rx="2" />
-      <path d="M15 8h.01" />
-      <path d="m3 16 5-5c.928-.893 2.072-.893 3 0l5 5" />
-      <path d="m14 14 1-1c.928-.893 2.072-.893 3 0l3 3" />
-    </svg>
+    <img
+      src={src}
+      alt={label}
+      onLoad={() => onStatus?.(true)}
+      onError={() => {
+        setFailed(true)
+        onStatus?.(false)
+      }}
+      className={`object-cover rounded-xl ${className}`}
+    />
   )
 }
 
-// Renders the image when the file exists; otherwise a dashed placeholder marking
-// what to gather (graceful fallback via onError, like ProjectCard).
-function Photo({ src, label, className = '' }) {
-  const [failed, setFailed] = useState(false)
-  if (!src || failed) {
-    return (
-      <div className={`border-2 border-dashed border-yellow-600/50 bg-yellow-500/5 rounded-xl flex flex-col items-center justify-center gap-2 text-slate-300 px-3 text-center ${className}`}>
-        <PhotoIcon />
-        <span className="text-xs">{label}</span>
+function BeforeAfter({ before, after }) {
+  const [beforeOk, setBeforeOk] = useState(null)
+  const [afterOk, setAfterOk] = useState(null)
+  if (!before && !after) return null
+
+  const anyOk = beforeOk === true || afterOk === true
+  const settled = (!before || beforeOk !== null) && (!after || afterOk !== null)
+  if (settled && !anyOk) return null
+
+  return (
+    <section className="mb-12">
+      {anyOk && (
+        <h2 className="font-serif text-2xl font-bold text-white mb-4">Before / after</h2>
+      )}
+      <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${anyOk ? '' : 'sr-only'}`}>
+        {before && (
+          <Photo src={before} label="Before" className="w-full h-48" onStatus={setBeforeOk} />
+        )}
+        {after && (
+          <Photo src={after} label="After" className="w-full h-48" onStatus={setAfterOk} />
+        )}
       </div>
-    )
-  }
-  return <img src={src} alt={label} onError={() => setFailed(true)} className={`object-cover rounded-xl ${className}`} />
+    </section>
+  )
 }
 
 const prettify = (k) => k.replace(/_/g, ' ').replace(/\b\w/, (c) => c.toUpperCase())
@@ -118,16 +136,7 @@ export default function CaseStudyPage() {
           </section>
         )}
 
-        {/* Before / after — only when at least one photo path is set (placeholders stay off the live site) */}
-        {(images.before || images.after) && (
-          <section className="mb-12">
-            <h2 className="font-serif text-2xl font-bold text-white mb-4">Before / after</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {images.before && <Photo src={images.before} label="Before" className="w-full h-48" />}
-              {images.after && <Photo src={images.after} label="After" className="w-full h-48" />}
-            </div>
-          </section>
-        )}
+        <BeforeAfter before={images.before} after={images.after} />
 
         {/* Milestones */}
         {milestones_completed.length > 0 && (

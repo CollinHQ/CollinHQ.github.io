@@ -68,3 +68,7 @@ Day-to-day accomplishments can live in a Notion database and sync to the site we
 3. GitHub Action updates `src/data/wins.json` → site redeploys
 
 Until Notion is connected, the home page shows the seed wins already in `wins.json`.
+
+## Full improvements backlog
+
+See **`docs/PORTFOLIO-IMPROVEMENTS.md`** for everything shipped, research notes, photo list, and open follow-ups.

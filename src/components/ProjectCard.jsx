@@ -20,7 +20,10 @@ export default function ProjectCard({ project }) {
 
   const heroImg = images?.hero
   const showImg = heroImg && !imgFailed
-  const highlights = key_highlights.slice(0, 3)
+  // Drop parenthetical asides on cards — keeps the feed scannable for hiring managers
+  const clean = (text) =>
+    String(text).replace(/\s*\([^)]*\)/g, '').replace(/\s{2,}/g, ' ').replace(/\s+([,;:.])/g, '$1').trim()
+  const highlights = key_highlights.slice(0, 3).map(clean)
 
   return (
     <article className="bg-[#1a2535] rounded-2xl overflow-hidden flex flex-col h-full min-h-[18rem] border border-transparent hover:border-yellow-600/25 transition-colors">

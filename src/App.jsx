@@ -22,7 +22,6 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<ProjectsPage />} />
-            {/* Hidden, unlinked case-study route — reachable only by direct URL for review */}
             <Route path="/projects/:id" element={<CaseStudyPage />} />
             <Route path="/skills" element={<SkillsPage />} />
             <Route path="/experience" element={<ExperiencePage />} />
