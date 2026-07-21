@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import projects from '../data/projects.json'
 import ProjectCard from './ProjectCard'
 
-const featured = ['fintech-hq-build-out', 'klaviyo-office-redesign', 'bridge-hq-relocation']
+// Hero proof set for hiring managers: move + build-out + scalable systems
+const featured = ['bridge-hq-relocation', 'fintech-hq-build-out', 'klaviyo-coi-tracker']
 const featuredProjects = featured.map(id => projects.find(p => p.id === id)).filter(Boolean)
 
 export default function FeaturedWork() {
@@ -14,7 +15,8 @@ export default function FeaturedWork() {
             <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Proof of work</p>
             <h2 className="font-serif text-4xl font-bold text-white mb-2">Featured Work</h2>
             <p className="text-slate-400 text-sm max-w-xl leading-relaxed">
-              Real build-outs, moves, and systems — with outcomes attached. Open a story for the full play-by-play.
+              The three stories hiring managers ask for: an HQ move, a ground-up build-out,
+              and a system that scaled beyond one office.
             </p>
           </div>
           <Link

@@ -1,8 +1,9 @@
 import Hero from '../components/Hero'
-import About from '../components/About'
 import CompaniesBar from '../components/CompaniesBar'
 import StatsBar from '../components/StatsBar'
+import About from '../components/About'
 import FeaturedWork from '../components/FeaturedWork'
+import HireCTA from '../components/HireCTA'
 import WhatIBring from '../components/WhatIBring'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
@@ -15,11 +16,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Reveal><About /></Reveal>
       <Reveal><CompaniesBar /></Reveal>
       <Reveal><StatsBar /></Reveal>
       <Reveal><FeaturedWork /></Reveal>
+      <Reveal><HireCTA /></Reveal>
       <Reveal><WhatIBring /></Reveal>
+      <Reveal><About /></Reveal>
       <Reveal><Testimonials /></Reveal>
       <Reveal><Contact /></Reveal>
     </>

@@ -2,8 +2,26 @@ import projects from '../data/projects.json'
 import ProjectCard from '../components/ProjectCard'
 import usePageTitle from '../hooks/usePageTitle'
 
-const featured = ['fintech-hq-build-out', 'klaviyo-office-redesign', 'klaviyo-coi-tracker', 'bridge-hq-relocation', 'bridge-records-migration', 'bridge-amenity-program', 'optisign-werqwise', 'events-culture']
-const featuredProjects = featured.map(id => projects.find(p => p.id === id)).filter(Boolean)
+const groups = [
+  {
+    id: 'build-move',
+    title: 'Build-outs & moves',
+    blurb: 'Space delivery with budgets, vendors, and hard return-to-office dates.',
+    ids: ['bridge-hq-relocation', 'fintech-hq-build-out', 'klaviyo-office-redesign'],
+  },
+  {
+    id: 'systems',
+    title: 'Systems, vendors & budget',
+    blurb: 'Compliance, automation, and spend control that scale past one site.',
+    ids: ['klaviyo-coi-tracker', 'bridge-records-migration', 'optisign-werqwise'],
+  },
+  {
+    id: 'experience',
+    title: 'Experience & culture',
+    blurb: 'Programs that change how people feel about coming in — with numbers.',
+    ids: ['bridge-amenity-program', 'events-culture'],
+  },
+]
 
 export default function ProjectsPage() {
   usePageTitle('Projects')
@@ -17,10 +35,25 @@ export default function ProjectsPage() {
           Flagship workplace operations work across build-outs, HQ moves, compliance systems,
           amenities, and events — each with a named outcome and the operational story behind it.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+
+        <div className="space-y-16">
+          {groups.map((group) => {
+            const items = group.ids.map((id) => projects.find((p) => p.id === id)).filter(Boolean)
+            if (!items.length) return null
+            return (
+              <section key={group.id} aria-labelledby={`group-${group.id}`}>
+                <h2 id={`group-${group.id}`} className="font-serif text-2xl font-bold text-white mb-1">
+                  {group.title}
+                </h2>
+                <p className="text-slate-400 text-sm mb-6 max-w-2xl">{group.blurb}</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {items.map((project) => (
+                    <ProjectCard key={project.id} project={project} />
+                  ))}
+                </div>
+              </section>
+            )
+          })}
         </div>
       </div>
     </div>

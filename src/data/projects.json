@@ -29,6 +29,7 @@
       "light_fixtures_coordinated": 45
     },
     "outcome_headline": { "value": "13,000", "label": "Sq ft built out" },
+    "proof_line": "No general contractor · 15 vendors · 3 floors",
     "images": {
       "hero": "/assets/images/projects/fintech-hq-build-out/hero.jpg",
       "before": "/assets/images/projects/fintech-hq-build-out/before.jpg",
@@ -102,6 +103,7 @@
       "Building Security & Safety"
     ],
     "outcome_headline": { "value": "8+", "label": "Global offices automated" },
+    "proof_line": "Self-running COI renewals · Monday.com",
     "key_highlights": [
       "Diagnosed the bottleneck: the expiration data existed, it just wasn't doing anything on its own",
       "Built three chained Monday.com automations: a nearing expiration auto-emails the vendor, the vendor's reply updates the record, and the new certificate files itself into the right category",
@@ -136,7 +138,8 @@
       "Budget Management",
       "Space Planning"
     ],
-    "outcome_headline": { "value": "17%", "label": "Under budget" },
+    "outcome_headline": { "value": "Zero", "label": "Downtime for ~300 people" },
+    "proof_line": "17% under budget · 1-day move window",
     "key_highlights": [
       "Acted as the hub keeping the vendor workstreams sequenced: One Workplace (furniture), Crown (the move), and IT (network)",
       "Ran one master timeline in Excel plus a Monday.com board so every vendor saw status in real time",
@@ -186,6 +189,7 @@
       "Workplace Ops"
     ],
     "outcome_headline": { "value": "35%", "label": "In-office attendance lift" },
+    "proof_line": "Concessions + engagement built from what brought people in",
     "key_highlights": [
       "Launched a break-room concessions program and engagement initiatives that lifted in-office attendance 35%",
       "Caught the snack vendor marking up Costco goods ~3x and switched to buying direct, tripling the value of a flat budget",
@@ -266,6 +270,12 @@
       "Process Documentation"
     ],
     "outcome_headline": { "value": "~$15K", "label": "Saved per year" },
+    "proof_line": "Scaled SF → San Mateo → UK · 10%+ tour lift",
+    "testimonial": {
+      "quote": "Collin is such an exceptional individual who consistently demonstrated qualities and values that make him an invaluable team member. He showcased an impressive level of resourcefulness and reliability, approached challenges with a positive and proactive attitude — and his friendly demeanor made him a favorite amongst our members.",
+      "name": "Julia Harris",
+      "title": "Sales & Marketing Coordinator, Werqwise (now at Four Seasons)"
+    },
     "key_highlights": [
       "Spotted the overspend and clunky UX unprompted, raised it, and assigned myself the project",
       "Sourced and compared options, chose OptiSigns, and gave everyone individual accounts to end shared logins",

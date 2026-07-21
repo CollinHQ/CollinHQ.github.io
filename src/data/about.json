@@ -5,7 +5,13 @@
   "company": "Cushman & Wakefield",
   "one_liner": "7+ years owning workplace operations end to end — build-outs, HQ moves, vendor systems, and the day-to-day details that make people want to show up. Most recently: a 13,000 sq ft, 3-floor SF headquarters built out with no general contractor.",
   "bio": "What keeps me in this work is simple: a good workplace changes how people feel and what they're able to do. When a space is easy to use, well stocked, and actually feels good to be in, people have what they need to focus, do their best work, and want to be there. Over 7+ years across San Francisco's tech, nonprofit, and coworking offices, I've learned that comes down to owning the details most people only notice when they're missing: facilities, vendors, budgets, onboarding, and the small touches and events that make a place feel alive. To me the physical space and the culture are the same job: take care of both, and people can do more and be more.",
-  "hero_tags": ["SF & NYC", "Office Build-Outs", "Vendor Ops"],
+  "hero_tags": ["Build-Outs & Moves", "Vendor & Budget Ops", "Employee Experience"],
+  "scope_strip": [
+    { "value": "7+", "label": "Years SF workplace ops" },
+    { "value": "13K", "label": "Sq ft build-out, no GC" },
+    { "value": "~300", "label": "People moved, 0 downtime" },
+    { "value": "8+", "label": "Offices on COI system" }
+  ],
   "currently": "Currently the workplace coordinator for a security-compliance company's SF headquarters, via Cushman & Wakefield, including an HQ relocation",
   "value_props": [
     {
@@ -29,11 +35,12 @@
       "text": "At BRIDGE, a concessions and engagement program I built from scratch lifted in-office attendance 35%. At Klaviyo and Werqwise, rituals and events I started are still part of how those offices feel today."
     }
   ],
+
   "headshot": "/assets/images/headshot/headshot.jpg",
   "stats": [
-    { "value": "7+",   "label": "Years in Workplace Ops",     "story": "Across tech, nonprofit, and coworking environments in San Francisco, from front desk to ground-up HQ build-out." },
-    { "value": "~300", "label": "People Moved, Zero Downtime", "story": "BRIDGE Housing's HQ relocation from 550 to 350 California: dependencies sequenced so the team returned Monday to finished desks and live Wi-Fi, 17% under budget." },
-    { "value": "$30K", "label": "Delivered Under Budget",     "story": "A Klaviyo event-space remodel covering AV install, city electrical permits, and cross-country furniture sourcing, delivered under budget for 200+ employees." },
+    { "value": "~300", "label": "People Moved, Zero Downtime", "story": "BRIDGE Housing's HQ relocation from 550 to 350 California: furniture, IT, and movers sequenced so the team returned Monday to finished desks and live Wi-Fi — 17% under budget." },
+    { "value": "13K",  "label": "Sq Ft Built Out, No GC",     "story": "Fintech SF HQ across 3 floors: 15 construction vendors, structural blockers solved on-site, kitchens and power delivered without a general contractor." },
+    { "value": "8+",   "label": "Global Offices Automated",   "story": "Built Klaviyo's Monday.com COI compliance tracker and rolled it worldwide — renewals chase themselves instead of living in a spreadsheet." },
     { "value": "35%",  "label": "In-Office Attendance Lift",  "story": "At BRIDGE Housing, a break-room concessions program and engagement initiatives built from what actually brought people in." }
   ],
   "tools": [

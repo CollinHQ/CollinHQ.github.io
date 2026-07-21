@@ -15,6 +15,7 @@ export default function ProjectCard({ project }) {
     images,
     case_study_ready,
     outcome_headline,
+    proof_line,
   } = project
 
   const heroImg = images?.hero
@@ -59,6 +60,9 @@ export default function ProjectCard({ project }) {
             <p className="text-slate-400 text-xs uppercase tracking-widest mt-1.5">
               {outcome_headline.label}
             </p>
+            {proof_line && (
+              <p className="text-slate-300 text-xs mt-2 leading-snug">{proof_line}</p>
+            )}
           </div>
         )}
 
@@ -91,15 +95,13 @@ export default function ProjectCard({ project }) {
           </div>
         )}
 
-        {case_study_ready ? (
+        {case_study_ready && (
           <Link
             to={`/projects/${id}`}
             className="text-yellow-500 hover:text-yellow-400 text-sm font-semibold transition-colors inline-flex items-center gap-1"
           >
             Read the full story →
           </Link>
-        ) : (
-          <p className="text-slate-500 text-xs">Details above</p>
         )}
       </div>
     </article>
