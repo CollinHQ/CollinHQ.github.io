@@ -40,7 +40,7 @@ if (!win || win === true) {
   npm run log-win -- --win "What you shipped" [--metric "Short receipt"] [--type currently] [--project bridge-hq-relocation]
 
 Types: highlight | milestone | currently
-Projects: fintech-hq-build-out | bridge-hq-relocation | klaviyo-coi-tracker | … or omit`)
+Projects: rho-hq-build-out | bridge-hq-relocation | klaviyo-coi-tracker | … or omit`)
   process.exit(1)
 }
 

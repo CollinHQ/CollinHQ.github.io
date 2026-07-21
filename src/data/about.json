@@ -11,7 +11,7 @@
     "Office Manager",
     "Office Coordinator"
   ],
-  "one_liner": "7+ years owning workplace operations end to end — build-outs, HQ moves, vendor systems, and the day-to-day details that make people want to show up. Most recently: a 13,000 sq ft, 3-floor SF headquarters built out with no general contractor.",
+  "one_liner": "7+ years taking care of workplaces — build-outs, HQ moves, vendors, and the small everyday details that make people glad to walk in. Most recently I built out Rho's 13,000 sq ft, 3-floor SF headquarters with no general contractor.",
   "bio": "What keeps me in this work is simple: a good workplace changes how people feel and what they're able to do. When a space is easy to use, well stocked, and actually feels good to be in, people have what they need to focus, do their best work, and want to be there. Over 7+ years across San Francisco's tech, nonprofit, and coworking offices, I've learned that comes down to owning the details most people only notice when they're missing: facilities, vendors, budgets, onboarding, and the small touches and events that make a place feel alive. To me the physical space and the culture are the same job: take care of both, and people can do more and be more.",
   "hero_tags": ["Build-Outs & Moves", "Vendor & Budget Ops", "Employee Experience"],
   "scope_strip": [
@@ -24,30 +24,30 @@
   "value_props": [
     {
       "icon": "🏗️",
-      "title": "I run the build, not just the ticket queue",
-      "text": "Directed a 13,000 sq ft, 3-floor SF HQ build-out with no general contractor — 15 vendors, structural blockers, kitchens, power, and move-in sequencing — while staying the on-site decision-maker executives could walk the floor with."
+      "title": "I'm on the floor for the build",
+      "text": "At Rho I directed a 13,000 sq ft, 3-floor SF HQ build-out with no general contractor — vendors, structural blockers, kitchens, power, move-in — and stayed the person leadership could walk the floor with."
     },
     {
       "icon": "📦",
-      "title": "Moves that land on Monday ready",
-      "text": "Led BRIDGE Housing's ~300-person HQ relocation with zero downtime and 17% under budget by sequencing furniture, IT, and movers around a hard return-to-office date — not hoping it would work out."
+      "title": "Moves that land Monday-ready",
+      "text": "At BRIDGE Housing I led the ~300-person HQ relocation with zero downtime and 17% under budget by lining up furniture, IT, and movers around a hard return-to-office date."
     },
     {
       "icon": "⚙️",
-      "title": "Ops systems that keep running without me",
-      "text": "Built Klaviyo's COI compliance tracker in Monday.com and rolled it to 8+ global offices, plus service catalogs and playbooks so workplace requests and vendor renewals don't live in one person's head."
+      "title": "Systems that keep running without me",
+      "text": "At Klaviyo I built a COI compliance tracker in Monday.com and rolled it to 8+ global offices, plus playbooks so renewals and workplace requests don't live in one person's head."
     },
     {
       "icon": "☕",
-      "title": "Culture you can measure",
-      "text": "At BRIDGE, a concessions and engagement program I built from scratch lifted in-office attendance 35%. At Klaviyo and Werqwise, rituals and events I started are still part of how those offices feel today."
+      "title": "Culture people can feel",
+      "text": "At BRIDGE, a concessions and engagement program I built from scratch lifted in-office attendance 35%. At Klaviyo and Werqwise, little rituals I started are still part of how those offices feel."
     }
   ],
 
   "headshot": "/assets/images/headshot/headshot.jpg",
   "stats": [
     { "value": "~300", "label": "People Moved, Zero Downtime", "story": "BRIDGE Housing's HQ relocation from 550 to 350 California: furniture, IT, and movers sequenced so the team returned Monday to finished desks and live Wi-Fi — 17% under budget." },
-    { "value": "13K",  "label": "Sq Ft Built Out, No GC",     "story": "Fintech SF HQ across 3 floors: 15 construction vendors, structural blockers solved on-site, kitchens and power delivered without a general contractor." },
+    { "value": "13K",  "label": "Sq Ft Built Out, No GC",     "story": "Rho SF HQ across 3 floors: 15 construction vendors, structural blockers solved on-site, kitchens and power delivered without a general contractor." },
     { "value": "8+",   "label": "Global Offices Automated",   "story": "Built Klaviyo's Monday.com COI compliance tracker and rolled it worldwide — renewals chase themselves instead of living in a spreadsheet." },
     { "value": "35%",  "label": "In-Office Attendance Lift",  "story": "At BRIDGE Housing, a break-room concessions program and engagement initiatives built from what actually brought people in." }
   ],
@@ -97,7 +97,7 @@
     "Budget Management": "I treat budget control as a core responsibility, not an afterthought. I've delivered projects $30K under budget, disputed inflated vendor quotes, and found mid-project savings — being deliberate about spend from day one rather than reconciling at the end.",
     "Employee Experience": "Employee experience shapes how I think about almost everything in a workplace: what does it feel like to work here, and what can operations do to improve that? I've built concession programs, engagement initiatives, and biophilic office environments specifically to make people want to come in and stay engaged.",
     "Event Programming": "I plan and execute workplace events from All-Hands and off-sites to client events, team-building, and seasonal programming. My focus is events with a clear purpose — building community, signaling care, or reinforcing culture — rather than just filling a calendar.",
-    "Onboarding & Offboarding": "I've owned onboarding and offboarding operations including access control, hardware provisioning, and workspace readiness. The goal is a seamless Day 1 for new hires and a clean, well-documented exit process that protects the organization.",
+    "Onboarding & Offboarding": "I've owned onboarding and offboarding operations including access control, hardware provisioning, and workspace readiness. The goal is a smooth Day 1 for new hires and a clean, well-documented exit process that protects the organization.",
     "AV/IT Systems": "I've owned AV and workplace technology across multiple sites — conference-room AV, Zoom-enabled rooms, digital signage, network, and print services. I'm not a dedicated IT specialist, but I'm comfortable owning these systems operationally and partnering with IT on deeper technical work.",
     "Building Security & Safety": "I partner closely with building security and safety teams on access control, inspections, and emergency response protocols. It's the less visible side of workplace operations — keeping the building's systems and the company's needs aligned and the environment safe.",
     "Process Documentation": "I build service catalogs, playbooks, and documentation as a natural output of the work. The goal is always the same: reduce dependency on knowledge living in one person's head and make it possible for someone else to run the same process faster next time. At Klaviyo I wrote a working SOP covering onboarding, office moves and setup, vendor and COI, and ticket intake that others followed.",

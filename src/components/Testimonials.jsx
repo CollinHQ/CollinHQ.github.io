@@ -6,10 +6,10 @@ export default function Testimonials() {
   return (
     <section className="px-6 py-20">
       <div className="max-w-4xl mx-auto">
-        <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2 text-center">Social proof</p>
+        <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2 text-center">Kind words</p>
         <h2 className="font-serif text-4xl font-bold text-white mb-3 text-center">What managers say</h2>
         <p className="text-slate-400 text-sm text-center mb-12 max-w-xl mx-auto">
-          Third-party proof that the work holds up under a manager who watched it day to day.
+          From people who watched the work day to day — not a polished recap, just how it felt to work together.
         </p>
 
         <div className={`grid gap-6 ${testimonials.length > 1 ? 'md:grid-cols-2' : 'max-w-2xl mx-auto'}`}>

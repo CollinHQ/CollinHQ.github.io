@@ -21,12 +21,15 @@ Full changelog, research notes, photo shopping list, and Notion wins plan:
 Home page **Recent wins** feed — keep it current without rewriting case studies.
 
 ```bash
-# Log a win right now (no Notion needed)
+# Use this today
+npm run collect-wins                                          # gather candidates
 npm run log-win -- --win "What you finished today" --type currently
 
 # Later: Notion auto-sync (optional)
 npm run sync:wins   # needs NOTION_TOKEN + NOTION_WINS_DB_ID
 ```
+
+Or ask Cursor: **“Run the accomplishments collector”** ([brief](./docs/agents/accomplishments-collector.md)).
 
 - Habit guide: [`docs/TRACKING-WINS.md`](./docs/TRACKING-WINS.md)  
 - Notion setup: [`docs/WINS-NOTION.md`](./docs/WINS-NOTION.md)  

@@ -25,13 +25,13 @@ export default function RecentWins({ limit = 5 }) {
   return (
     <section className="px-6 py-16" aria-labelledby="recent-wins-heading">
       <div className="max-w-3xl mx-auto">
-        <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Living log</p>
+        <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Lately</p>
         <h2 id="recent-wins-heading" className="font-serif text-3xl md:text-4xl font-bold text-white mb-2">
           Recent wins
         </h2>
         <p className="text-slate-400 text-sm mb-8 max-w-xl leading-relaxed">
-          Work accomplishments tracked as they happen — auto-synced from Notion when Publish is checked.
-          Case studies stay curated; this feed stays current.
+          A running list of what I&apos;ve been shipping. Bigger case studies stay polished;
+          this feed stays honest and up to date.
         </p>
 
         <ol className="space-y-0 border-l border-yellow-600/25 ml-2">

@@ -16,7 +16,7 @@
  *   Detail (rich_text, optional)
  *
  * Project select options should match portfolio project ids, e.g.:
- *   bridge-hq-relocation, fintech-hq-build-out, klaviyo-coi-tracker, …
+ *   bridge-hq-relocation, rho-hq-build-out, klaviyo-coi-tracker, …
  *   or "none" / blank for no project link
  *
  * See docs/WINS-NOTION.md for setup.

@@ -7,7 +7,7 @@ const groups = [
     id: 'build-move',
     title: 'Build-outs & moves',
     blurb: 'Space delivery with budgets, vendors, and hard return-to-office dates.',
-    ids: ['bridge-hq-relocation', 'fintech-hq-build-out', 'klaviyo-office-redesign'],
+    ids: ['bridge-hq-relocation', 'rho-hq-build-out', 'klaviyo-office-redesign'],
   },
   {
     id: 'systems',
@@ -18,7 +18,7 @@ const groups = [
   {
     id: 'experience',
     title: 'Experience & culture',
-    blurb: 'Programs that change how people feel about coming in — with numbers.',
+    blurb: 'Programs that change how people feel about coming in.',
     ids: ['bridge-amenity-program', 'events-culture'],
   },
 ]
@@ -29,11 +29,11 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen pt-24 pb-24 px-6">
       <div className="max-w-5xl mx-auto">
-        <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Proof of work</p>
+        <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Portfolio</p>
         <h1 className="font-serif text-5xl font-bold text-white mb-4">Projects</h1>
         <p className="text-slate-400 text-lg mb-14 max-w-2xl">
-          Flagship workplace operations work across build-outs, HQ moves, compliance systems,
-          amenities, and events — each with a named outcome and the operational story behind it.
+          Build-outs, HQ moves, vendor systems, amenities, and events — the work behind how
+          an office actually runs day to day.
         </p>
 
         <div className="space-y-16">

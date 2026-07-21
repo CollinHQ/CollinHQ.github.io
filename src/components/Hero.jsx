@@ -66,14 +66,14 @@ export default function Hero() {
           to="/projects/bridge-hq-relocation"
           className="bg-yellow-500 hover:bg-yellow-400 text-[#0d1b2a] font-semibold text-sm rounded-full px-6 py-3 transition-colors"
         >
-          Read a flagship story →
+          See a project I&apos;m proud of →
         </Link>
         <a
           href="#contact"
           onClick={scrollToContact}
           className="border border-yellow-600/40 text-yellow-500 hover:bg-yellow-500/10 text-sm rounded-full px-6 py-3 transition-colors"
         >
-          Hiring? Get in touch
+          Say hello
         </a>
       </div>
 

@@ -21,7 +21,7 @@ SF tech / corporate workplace roles filter for:
 | Signal | Why it matters | Collin’s proof |
 |---|---|---|
 | **Scope** | Years, sq ft, headcount, # vendors/sites | 7+ yrs, 13K sq ft, ~300 people, 8+ offices |
-| **Delivery** | Moves / build-outs with budget + downtime | BRIDGE zero downtime + 17% under; fintech no-GC build-out |
+| **Delivery** | Moves / build-outs with budget + downtime | BRIDGE zero downtime + 17% under; Rho no-GC build-out |
 | **Systems** | Automation / compliance that scales | Klaviyo COI → 8+ global offices |
 | **EX with a metric** | Attendance, savings, ticket cuts | 35% attendance lift; $30K under; ~$15K/yr signage |
 | **Named tools** | Envoy, Monday.com, Notion, Freshworks | Listed on Skills + in stories |
@@ -67,7 +67,7 @@ Soft “I love making people feel welcome” is table stakes. **Owned X for Y pe
 
 ## Photos to hunt (highest impact first)
 
-1. **Fintech HQ** — wide finished floor + kitchen + one true before/shell
+1. **Rho HQ** — wide finished floor + kitchen + one true before/shell
 2. **BRIDGE move** — Monday-ready desks / new office wide shot
 3. **BRIDGE amenities** — break room in use
 4. **Events** — Halloween (scale) + one holiday party

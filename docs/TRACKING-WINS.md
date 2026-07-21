@@ -1,5 +1,25 @@
 # Keep track of work accomplishments
 
+Two ways to log wins — plus an **agent** that can gather candidates for you.
+
+## Use this today
+
+```bash
+# Dump rough notes anytime
+# → docs/wins-inbox.md
+
+# Collect candidates from inbox + current role
+npm run collect-wins
+
+# Publish a keeper to the site feed
+npm run log-win -- --win "What you finished" --type currently
+```
+
+Or tell Cursor: **“Run the accomplishments collector”**  
+→ brief lives at [`agents/accomplishments-collector.md`](./agents/accomplishments-collector.md)
+
+---
+
 Two ways to log wins. Use whichever you’ll actually open on a busy day.
 
 ---
@@ -19,7 +39,7 @@ Examples:
 npm run log-win -- --win "Locked mover bids and dock schedule for SF HQ relocation" --type currently
 
 # Finished something big
-npm run log-win -- --win "Kitchen install signed off on Floor 3" --metric "On schedule" --type milestone --project fintech-hq-build-out
+npm run log-win -- --win "Kitchen install signed off on Floor 3" --metric "On schedule" --type milestone --project rho-hq-build-out
 
 # Systems / process win
 npm run log-win -- --win "Vendor COI chase running without manual follow-up" --type highlight --project klaviyo-coi-tracker

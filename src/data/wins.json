@@ -23,9 +23,9 @@
     {
       "id": "seed-fintech-build-out",
       "date": "2026-07-01",
-      "win": "Wrapped a 13,000 sq ft, 3-floor SF HQ build-out run with no general contractor",
+      "win": "Wrapped Rho's 13,000 sq ft, 3-floor SF HQ build-out with no general contractor",
       "metric": "13K sq ft · no GC",
-      "project_id": "fintech-hq-build-out",
+      "project_id": "rho-hq-build-out",
       "type": "milestone",
       "detail": "15 vendors across electrical, flooring, HVAC, AV, lighting, and millwork."
     },

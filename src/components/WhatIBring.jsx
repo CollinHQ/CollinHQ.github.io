@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 import about from '../data/about.json'
 
 const projectLinks = {
-  'I run the build, not just the ticket queue': '/projects/fintech-hq-build-out',
-  'Moves that land on Monday ready': '/projects/bridge-hq-relocation',
-  'Ops systems that keep running without me': '/projects/klaviyo-coi-tracker',
-  'Culture you can measure': '/projects/bridge-amenity-program',
+  "I'm on the floor for the build": '/projects/rho-hq-build-out',
+  'Moves that land Monday-ready': '/projects/bridge-hq-relocation',
+  'Systems that keep running without me': '/projects/klaviyo-coi-tracker',
+  'Culture people can feel': '/projects/bridge-amenity-program',
 }
 
 export default function WhatIBring() {
@@ -15,8 +15,8 @@ export default function WhatIBring() {
         <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2 text-center">How I show up</p>
         <h2 className="font-serif text-4xl font-bold text-white mb-3 text-center">What I Bring</h2>
         <p className="text-slate-400 text-sm text-center mb-12 max-w-2xl mx-auto">
-          What Workplace Manager and Office Coordinator roles actually need: operational control,
-          vendor economics, and experience work that moves a metric.
+          The parts of the job I care about most — keeping the space working, the vendors honest,
+          and the office somewhere people want to be.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {about.value_props.map(({ icon, title, text }) => {
