@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 const companies = [
   { name: 'Cushman & Wakefield', logo: null },
+  { name: 'Rho', logo: null },
   { name: 'Klaviyo', logo: '/assets/images/logos/klaviyo.png' },
   { name: 'BRIDGE Housing', logo: '/assets/images/logos/bridge.png' },
   { name: 'Werqwise', logo: '/assets/images/logos/werqwise.png' },
