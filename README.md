@@ -1,8 +1,29 @@
 # Collin Brown
 
-**Workplace Operations Manager**  
+**Workplace Experience Manager · Workplace / Office Coordinator**  
 Live site: [collinhq.github.io](https://collinhq.github.io)
 
 ---
 
-Collin Brown is a workplace operations professional based in San Francisco, CA, currently at Rho. This site documents his work across office build-outs, vendor management, employee experience, and process development.
+Portfolio for Collin Brown — San Francisco workplace operations across office build-outs, HQ moves, vendor systems, and employee experience.
+
+## Edit copy
+
+See [`EDITING.md`](./EDITING.md) for which JSON files power each section.
+
+## Auto-track wins (Notion → site)
+
+Log accomplishments in Notion → check **Publish** → weekly Action updates the home page **Recent wins** feed.
+
+Setup: [`docs/WINS-NOTION.md`](./docs/WINS-NOTION.md)
+
+```bash
+npm run sync:wins   # needs NOTION_TOKEN + NOTION_WINS_DB_ID
+```
+
+## Dev
+
+```bash
+npm install
+npm run dev
+```
