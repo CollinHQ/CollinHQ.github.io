@@ -1,6 +1,7 @@
 [
   {
     "id": "fintech-hq-build-out",
+    "case_study_ready": true,
     "icon": "🏗️",
     "title": "Fintech HQ Office Build-Out",
     "status": "Completed",
@@ -74,6 +75,7 @@
     "numbers": {
       "under_budget": "$30K"
     },
+    "outcome_headline": { "value": "$30K", "label": "Under budget" },
     "images": {
       "hero": "/assets/images/projects/klaviyo-office-redesign/hero.jpg",
       "before": "/assets/images/projects/klaviyo-office-redesign/before.jpg",
@@ -86,6 +88,7 @@
   },
   {
     "id": "klaviyo-coi-tracker",
+    "case_study_ready": true,
     "icon": "🛡️",
     "title": "Automated COI Compliance Tracker",
     "status": "Completed",
@@ -119,6 +122,7 @@
   },
   {
     "id": "bridge-hq-relocation",
+    "case_study_ready": true,
     "icon": "📦",
     "title": "BRIDGE Housing HQ Relocation",
     "status": "Completed",
@@ -168,6 +172,7 @@
   },
   {
     "id": "bridge-amenity-program",
+    "case_study_ready": true,
     "icon": "✨",
     "title": "BRIDGE Amenity & Engagement Program",
     "status": "Completed",
@@ -198,6 +203,7 @@
   },
   {
     "id": "bridge-records-migration",
+    "case_study_ready": true,
     "icon": "🗄️",
     "title": "Records Migration: Iron Mountain → Corodata",
     "status": "Completed",
@@ -246,6 +252,7 @@
   },
   {
     "id": "optisign-werqwise",
+    "case_study_ready": true,
     "icon": "🖥️",
     "title": "OptiSigns Digital Signage Rollout",
     "status": "Completed",
@@ -281,9 +288,11 @@
   },
   {
     "id": "events-culture",
+    "case_study_ready": true,
     "icon": "🎉",
     "title": "Events & Culture Programming",
     "status": "Ongoing",
+    "company": "Across five companies",
     "location": "San Francisco, CA",
     "role": "Event planning and culture programming across five companies",
     "description": "Events are where a team actually feels taken care of. From a 428-guest Halloween flagship to a $5,000 holiday party that punched above its budget, I plan, produce, and run workplace events end-to-end, then tighten them year over year like any other system.",
@@ -326,7 +335,7 @@
       "Auditing"
     ],
     "key_highlights": [
-      "Audited design firm invoice (#1581) by cross-referencing billed meeting hours against actual calendar events",
+      "Audited a design firm invoice by cross-referencing billed meeting hours against actual calendar events",
       "Reviewed office lease to extract COI/insurance requirements and building rules",
       "Negotiated vendor contracts: Bevy sparkling water (sub-$500/mo), Commonwealth Joe cold brew kegerator",
       "Bevi Stand Up 2.0 sparkling water trial negotiated and contract sent via IntelAgree (7-day trial, 8 flavors)",

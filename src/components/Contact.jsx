@@ -34,8 +34,8 @@ export default function Contact() {
         <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Contact</p>
         <h2 className="font-serif text-4xl font-bold text-white mb-4">Get in Touch</h2>
         <p className="text-slate-400 text-base leading-relaxed mb-10 max-w-xl mx-auto">
-          Open to conversations about workplace operations roles, office build-outs,
-          and how I can help your team. The fastest way to reach me is email.
+          Hiring for workplace operations, facilities, or a build-out / relocation lead?
+          I&apos;m open to conversations — email is the fastest way to reach me.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">

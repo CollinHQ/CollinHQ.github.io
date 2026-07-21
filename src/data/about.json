@@ -3,10 +3,32 @@
   "title": "Workplace Experience Manager",
   "location": "San Francisco, CA",
   "company": "Cushman & Wakefield",
-  "one_liner": "7+ years turning empty shells into offices people are genuinely glad to walk into. Most recently a 13,000 sq ft, 3-floor SF build-out run with no general contractor, plus the vendors, budgets, and everyday details that make a space work for the people in it.",
+  "one_liner": "7+ years owning workplace operations end to end — build-outs, HQ moves, vendor systems, and the day-to-day details that make people want to show up. Most recently: a 13,000 sq ft, 3-floor SF headquarters built out with no general contractor.",
   "bio": "What keeps me in this work is simple: a good workplace changes how people feel and what they're able to do. When a space is easy to use, well stocked, and actually feels good to be in, people have what they need to focus, do their best work, and want to be there. Over 7+ years across San Francisco's tech, nonprofit, and coworking offices, I've learned that comes down to owning the details most people only notice when they're missing: facilities, vendors, budgets, onboarding, and the small touches and events that make a place feel alive. To me the physical space and the culture are the same job: take care of both, and people can do more and be more.",
   "hero_tags": ["SF & NYC", "Office Build-Outs", "Vendor Ops"],
   "currently": "Currently the workplace coordinator for a security-compliance company's SF headquarters, via Cushman & Wakefield, including an HQ relocation",
+  "value_props": [
+    {
+      "icon": "🏗️",
+      "title": "I run the build, not just the ticket queue",
+      "text": "Directed a 13,000 sq ft, 3-floor SF HQ build-out with no general contractor — 15 vendors, structural blockers, kitchens, power, and move-in sequencing — while staying the on-site decision-maker executives could walk the floor with."
+    },
+    {
+      "icon": "📦",
+      "title": "Moves that land on Monday ready",
+      "text": "Led BRIDGE Housing's ~300-person HQ relocation with zero downtime and 17% under budget by sequencing furniture, IT, and movers around a hard return-to-office date — not hoping it would work out."
+    },
+    {
+      "icon": "⚙️",
+      "title": "Ops systems that keep running without me",
+      "text": "Built Klaviyo's COI compliance tracker in Monday.com and rolled it to 8+ global offices, plus service catalogs and playbooks so workplace requests and vendor renewals don't live in one person's head."
+    },
+    {
+      "icon": "☕",
+      "title": "Culture you can measure",
+      "text": "At BRIDGE, a concessions and engagement program I built from scratch lifted in-office attendance 35%. At Klaviyo and Werqwise, rituals and events I started are still part of how those offices feel today."
+    }
+  ],
   "headshot": "/assets/images/headshot/headshot.jpg",
   "stats": [
     { "value": "7+",   "label": "Years in Workplace Ops",     "story": "Across tech, nonprofit, and coworking environments in San Francisco, from front desk to ground-up HQ build-out." },

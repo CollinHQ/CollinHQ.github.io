@@ -72,29 +72,28 @@ export default function CaseStudyPage() {
         <h1 className="font-serif text-5xl md:text-6xl font-bold text-white leading-none mb-3">{title}</h1>
         {role && <p className="text-slate-400 text-base mb-8 max-w-2xl">{role}</p>}
 
-        {/* Hero */}
-        <Photo src={images.hero} label="Add hero photo — the finished space, or a striking in-progress shot" className="w-full h-64 md:h-80 mb-8" />
+        {/* Hero photo — skip empty placeholders so stories still read polished without images */}
+        {images.hero && (
+          <Photo src={images.hero} label={title} className="w-full h-64 md:h-80 mb-8" />
+        )}
 
         {/* Metrics — headline leads, supporting numbers follow */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
-          {outcome_headline ? (
-            <div className="bg-[#1a2535] rounded-lg p-4 text-center ring-1 ring-yellow-600/40">
-              <div className="font-serif text-3xl font-bold text-yellow-500">{outcome_headline.value}</div>
-              <div className="text-slate-400 text-xs uppercase tracking-wider mt-1">{outcome_headline.label}</div>
-            </div>
-          ) : (
-            <div className="border-2 border-dashed border-yellow-600/50 bg-yellow-500/5 rounded-lg p-4 text-center flex flex-col items-center justify-center">
-              <div className="text-yellow-500 text-lg leading-none">+</div>
-              <div className="text-slate-300 text-xs mt-1 leading-tight">Headline result — add one</div>
-            </div>
-          )}
-          {statEntries.map(([k, v]) => (
-            <div key={k} className="bg-[#1a2535] rounded-lg p-4 text-center">
-              <div className="font-serif text-3xl font-bold text-yellow-500">{v}</div>
-              <div className="text-slate-400 text-xs uppercase tracking-wider mt-1">{prettify(k)}</div>
-            </div>
-          ))}
-        </div>
+        {(outcome_headline || statEntries.length > 0) && (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
+            {outcome_headline && (
+              <div className="bg-[#1a2535] rounded-lg p-4 text-center ring-1 ring-yellow-600/40">
+                <div className="font-serif text-3xl font-bold text-yellow-500">{outcome_headline.value}</div>
+                <div className="text-slate-400 text-xs uppercase tracking-wider mt-1">{outcome_headline.label}</div>
+              </div>
+            )}
+            {statEntries.map(([k, v]) => (
+              <div key={k} className="bg-[#1a2535] rounded-lg p-4 text-center">
+                <div className="font-serif text-3xl font-bold text-yellow-500">{v}</div>
+                <div className="text-slate-400 text-xs uppercase tracking-wider mt-1">{prettify(k)}</div>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* The brief */}
         {description && (
@@ -119,14 +118,16 @@ export default function CaseStudyPage() {
           </section>
         )}
 
-        {/* Before / after */}
-        <section className="mb-12">
-          <h2 className="font-serif text-2xl font-bold text-white mb-4">Before / after</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Photo src={images.before} label="Before photo" className="w-full h-48" />
-            <Photo src={images.after} label="After photo" className="w-full h-48" />
-          </div>
-        </section>
+        {/* Before / after — only when at least one photo path is set (placeholders stay off the live site) */}
+        {(images.before || images.after) && (
+          <section className="mb-12">
+            <h2 className="font-serif text-2xl font-bold text-white mb-4">Before / after</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {images.before && <Photo src={images.before} label="Before" className="w-full h-48" />}
+              {images.after && <Photo src={images.after} label="After" className="w-full h-48" />}
+            </div>
+          </section>
+        )}
 
         {/* Milestones */}
         {milestones_completed.length > 0 && (
@@ -145,25 +146,17 @@ export default function CaseStudyPage() {
           </section>
         )}
 
-        {/* Testimonial */}
-        <section className="mb-12">
-          {testimonial ? (
+        {/* Testimonial — only render when we have a real quote */}
+        {testimonial && (
+          <section className="mb-12">
             <figure className="bg-[#1a2535] rounded-2xl p-8">
               <blockquote className="font-serif text-2xl text-slate-200 italic leading-relaxed">“{testimonial.quote}”</blockquote>
               <figcaption className="text-slate-400 text-sm mt-4">
                 {testimonial.name}{testimonial.title ? ` · ${testimonial.title}` : ''}
               </figcaption>
             </figure>
-          ) : (
-            <div className="border-2 border-dashed border-yellow-600/50 bg-yellow-500/5 rounded-2xl p-8 flex items-start gap-4">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="#eab308" className="flex-shrink-0 opacity-80" aria-hidden="true" focusable="false"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10H0z" /></svg>
-              <div>
-                <p className="font-serif text-xl text-slate-200 italic">“Add a quote from someone on the build…”</p>
-                <p className="text-slate-400 text-sm mt-2">A CEO walkthrough, building management, or a key vendor — anyone who saw you run it.</p>
-              </div>
-            </div>
-          )}
-        </section>
+          </section>
+        )}
 
         {/* Tags */}
         {tags.length > 0 && (

@@ -6,7 +6,8 @@ export default function Testimonials() {
   return (
     <section className="px-6 py-20">
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-serif text-4xl font-bold text-white mb-12 text-center">Endorsements</h2>
+        <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2 text-center">Social proof</p>
+        <h2 className="font-serif text-4xl font-bold text-white mb-12 text-center">What managers say</h2>
 
         <div className={`grid gap-6 ${testimonials.length > 1 ? 'md:grid-cols-2' : 'max-w-2xl mx-auto'}`}>
           {testimonials.map(({ id, quote, name, title, company, relationship }) => (
