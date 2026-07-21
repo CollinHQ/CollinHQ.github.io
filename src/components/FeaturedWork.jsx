@@ -15,8 +15,8 @@ export default function FeaturedWork() {
             <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Proof of work</p>
             <h2 className="font-serif text-4xl font-bold text-white mb-2">Featured Work</h2>
             <p className="text-slate-400 text-sm max-w-xl leading-relaxed">
-              The three stories hiring managers ask for: an HQ move, a ground-up build-out,
-              and a system that scaled beyond one office.
+              The three stories Workplace Manager and Office Coordinator interviews ask for:
+              an HQ move, a ground-up build-out, and a system that scaled beyond one office.
             </p>
           </div>
           <Link

@@ -1,8 +1,16 @@
 {
   "name": "Collin Brown",
   "title": "Workplace Experience Manager",
+  "title_line": "Workplace Experience · Workplace Ops · Office Coordination",
   "location": "San Francisco, CA",
   "company": "Cushman & Wakefield",
+  "target_roles": [
+    "Workplace Experience Manager",
+    "Workplace Manager",
+    "Workplace Coordinator",
+    "Office Manager",
+    "Office Coordinator"
+  ],
   "one_liner": "7+ years owning workplace operations end to end — build-outs, HQ moves, vendor systems, and the day-to-day details that make people want to show up. Most recently: a 13,000 sq ft, 3-floor SF headquarters built out with no general contractor.",
   "bio": "What keeps me in this work is simple: a good workplace changes how people feel and what they're able to do. When a space is easy to use, well stocked, and actually feels good to be in, people have what they need to focus, do their best work, and want to be there. Over 7+ years across San Francisco's tech, nonprofit, and coworking offices, I've learned that comes down to owning the details most people only notice when they're missing: facilities, vendors, budgets, onboarding, and the small touches and events that make a place feel alive. To me the physical space and the culture are the same job: take care of both, and people can do more and be more.",
   "hero_tags": ["Build-Outs & Moves", "Vendor & Budget Ops", "Employee Experience"],

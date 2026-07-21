@@ -173,7 +173,7 @@ export default function CaseStudyPage() {
             href={`mailto:${about.contact.email}?subject=Re:%20${encodeURIComponent(title)}`}
             className="bg-yellow-500 hover:bg-yellow-400 text-[#0d1b2a] font-semibold text-sm rounded-full px-6 py-3 transition-colors"
           >
-            Hiring for this kind of work? Email me
+            Hiring a Workplace / Office lead? Email me
           </a>
           <a href={about.contact.resume_pdf} download="Collin Brown Resume.pdf" className="border border-yellow-600/40 text-yellow-500 hover:bg-yellow-500/10 text-sm rounded-full px-6 py-3 transition-colors">Download Resume</a>
           <Link to="/projects" className="border border-yellow-600/40 text-yellow-500 hover:bg-yellow-500/10 text-sm rounded-full px-6 py-3 transition-colors">More projects</Link>

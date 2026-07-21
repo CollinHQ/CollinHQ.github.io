@@ -15,8 +15,8 @@ export default function WhatIBring() {
         <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2 text-center">How I show up</p>
         <h2 className="font-serif text-4xl font-bold text-white mb-3 text-center">What I Bring</h2>
         <p className="text-slate-400 text-sm text-center mb-12 max-w-2xl mx-auto">
-          The mix SF tech hiring managers look for: operational control, vendor economics,
-          and experience work that moves a metric.
+          What Workplace Manager and Office Coordinator roles actually need: operational control,
+          vendor economics, and experience work that moves a metric.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {about.value_props.map(({ icon, title, text }) => {

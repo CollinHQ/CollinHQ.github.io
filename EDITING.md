@@ -32,6 +32,8 @@ All of these are in `src/data/`:
 | The **4 big stat numbers** + labels | `about.json` | `"stats"` |
 | The **"Currently building..."** badge at the top | `about.json` | `"currently"` |
 | Your **name / title** | `about.json` | `"name"` / `"title"` |
+| Roles you're **open to** (hire pills) | `about.json` | `"target_roles"` |
+| Subtitle under your title | `about.json` | `"title_line"` |
 | The **one-liner** under your name | `about.json` | `"one_liner"` |
 | **Skills** list | `about.json` | `"skills"` |
 | **Tools** list | `about.json` | `"tools"` |

@@ -35,8 +35,11 @@ export default function Hero() {
       <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-3">
         {about.name}
       </h1>
-      <p className="text-yellow-500 text-sm uppercase tracking-widest mb-4">
+      <p className="text-yellow-500 text-sm uppercase tracking-widest mb-2">
         {about.title}
+      </p>
+      <p className="text-slate-400 text-xs md:text-sm tracking-wide mb-4">
+        {about.title_line || 'Workplace Manager · Workplace Coordinator · Office Coordinator'}
       </p>
 
       {about.hero_tags?.length > 0 && (
