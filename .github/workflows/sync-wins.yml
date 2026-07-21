@@ -1,0 +1,54 @@
+# Sync published wins from Notion → src/data/wins.json
+# Then commit if changed (push to main triggers the existing Pages deploy).
+#
+# Required repo secrets (Settings → Secrets and variables → Actions):
+#   NOTION_TOKEN        — Notion integration secret
+#   NOTION_WINS_DB_ID   — Wins database ID
+#
+# Until secrets are set, this workflow exits successfully without changing files.
+
+name: Sync wins from Notion
+
+on:
+  schedule:
+    # Sundays 16:00 UTC (~9am PT)
+    - cron: '0 16 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-wins
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Sync wins.json from Notion
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_WINS_DB_ID: ${{ secrets.NOTION_WINS_DB_ID }}
+          WINS_LIMIT: '12'
+        run: node scripts/sync-wins-from-notion.mjs
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- src/data/wins.json; then
+            echo "wins.json unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/wins.json
+          git commit -m "chore: sync portfolio wins from Notion"
+          git push

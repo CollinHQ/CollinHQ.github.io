@@ -3,6 +3,7 @@ import CompaniesBar from '../components/CompaniesBar'
 import StatsBar from '../components/StatsBar'
 import About from '../components/About'
 import FeaturedWork from '../components/FeaturedWork'
+import RecentWins from '../components/RecentWins'
 import HireCTA from '../components/HireCTA'
 import WhatIBring from '../components/WhatIBring'
 import Testimonials from '../components/Testimonials'
@@ -19,6 +20,7 @@ export default function Home() {
       <Reveal><CompaniesBar /></Reveal>
       <Reveal><StatsBar /></Reveal>
       <Reveal><FeaturedWork /></Reveal>
+      <Reveal><RecentWins /></Reveal>
       <Reveal><HireCTA /></Reveal>
       <Reveal><WhatIBring /></Reveal>
       <Reveal><About /></Reveal>

@@ -42,6 +42,7 @@ All of these are in `src/data/`:
 | **Timeline** entries (Experience page) | `experience.json` | `"description"` / `"highlights"` |
 | **Project cards** text | `projects.json` | `"description"` / `"key_highlights"` |
 | **Endorsements / testimonials** | `testimonials.json` | `"quote"` |
+| **Recent wins** (home feed) | `wins.json` | `"wins"` — or check **Publish** in the Notion DB (see `docs/WINS-NOTION.md`) |
 
 ## Tip: preview before you commit
 
@@ -53,7 +54,17 @@ You probably deleted a `"`, `,`, or `}` by accident. Easiest fix: on GitHub, ope
 
 ## When to use an AI instead
 
-Use a chat (and point it at this repo + `HANDOFF.md`) for the bigger stuff:
+Use a chat (and point it at this repo) for the bigger stuff:
 - Rewriting a whole section or finding the right words
 - Adding new sections, photos, or testimonials
 - Anything involving the layout or code, not just words
+
+## Auto-updating wins from Notion
+
+Day-to-day accomplishments can live in a Notion database and sync to the site weekly.
+
+1. Set up the DB + GitHub secrets once → **`docs/WINS-NOTION.md`**
+2. Log a win → check **Publish**
+3. GitHub Action updates `src/data/wins.json` → site redeploys
+
+Until Notion is connected, the home page shows the seed wins already in `wins.json`.

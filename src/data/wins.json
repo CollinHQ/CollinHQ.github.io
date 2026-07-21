@@ -1,0 +1,51 @@
+{
+  "updated_at": "2026-07-21",
+  "source": "seed",
+  "wins": [
+    {
+      "id": "seed-cushman-hq-move",
+      "date": "2026-07-01",
+      "win": "Coordinating the client's SF HQ relocation end-to-end — movers, monitor installs, building logistics, and move-day sequencing",
+      "metric": "3rd HQ move",
+      "project_id": null,
+      "type": "currently",
+      "detail": "Via Cushman & Wakefield for a security-compliance company's SF headquarters."
+    },
+    {
+      "id": "seed-fintech-build-out",
+      "date": "2026-07-01",
+      "win": "Wrapped a 13,000 sq ft, 3-floor SF HQ build-out run with no general contractor",
+      "metric": "13K sq ft · no GC",
+      "project_id": "fintech-hq-build-out",
+      "type": "milestone",
+      "detail": "15 vendors across electrical, flooring, HVAC, AV, lighting, and millwork."
+    },
+    {
+      "id": "seed-bridge-move",
+      "date": "2025-05-01",
+      "win": "Relocated BRIDGE Housing's ~300-person HQ with zero downtime, 17% under budget",
+      "metric": "Zero downtime",
+      "project_id": "bridge-hq-relocation",
+      "type": "milestone",
+      "detail": "Furniture, IT, and movers sequenced around a hard Monday return-to-office."
+    },
+    {
+      "id": "seed-coi-tracker",
+      "date": "2025-10-01",
+      "win": "Rolled Klaviyo's self-running COI compliance tracker to 8+ global offices",
+      "metric": "8+ offices",
+      "project_id": "klaviyo-coi-tracker",
+      "type": "highlight",
+      "detail": "Monday.com automations chase renewals and file certificates without a spreadsheet chase."
+    },
+    {
+      "id": "seed-bridge-amenities",
+      "date": "2025-01-15",
+      "win": "Built BRIDGE's concessions and engagement program that lifted in-office attendance 35%",
+      "metric": "35% attendance lift",
+      "project_id": "bridge-amenity-program",
+      "type": "highlight",
+      "detail": "Programmed from what actually brought people into the office."
+    }
+  ]
+}
