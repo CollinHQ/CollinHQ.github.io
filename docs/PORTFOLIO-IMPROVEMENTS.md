@@ -152,4 +152,8 @@ See [`EDITING.md`](../EDITING.md). Golden rule: only change words inside `" "` q
 
 ---
 
+## Copy tone note
+
+Prefer outcome-level numbers (sq ft, % under budget, attendance lift) over headcount/budget micro-specs. Avoid exact figures like `500+ employees`, `428 guests`, or `sub-$500/mo` — use “staff organization-wide,” “hundreds of guests,” “lean budget,” etc.
+
 *Last updated: 2026-07-21*

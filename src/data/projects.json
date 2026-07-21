@@ -305,23 +305,22 @@
     "company": "Across five companies",
     "location": "San Francisco, CA",
     "role": "Event planning and culture programming across five companies",
-    "description": "Events are where a team actually feels taken care of. From a 428-guest Halloween flagship to a $5,000 holiday party that punched above its budget, I plan, produce, and run workplace events end-to-end, then tighten them year over year like any other system.",
+    "description": "Events are where a team actually feels taken care of. From a large multi-floor Halloween flagship to a lean holiday party that punched above its budget, I plan, produce, and run workplace events end-to-end, then tighten them year over year like any other system.",
     "tags": [
       "Event Programming",
       "Employee Experience",
       "Workplace Ops"
     ],
-    "outcome_headline": { "value": "428", "label": "Guests, flagship event" },
+    "outcome_headline": { "value": "400+", "label": "Guests, flagship event" },
     "key_highlights": [
-      "Werqwise Halloween party: 428 guests across 3 floors; owned food & beverage end-to-end, led layout execution on the night, and emcee'd, as part of the team that ran it",
-      "BRIDGE holiday party on a $5,000 budget for ~200 invited: brought it in-house with trusted bartenders, crowd-sourced catering, a photo booth, and a theme",
+      "Werqwise Halloween party: hundreds of guests across 3 floors; owned food & beverage end-to-end, led layout execution on the night, and emcee'd, as part of the team that ran it",
+      "BRIDGE holiday party on a lean budget for a large invited list: brought it in-house with trusted bartenders, crowd-sourced catering, a photo booth, and a theme",
       "Pulled event permits in person with a consultant and booked a headline DJ (green room, sound engineer, full AV) for a startup HQ launch",
       "Ran member events end-to-end at Werqwise, from food to close-down reset; started a Klaviyo end-of-day happy hour that still runs today",
-      "Currently planning a ~300-guest company holiday party end-to-end, from venue sourcing through production"
+      "Currently planning a large company holiday party end-to-end, from venue sourcing through production"
     ],
     "numbers": {
-      "flagship_guests": "428",
-      "holiday_budget": "$5K",
+      "flagship_guests": "400+",
       "companies": "5"
     },
     "milestones_completed": [],
@@ -347,8 +346,8 @@
     "key_highlights": [
       "Audited a design firm invoice by cross-referencing billed meeting hours against actual calendar events",
       "Reviewed office lease to extract COI/insurance requirements and building rules",
-      "Negotiated vendor contracts: Bevy sparkling water (sub-$500/mo), Commonwealth Joe cold brew kegerator",
-      "Bevi Stand Up 2.0 sparkling water trial negotiated and contract sent via IntelAgree (7-day trial, 8 flavors)",
+      "Negotiated vendor contracts for pantry staples including sparkling water and cold brew service",
+      "Ran a sparkling water trial and moved a competitive contract through legal for signature",
       "Built vendor database in Notion for tracking contacts, contracts, and compliance status"
     ],
     "milestones_completed": [],
