@@ -16,15 +16,21 @@ See [`EDITING.md`](./EDITING.md) for which JSON files power each section.
 Full changelog, research notes, photo shopping list, and Notion wins plan:  
 [`docs/PORTFOLIO-IMPROVEMENTS.md`](./docs/PORTFOLIO-IMPROVEMENTS.md)
 
-## Auto-track wins (Notion → site)
+## Track work accomplishments
 
-Log accomplishments in Notion → check **Publish** → weekly Action updates the home page **Recent wins** feed.
-
-Setup: [`docs/WINS-NOTION.md`](./docs/WINS-NOTION.md)
+Home page **Recent wins** feed — keep it current without rewriting case studies.
 
 ```bash
+# Log a win right now (no Notion needed)
+npm run log-win -- --win "What you finished today" --type currently
+
+# Later: Notion auto-sync (optional)
 npm run sync:wins   # needs NOTION_TOKEN + NOTION_WINS_DB_ID
 ```
+
+- Habit guide: [`docs/TRACKING-WINS.md`](./docs/TRACKING-WINS.md)  
+- Notion setup: [`docs/WINS-NOTION.md`](./docs/WINS-NOTION.md)  
+- Scratch pad: [`docs/wins-inbox.md`](./docs/wins-inbox.md)
 
 ## Dev
 

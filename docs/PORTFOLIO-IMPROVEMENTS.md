@@ -78,19 +78,20 @@ Drop files into `public/assets/images/projects/<project-id>/` as `hero.jpg` / `b
 
 ---
 
-## Notion wins — how it works
+## Tracking wins — how it works
 
 ```
-Notion DB (Publish ✓) → GitHub Action (Sunday / manual)
-  → src/data/wins.json → Home “Recent wins” → Pages deploy
+npm run log-win  ──┐
+Notion (Publish ✓) ─┼──► src/data/wins.json → Home “Recent wins” → Pages deploy
+                    │         ▲
+                    └─────────┘  weekly Action (optional)
 ```
 
-**Do:** log Name + Date + Metric + Project + Type; check Publish when clean.  
+- **Today:** `npm run log-win -- --win "…"` or edit `wins.json` / scratch in `wins-inbox.md`  
+- **Later:** Notion DB + secrets → [`WINS-NOTION.md`](./WINS-NOTION.md)  
+- **Habit:** [`TRACKING-WINS.md`](./TRACKING-WINS.md)
+
 **Don’t auto-publish:** hero, featured case studies, sensitive client/invoice detail.
-
-Full setup: [`WINS-NOTION.md`](./WINS-NOTION.md).
-
-Until secrets `NOTION_TOKEN` + `NOTION_WINS_DB_ID` are set, seed wins stay live and the Action skips safely.
 
 ---
 

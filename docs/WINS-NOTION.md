@@ -88,6 +88,14 @@ If secrets are missing, the script **skips safely** and leaves the seed wins in 
 3. Check **Publish** when it’s clean enough for hiring managers  
 4. Site updates on the next sync (or run the workflow now)
 
+**Don’t have Notion set up yet?** Log straight into the site data:
+
+```bash
+npm run log-win -- --win "What you shipped" --type currently
+```
+
+Full habit guide: [`TRACKING-WINS.md`](./TRACKING-WINS.md)
+
 ## What stays manual
 
 - Hero, stats, featured case studies, testimonials  

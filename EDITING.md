@@ -59,15 +59,21 @@ Use a chat (and point it at this repo) for the bigger stuff:
 - Adding new sections, photos, or testimonials
 - Anything involving the layout or code, not just words
 
-## Auto-updating wins from Notion
+## Tracking work accomplishments (wins)
 
-Day-to-day accomplishments can live in a Notion database and sync to the site weekly.
+Day-to-day wins show on the home page **Recent wins** feed (`src/data/wins.json`).
 
-1. Set up the DB + GitHub secrets once → **`docs/WINS-NOTION.md`**
-2. Log a win → check **Publish**
-3. GitHub Action updates `src/data/wins.json` → site redeploys
+**Fast (today):**
+```bash
+npm run log-win -- --win "What you finished" --type currently
+```
 
-Until Notion is connected, the home page shows the seed wins already in `wins.json`.
+**Notion (weekly auto-sync):** set up once → **`docs/WINS-NOTION.md`**
+
+**Habit + examples:** **`docs/TRACKING-WINS.md`**  
+**Scratch pad:** **`docs/wins-inbox.md`** (not on the live site)
+
+Until Notion secrets are connected, use `log-win` or edit `wins.json` on GitHub.
 
 ## Full improvements backlog
 

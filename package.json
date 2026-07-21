@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "sync:wins": "node scripts/sync-wins-from-notion.mjs"
+    "sync:wins": "node scripts/sync-wins-from-notion.mjs",
+    "log-win": "node scripts/log-win.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

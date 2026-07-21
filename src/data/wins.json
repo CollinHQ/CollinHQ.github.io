@@ -1,7 +1,16 @@
 {
   "updated_at": "2026-07-21",
-  "source": "seed",
+  "source": "manual",
   "wins": [
+    {
+      "id": "log-2026-07-21-bef5f2",
+      "date": "2026-07-21",
+      "win": "Built a one-command win logger so accomplishments can update the portfolio without rewriting case studies",
+      "metric": "Tracking system",
+      "project_id": null,
+      "type": "highlight",
+      "detail": null
+    },
     {
       "id": "seed-cushman-hq-move",
       "date": "2026-07-01",
