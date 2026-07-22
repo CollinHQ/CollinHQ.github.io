@@ -85,12 +85,25 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Stats pulled into the hero so there's substance above the fold */}
+        {/* Stats pulled into the hero so there's substance above the fold.
+            Hover/focus reveals the "receipt" behind each number (desktop). */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-8 border-t border-yellow-600/20 pt-8">
-          {about.stats.map(({ value, label }) => (
-            <div key={label}>
+          {about.stats.map(({ value, label, story }) => (
+            <div
+              key={label}
+              tabIndex={story ? 0 : -1}
+              className="relative group rounded-lg cursor-default"
+            >
               <p className="font-serif text-4xl font-bold text-yellow-500">{value}</p>
               <p className="text-slate-400 text-xs uppercase tracking-widest mt-2 leading-snug">{label}</p>
+
+              {story && (
+                <div className="pointer-events-none absolute left-0 bottom-full mb-3 w-64 max-w-[80vw] opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 group-focus:opacity-100 group-focus:translate-y-0 transition-all duration-200 z-20">
+                  <div className="bg-[#1a2535] border border-yellow-600/30 rounded-lg p-3 shadow-xl text-left">
+                    <p className="text-slate-300 text-xs leading-relaxed">{story}</p>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
