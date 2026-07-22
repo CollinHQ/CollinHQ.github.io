@@ -16,9 +16,10 @@ export default function FeaturedWork() {
           action={
             <Link
               to="/projects"
-              className="text-slate-400 hover:text-yellow-500 text-sm transition-colors whitespace-nowrap"
+              className="group text-slate-400 hover:text-yellow-500 text-sm transition-colors whitespace-nowrap"
             >
-              See all projects →
+              See all projects{' '}
+              <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
             </Link>
           }
         />

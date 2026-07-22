@@ -9,11 +9,11 @@ export default function Footer() {
           © {new Date().getFullYear()} Collin Brown · San Francisco, CA
         </p>
         <div className="flex items-center gap-5 text-xs">
-          <Link to="/skills" className="text-slate-400 hover:text-yellow-500 transition-colors">Skills</Link>
-          <Link to="/projects" className="text-slate-400 hover:text-yellow-500 transition-colors">Projects</Link>
-          <Link to="/experience" className="text-slate-400 hover:text-yellow-500 transition-colors">Experience</Link>
-          <a href={`mailto:${about.contact.email}`} className="text-slate-400 hover:text-yellow-500 transition-colors">Email</a>
-          <a href={about.contact.linkedin} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-yellow-500 transition-colors">LinkedIn</a>
+          <Link to="/skills" className="link-underline text-slate-400 hover:text-yellow-500 transition-colors">Skills</Link>
+          <Link to="/projects" className="link-underline text-slate-400 hover:text-yellow-500 transition-colors">Projects</Link>
+          <Link to="/experience" className="link-underline text-slate-400 hover:text-yellow-500 transition-colors">Experience</Link>
+          <a href={`mailto:${about.contact.email}`} className="link-underline text-slate-400 hover:text-yellow-500 transition-colors">Email</a>
+          <a href={about.contact.linkedin} target="_blank" rel="noreferrer" className="link-underline text-slate-400 hover:text-yellow-500 transition-colors">LinkedIn</a>
         </div>
       </div>
     </footer>

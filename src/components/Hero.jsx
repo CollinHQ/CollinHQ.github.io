@@ -1,10 +1,50 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import about from '../data/about.json'
 
+const prefersReducedMotion = () =>
+  typeof window !== 'undefined' &&
+  window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+
+// Animate a number from 0 to target once on mount (instant for reduced-motion).
+function useCountUp(target, duration = 1300) {
+  const [n, setN] = useState(() => (prefersReducedMotion() ? target : 0))
+  useEffect(() => {
+    if (prefersReducedMotion()) { setN(target); return }
+    let raf, start
+    const step = (t) => {
+      if (start == null) start = t
+      const p = Math.min((t - start) / duration, 1)
+      setN(target * (1 - Math.pow(1 - p, 3)))
+      if (p < 1) raf = requestAnimationFrame(step)
+    }
+    raf = requestAnimationFrame(step)
+    return () => cancelAnimationFrame(raf)
+  }, [target, duration])
+  return n
+}
+
+// Renders a stat like "~300" / "$30K" / "35%" with the numeric part counting up,
+// preserving any prefix (~, $) and suffix (+, K, %).
+function StatValue({ value }) {
+  const m = /^(\D*)(\d+(?:\.\d+)?)(.*)$/.exec(value)
+  const target = m ? parseFloat(m[2]) : 0
+  const n = useCountUp(target)
+  if (!m) return value
+  const display = Number.isInteger(target) ? Math.round(n) : n.toFixed(1)
+  return `${m[1]}${display}${m[3]}`
+}
+
 export default function Hero() {
   const [photoFailed, setPhotoFailed] = useState(false)
+  const [imgLoaded, setImgLoaded] = useState(false)
   const [scrollY, setScrollY] = useState(0)
+  const headshotRef = useRef(null)
+
+  // Cached images may already be complete before onLoad binds.
+  useEffect(() => {
+    if (headshotRef.current?.complete) setImgLoaded(true)
+  }, [])
 
   // Subtle scroll parallax on the ambient glow (skipped for reduced-motion users).
   useEffect(() => {
@@ -68,14 +108,15 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 to="/projects"
-                className="bg-yellow-500 hover:bg-yellow-400 text-[#0d1b2a] font-semibold text-sm rounded-full px-6 py-3 transition-colors"
+                className="group bg-yellow-500 hover:bg-yellow-400 text-[#0d1b2a] font-semibold text-sm rounded-full px-6 py-3 transition active:scale-[0.97]"
               >
-                View My Work →
+                View My Work{' '}
+                <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
               </Link>
               <a
                 href="#contact"
                 onClick={scrollToContact}
-                className="border border-yellow-600/40 text-yellow-500 hover:bg-yellow-500/10 text-sm rounded-full px-6 py-3 transition-colors"
+                className="border border-yellow-600/40 text-yellow-500 hover:bg-yellow-500/10 text-sm rounded-full px-6 py-3 transition active:scale-[0.97]"
               >
                 Get in Touch
               </a>
@@ -100,10 +141,12 @@ export default function Hero() {
               <div className="relative">
                 <div aria-hidden="true" className="absolute -inset-3 rounded-full border border-yellow-600/25" />
                 <img
+                  ref={headshotRef}
                   src={about.headshot}
                   alt={about.name}
                   onError={() => setPhotoFailed(true)}
-                  className="relative w-56 h-56 md:w-72 md:h-72 rounded-full object-cover ring-4 ring-yellow-500/60 shadow-2xl shadow-black/50"
+                  onLoad={() => setImgLoaded(true)}
+                  className={`relative w-56 h-56 md:w-72 md:h-72 rounded-full object-cover ring-4 ring-yellow-500/60 shadow-2xl shadow-black/50 transition-opacity duration-700 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
                 />
               </div>
             )}
@@ -119,7 +162,7 @@ export default function Hero() {
               tabIndex={story ? 0 : -1}
               className="relative group rounded-lg cursor-default"
             >
-              <p className="font-serif text-4xl font-bold text-yellow-500">{value}</p>
+              <p className="font-serif text-4xl font-bold text-yellow-500"><StatValue value={value} /></p>
               <p className="text-slate-400 text-xs uppercase tracking-widest mt-2 leading-snug">{label}</p>
 
               {story && (

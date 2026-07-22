@@ -82,9 +82,10 @@ export default function Navbar() {
   }
 
   const renderLink = (link, mobile = false) => {
+    const underline = 'relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:bg-yellow-500 after:origin-left after:transition-transform after:duration-200 hover:after:scale-x-100'
     const baseClass = mobile
       ? `block py-3 text-base tracking-wide transition-colors duration-200 ${isActive(link.href) ? 'text-yellow-500' : 'text-slate-200 hover:text-yellow-500'}`
-      : `text-sm tracking-wide transition-colors duration-200 ${isActive(link.href) ? 'text-yellow-500' : 'text-slate-300 hover:text-yellow-500'}`
+      : `${underline} text-sm tracking-wide transition-colors duration-200 ${isActive(link.href) ? 'text-yellow-500 after:scale-x-100' : 'text-slate-300 hover:text-yellow-500 after:scale-x-0'}`
 
     return link.scroll ? (
       <a key={link.href} href={link.href} onClick={handleAboutClick} className={baseClass}>
