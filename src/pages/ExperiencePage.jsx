@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import experience from '../data/experience.json'
 import InteractiveResume from '../components/InteractiveResume'
-import Timeline from '../components/Timeline'
 import Testimonials from '../components/Testimonials'
 import usePageTitle from '../hooks/usePageTitle'
 
@@ -40,24 +38,24 @@ export default function ExperiencePage() {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-24 px-6">
+    <div className="relative min-h-screen pt-24 pb-24 px-6 overflow-hidden">
+      {/* Subtle depth to match the hero */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute -top-32 right-0 w-[34rem] h-[34rem] max-w-full rounded-full bg-yellow-500/[0.06] blur-[130px]" />
+      </div>
       <div className="max-w-4xl mx-auto">
 
-        <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Background</p>
-        <h1 className="font-serif text-5xl font-bold text-white mb-10">Experience</h1>
-
-        {/* Timeline */}
-        <section className="mb-24">
-          <h2 className="font-serif text-3xl font-bold text-white mb-8">Timeline</h2>
-          <Timeline experience={experience} />
-        </section>
+        <p className="flex items-center gap-3 text-yellow-500 text-xs uppercase tracking-[0.2em] mb-3">
+          <span className="h-px w-8 bg-yellow-600/50" aria-hidden="true" />
+          Background
+        </p>
+        <h1 className="font-serif text-5xl font-bold text-white mb-3">Experience</h1>
+        <p className="text-slate-400 text-sm mb-10 max-w-2xl">
+          Click <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true" focusable="false" className="inline-block align-middle text-yellow-500"><polyline points="6 9 12 15 18 9" /></svg> on any bullet to expand the detail. Skill tags link to the Skills page.
+        </p>
 
         {/* Interactive Resume */}
         <section id="interactive-resume" ref={resumeRef} className="scroll-mt-16">
-          <h2 className="font-serif text-3xl font-bold text-white mb-1 text-center">Interactive Resume</h2>
-          <p className="text-slate-400 text-sm mb-4 text-center">
-            Click <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true" focusable="false" className="inline-block align-middle text-yellow-500"><polyline points="6 9 12 15 18 9" /></svg> on any bullet to expand. Skill tags link to the Skills page.
-          </p>
           <InteractiveResume pinnedSkill={pinnedSkill} onClearPin={clearPin} />
         </section>
 
