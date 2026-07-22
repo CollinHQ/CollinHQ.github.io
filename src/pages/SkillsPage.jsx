@@ -77,15 +77,18 @@ export default function SkillsPage() {
 
           {/* Tools */}
           <div>
-            <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-6">Tools</h2>
-            <ul className="space-y-3">
+            <h2 className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Tools</h2>
+            <p className="text-slate-400 text-xs mb-5">Platforms and software I work in day to day.</p>
+            <div className="flex flex-wrap gap-2.5">
               {about.tools.map((tool) => (
-                <li key={tool} className="flex items-center gap-3 text-slate-300">
-                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0" />
-                  <span className="text-base">{tool}</span>
-                </li>
+                <span
+                  key={tool}
+                  className="border border-slate-700 text-slate-300 bg-slate-800/40 rounded-full px-3 py-1.5 text-sm"
+                >
+                  {tool}
+                </span>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
 
