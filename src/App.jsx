@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Analytics from './components/Analytics'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -10,6 +11,7 @@ import ExperiencePage from './pages/ExperiencePage'
 export default function App() {
   return (
     <BrowserRouter>
+      <Analytics />
       <div className="bg-[#0d1b2a] min-h-screen flex flex-col">
         <a
           href="#main"
