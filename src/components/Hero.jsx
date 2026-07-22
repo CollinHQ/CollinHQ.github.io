@@ -1,9 +1,28 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import about from '../data/about.json'
 
 export default function Hero() {
   const [photoFailed, setPhotoFailed] = useState(false)
+  const [scrollY, setScrollY] = useState(0)
+
+  // Subtle scroll parallax on the ambient glow (skipped for reduced-motion users).
+  useEffect(() => {
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
+    let raf = null
+    const onScroll = () => {
+      if (raf) return
+      raf = window.requestAnimationFrame(() => {
+        setScrollY(window.scrollY)
+        raf = null
+      })
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      if (raf) window.cancelAnimationFrame(raf)
+    }
+  }, [])
 
   const scrollToContact = (e) => {
     e.preventDefault()
@@ -12,10 +31,16 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center px-6 pt-28 pb-16 overflow-hidden">
-      {/* Subtle depth so the background isn't a flat rectangle */}
+      {/* Subtle depth so the background isn't a flat rectangle: a slow-drifting
+          "aurora" plus a gentle scroll parallax. */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -top-40 -right-24 w-[38rem] h-[38rem] rounded-full bg-yellow-500/10 blur-[120px]" />
-        <div className="absolute -bottom-24 left-1/4 w-[30rem] h-[30rem] rounded-full bg-yellow-600/[0.06] blur-[120px]" />
+        <div
+          className="absolute inset-0 will-change-transform"
+          style={{ transform: `translate3d(0, ${scrollY * 0.18}px, 0)` }}
+        >
+          <div className="aurora-a absolute -top-40 -right-24 w-[38rem] h-[38rem] rounded-full bg-yellow-500/10 blur-[120px]" />
+          <div className="aurora-b absolute -bottom-24 left-1/4 w-[30rem] h-[30rem] rounded-full bg-yellow-600/[0.06] blur-[120px]" />
+        </div>
       </div>
 
       <div className="max-w-6xl mx-auto w-full">

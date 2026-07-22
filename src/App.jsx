@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -6,6 +6,23 @@ import ProjectsPage from './pages/ProjectsPage'
 import CaseStudyPage from './pages/CaseStudyPage'
 import SkillsPage from './pages/SkillsPage'
 import ExperiencePage from './pages/ExperiencePage'
+
+// Re-keys on each route so the page fades/slides in (page-enter animation).
+function AnimatedRoutes() {
+  const location = useLocation()
+  return (
+    <div key={location.pathname} className="page-enter">
+      <Routes location={location}>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        {/* Hidden, unlinked case-study route — reachable only by direct URL for review */}
+        <Route path="/projects/:id" element={<CaseStudyPage />} />
+        <Route path="/skills" element={<SkillsPage />} />
+        <Route path="/experience" element={<ExperiencePage />} />
+      </Routes>
+    </div>
+  )
+}
 
 export default function App() {
   return (
@@ -19,14 +36,7 @@ export default function App() {
         </a>
         <Navbar />
         <main id="main" tabIndex={-1} className="flex-1 outline-none">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            {/* Hidden, unlinked case-study route — reachable only by direct URL for review */}
-            <Route path="/projects/:id" element={<CaseStudyPage />} />
-            <Route path="/skills" element={<SkillsPage />} />
-            <Route path="/experience" element={<ExperiencePage />} />
-          </Routes>
+          <AnimatedRoutes />
         </main>
         <Footer />
       </div>
