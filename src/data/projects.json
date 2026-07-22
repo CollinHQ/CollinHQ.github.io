@@ -1,6 +1,7 @@
 [
   {
     "id": "fintech-hq-build-out",
+    "case_study_ready": true,
     "icon": "🏗️",
     "title": "Fintech HQ Office Build-Out",
     "status": "Completed",
@@ -119,6 +120,7 @@
   },
   {
     "id": "bridge-hq-relocation",
+    "case_study_ready": true,
     "icon": "📦",
     "title": "BRIDGE Housing HQ Relocation",
     "status": "Completed",
@@ -198,6 +200,7 @@
   },
   {
     "id": "bridge-records-migration",
+    "case_study_ready": true,
     "icon": "🗄️",
     "title": "Records Migration: Iron Mountain → Corodata",
     "status": "Completed",
