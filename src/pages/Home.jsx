@@ -1,5 +1,4 @@
 import Hero from '../components/Hero'
-import StatsBar from '../components/StatsBar'
 import About from '../components/About'
 import FeaturedWork from '../components/FeaturedWork'
 import Contact from '../components/Contact'
@@ -13,7 +12,6 @@ export default function Home() {
     <>
       <Hero />
       <Reveal><About /></Reveal>
-      <Reveal><StatsBar /></Reveal>
       <Reveal><FeaturedWork /></Reveal>
       <Reveal><Contact /></Reveal>
     </>

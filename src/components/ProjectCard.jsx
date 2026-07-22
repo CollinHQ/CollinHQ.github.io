@@ -1,13 +1,19 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function ProjectCard({ project }) {
   const [flipped, setFlipped] = useState(false)
   const [imgFailed, setImgFailed] = useState(false)
+  const [imgLoaded, setImgLoaded] = useState(false)
+  const imgRef = useRef(null)
   const { id, icon, title, status, description, tags, numbers, key_highlights, images, case_study_ready } = project
 
   const heroImg = images?.hero
   const showImg = heroImg && !imgFailed
+
+  useEffect(() => {
+    if (imgRef.current?.complete) setImgLoaded(true)
+  }, [])
 
   const statEntries = Object.entries(numbers || {}).filter(
     ([, v]) => v !== null && v !== true && v !== false
@@ -17,7 +23,7 @@ export default function ProjectCard({ project }) {
 
   return (
     <div
-      className="cursor-pointer h-full min-h-[18rem]"
+      className="group cursor-pointer h-full min-h-[18rem] transition-transform duration-300 hover:-translate-y-1.5"
       style={{ perspective: '1000px' }}
       onClick={() => setFlipped(f => !f)}
       role="button"
@@ -40,16 +46,18 @@ export default function ProjectCard({ project }) {
       >
         {/* Front */}
         <div
-          className="col-start-1 row-start-1 bg-[#1a2535] rounded-2xl overflow-hidden flex flex-col"
+          className="col-start-1 row-start-1 bg-[#1a2535] rounded-2xl overflow-hidden flex flex-col ring-1 ring-transparent transition-shadow duration-300 group-hover:ring-yellow-600/40 group-hover:shadow-xl group-hover:shadow-black/40"
           style={{ backfaceVisibility: 'hidden' }}
         >
           {/* Hero photo — renders only when the file exists */}
           {showImg && (
             <img
+              ref={imgRef}
               src={heroImg}
               alt={title}
               onError={() => setImgFailed(true)}
-              className="w-full h-36 object-cover"
+              onLoad={() => setImgLoaded(true)}
+              className={`w-full h-36 object-cover transition-opacity duration-700 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
             />
           )}
 

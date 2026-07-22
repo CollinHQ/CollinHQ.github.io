@@ -14,6 +14,47 @@
   }
 }
 
+/* Page-enter transition (keyed per route in App) */
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter { animation: pageEnter 0.45s ease-out both; }
+
+/* Ambient "aurora" drift for the background glow blobs */
+@keyframes auroraA {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(-5%, 4%, 0) scale(1.12); }
+}
+@keyframes auroraB {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(6%, -3%, 0) scale(1.08); }
+}
+.aurora-a { animation: auroraA 16s ease-in-out infinite alternate; }
+.aurora-b { animation: auroraB 22s ease-in-out infinite alternate; }
+
+/* Link underline that grows in from the left on hover/focus */
+.link-underline { position: relative; }
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.link-underline:hover::after,
+.link-underline:focus-visible::after { transform: scaleX(1); }
+
+/* Faint film-grain texture (used as a low-opacity fixed overlay) */
+.bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
 /* Respect users who prefer reduced motion: neutralize looping + 3D animations */
 @media (prefers-reduced-motion: reduce) {
   *,
