@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import projects from '../data/projects.json'
 import ProjectCard from './ProjectCard'
 import SectionHeading from './SectionHeading'
+import Reveal from './Reveal'
 
 const featured = ['fintech-hq-build-out', 'klaviyo-office-redesign', 'bridge-hq-relocation']
 const featuredProjects = featured.map(id => projects.find(p => p.id === id)).filter(Boolean)
@@ -24,8 +25,10 @@ export default function FeaturedWork() {
           }
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {featuredProjects.map((project, i) => (
+            <Reveal key={project.id} delay={i * 90} className="h-full">
+              <ProjectCard project={project} />
+            </Reveal>
           ))}
         </div>
       </div>

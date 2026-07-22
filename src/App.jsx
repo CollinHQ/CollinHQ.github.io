@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollProgress from './components/ScrollProgress'
 import Home from './pages/Home'
 import ProjectsPage from './pages/ProjectsPage'
 import CaseStudyPage from './pages/CaseStudyPage'
@@ -27,6 +28,9 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollProgress />
+      {/* Faint film grain over the whole page for editorial depth */}
+      <div aria-hidden="true" className="bg-grain pointer-events-none fixed inset-0 z-[1] opacity-[0.04]" />
       <div className="bg-[#0d1b2a] min-h-screen flex flex-col">
         <a
           href="#main"

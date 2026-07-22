@@ -39,11 +39,31 @@ export default function Hero() {
   const [photoFailed, setPhotoFailed] = useState(false)
   const [imgLoaded, setImgLoaded] = useState(false)
   const [scrollY, setScrollY] = useState(0)
+  const [spot, setSpot] = useState({ x: 0, y: 0, active: false })
   const headshotRef = useRef(null)
+  const sectionRef = useRef(null)
 
   // Cached images may already be complete before onLoad binds.
   useEffect(() => {
     if (headshotRef.current?.complete) setImgLoaded(true)
+  }, [])
+
+  // Soft cursor-follow spotlight (desktop pointers only, off for reduced-motion).
+  useEffect(() => {
+    if (prefersReducedMotion() || !window.matchMedia?.('(pointer: fine)').matches) return
+    const el = sectionRef.current
+    if (!el) return
+    const onMove = (e) => {
+      const r = el.getBoundingClientRect()
+      setSpot({ x: e.clientX - r.left, y: e.clientY - r.top, active: true })
+    }
+    const onLeave = () => setSpot((s) => ({ ...s, active: false }))
+    el.addEventListener('mousemove', onMove)
+    el.addEventListener('mouseleave', onLeave)
+    return () => {
+      el.removeEventListener('mousemove', onMove)
+      el.removeEventListener('mouseleave', onLeave)
+    }
   }, [])
 
   // Subtle scroll parallax on the ambient glow (skipped for reduced-motion users).
@@ -70,7 +90,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center px-6 pt-28 pb-16 overflow-hidden">
+    <section ref={sectionRef} className="relative min-h-screen flex items-center px-6 pt-28 pb-16 overflow-hidden">
       {/* Subtle depth so the background isn't a flat rectangle: a slow-drifting
           "aurora" plus a gentle scroll parallax. */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
@@ -82,6 +102,16 @@ export default function Hero() {
           <div className="aurora-b absolute -bottom-24 left-1/4 w-[30rem] h-[30rem] rounded-full bg-yellow-600/[0.06] blur-[120px]" />
         </div>
       </div>
+
+      {/* Cursor-follow spotlight */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10 transition-opacity duration-300"
+        style={{
+          opacity: spot.active ? 1 : 0,
+          background: `radial-gradient(340px circle at ${spot.x}px ${spot.y}px, rgba(234,179,8,0.10), transparent 70%)`,
+        }}
+      />
 
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid lg:grid-cols-[1.5fr_1fr] gap-12 lg:gap-16 items-center">

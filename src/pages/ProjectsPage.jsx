@@ -1,5 +1,6 @@
 import projects from '../data/projects.json'
 import ProjectCard from '../components/ProjectCard'
+import Reveal from '../components/Reveal'
 import usePageTitle from '../hooks/usePageTitle'
 
 const featured = ['fintech-hq-build-out', 'klaviyo-office-redesign', 'klaviyo-coi-tracker', 'bridge-hq-relocation', 'bridge-records-migration', 'bridge-amenity-program', 'optisign-werqwise', 'events-culture']
@@ -24,8 +25,10 @@ export default function ProjectsPage() {
           A selection of workplace operations work: office build-outs, redesigns, relocations, and the everyday systems and programs that keep a workplace running, driven from planning through completion.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {featuredProjects.map((project, i) => (
+            <Reveal key={project.id} delay={(i % 3) * 80} className="h-full">
+              <ProjectCard project={project} />
+            </Reveal>
           ))}
         </div>
       </div>
