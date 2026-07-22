@@ -276,6 +276,24 @@
     ]
   },
   {
+    "id": "career-break-2020",
+    "company": "Career Break",
+    "title": "COVID-19 Pandemic",
+    "location": "",
+    "start": "Apr 2020",
+    "end": "Aug 2021",
+    "bullets": [
+      {
+        "id": "career-break-1",
+        "short": "A planned career pause during the global COVID-19 pandemic; returned to workplace operations as offices reopened.",
+        "has_detail": false,
+        "detail_needed": null,
+        "skills": [],
+        "detail": null
+      }
+    ]
+  },
+  {
     "id": "connections-2019",
     "company": "ConnectionsSF",
     "title": "Office Manager",
