@@ -25,3 +25,6 @@ Non-obvious notes:
   asset tools that use `sharp` and read source files from `$HOME`; they are not part of
   the dev/build flow and are not needed to run the site.
 - Deployment is automatic via `.github/workflows/deploy.yml` (Node 20) on push to `main`.
+- Privacy: the GitHub repo and the published GitHub Pages site are intentionally **public**
+  (it's a portfolio). The owner keeps only their **Cursor Cloud environment and secrets
+  personal-scoped** (not team-shared) — set scope to Personal in the Cursor dashboard.
