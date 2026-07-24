@@ -17,7 +17,7 @@
       },
       {
         "id": "cushman-2",
-        "short": "Coordinating the client's SF headquarters relocation end-to-end: mover and installation bids (~100 workstation monitors), building management logistics, and move-day sequencing, the third HQ move of my career",
+        "short": "Coordinating the client's SF headquarters relocation end-to-end: mover and installation bids (~100 workstation monitors), building management logistics, and move-day sequencing",
         "has_detail": false,
         "detail_needed": "Detail to be written once the move completes.",
         "skills": ["Vendor & Contractor Management", "Space Planning", "Workplace Operations"],
@@ -272,6 +272,24 @@
         "detail_needed": null,
         "skills": ["Workplace Operations", "Facilities Management"],
         "detail": "Front desk at a high-volume coworking space is really a concierge business. Daily mail and package receiving ran through Envoy: scan the label, the member gets auto-notified, and the hand-off happens at the front. I onboarded new member groups and built the location guide (emergency exits, photos, the details people actually need on day one), and members used our team like their EAs for calendar management, meeting-room logistics, and lunch orders on the fly."
+      }
+    ]
+  },
+  {
+    "id": "career-break-2020",
+    "company": "Career Break",
+    "title": "COVID-19 Pandemic",
+    "location": "",
+    "start": "Apr 2020",
+    "end": "Aug 2021",
+    "bullets": [
+      {
+        "id": "career-break-1",
+        "short": "A planned career pause during the global COVID-19 pandemic; returned to workplace operations as offices reopened.",
+        "has_detail": false,
+        "detail_needed": null,
+        "skills": [],
+        "detail": null
       }
     ]
   },

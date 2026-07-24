@@ -1,23 +1,30 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function ProjectCard({ project }) {
   const [flipped, setFlipped] = useState(false)
   const [imgFailed, setImgFailed] = useState(false)
-  const { id, icon, title, status, description, tags, numbers, key_highlights, images, case_study_ready } = project
+  const [imgLoaded, setImgLoaded] = useState(false)
+  const imgRef = useRef(null)
+  const { id, icon, title, status, description, tags, numbers, key_highlights, images, case_study_ready, outcome_headline } = project
 
   const heroImg = images?.hero
   const showImg = heroImg && !imgFailed
+
+  useEffect(() => {
+    if (imgRef.current?.complete) setImgLoaded(true)
+  }, [])
 
   const statEntries = Object.entries(numbers || {}).filter(
     ([, v]) => v !== null && v !== true && v !== false
   )
 
+  // Prefer the headline result on the front for instant scannability; keep supporting stats.
   const frontHighlights = (key_highlights || []).slice(0, 2)
 
   return (
     <div
-      className="cursor-pointer h-full min-h-[18rem]"
+      className="group cursor-pointer h-full min-h-[18rem] transition-transform duration-300 hover:-translate-y-1.5"
       style={{ perspective: '1000px' }}
       onClick={() => setFlipped(f => !f)}
       role="button"
@@ -40,16 +47,18 @@ export default function ProjectCard({ project }) {
       >
         {/* Front */}
         <div
-          className="col-start-1 row-start-1 bg-[#1a2535] rounded-2xl overflow-hidden flex flex-col"
+          className="col-start-1 row-start-1 bg-[#1a2535] rounded-2xl overflow-hidden flex flex-col ring-1 ring-transparent transition-shadow duration-300 group-hover:ring-yellow-600/40 group-hover:shadow-xl group-hover:shadow-black/40"
           style={{ backfaceVisibility: 'hidden' }}
         >
           {/* Hero photo — renders only when the file exists */}
           {showImg && (
             <img
+              ref={imgRef}
               src={heroImg}
               alt={title}
               onError={() => setImgFailed(true)}
-              className="w-full h-36 object-cover"
+              onLoad={() => setImgLoaded(true)}
+              className={`w-full h-36 object-cover transition-opacity duration-700 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
             />
           )}
 
@@ -71,6 +80,13 @@ export default function ProjectCard({ project }) {
               <h3 className="font-serif text-xl font-bold text-white mb-2">{title}</h3>
               <p className="text-slate-400 text-sm leading-relaxed">{description}</p>
             </div>
+
+            {outcome_headline && (
+              <div className="rounded-lg bg-yellow-500/5 ring-1 ring-yellow-600/30 px-3 py-2.5 flex items-baseline gap-2.5">
+                <span className="font-serif text-2xl font-bold text-yellow-500 leading-none">{outcome_headline.value}</span>
+                <span className="text-slate-400 text-xs uppercase tracking-wider">{outcome_headline.label}</span>
+              </div>
+            )}
 
             {frontHighlights.length > 0 && (
               <ul className="space-y-1.5">

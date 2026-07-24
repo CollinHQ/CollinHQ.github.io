@@ -50,17 +50,19 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
         <p className="text-gray-500 text-xs mt-2 leading-relaxed max-w-xl mx-auto">{about.one_liner}</p>
       </div>
 
-      {resume.map((role, roleIdx) => (
-        <div key={role.id}>
+      {resume.map((role, roleIdx) => {
+        const isBreak = role.id === 'career-break-2020'
+        return (
+        <div key={role.id} className={isBreak ? 'bg-amber-50/60' : undefined}>
           <div className={`px-8 ${roleIdx > 0 ? 'pt-1.5' : 'pt-3'} pb-0`}>
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
               <div>
-                <span className="font-bold text-gray-900 text-sm">{role.company}</span>
-                <span className="text-gray-500 text-sm"> — {role.title}</span>
+                <span className={`font-bold text-sm ${isBreak ? 'text-amber-800' : 'text-gray-900'}`}>{role.company}</span>
+                <span className={`text-sm ${isBreak ? 'text-amber-700/80' : 'text-gray-500'}`}> — {role.title}</span>
               </div>
               <span className="text-gray-500 text-xs whitespace-nowrap">{role.start} – {role.end}</span>
             </div>
-            <p className="text-gray-400 text-xs">{role.location}</p>
+            {role.location ? <p className="text-gray-400 text-xs">{role.location}</p> : null}
           </div>
 
           <ul className={`px-8 ${roleIdx === resume.length - 1 ? 'pb-5' : 'pb-1'}`}>
@@ -140,7 +142,8 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
             })}
           </ul>
         </div>
-      ))}
+        )
+      })}
     </div>
   )
 }

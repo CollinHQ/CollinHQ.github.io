@@ -1,4 +1,5 @@
 import about from '../data/about.json'
+import SectionHeading from './SectionHeading'
 
 function MailIcon() {
   return (
@@ -29,13 +30,17 @@ function DownloadIcon() {
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-6 py-24 scroll-mt-16">
+    <section id="contact" className="relative px-6 py-24 scroll-mt-16 overflow-hidden">
+      {/* Subtle depth to match the hero */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute left-1/2 -translate-x-1/2 top-4 w-[36rem] h-[36rem] max-w-full rounded-full bg-yellow-500/[0.07] blur-[130px]" />
+      </div>
+
       <div className="max-w-3xl mx-auto text-center">
-        <p className="text-yellow-500 text-xs uppercase tracking-widest mb-2">Contact</p>
-        <h2 className="font-serif text-4xl font-bold text-white mb-4">Get in Touch</h2>
+        <SectionHeading align="center" eyebrow="Contact" title="Get in Touch" />
         <p className="text-slate-400 text-base leading-relaxed mb-10 max-w-xl mx-auto">
-          Open to conversations about workplace operations roles, office build-outs,
-          and how I can help your team. The fastest way to reach me is email.
+          Hiring for workplace operations, facilities, or a build-out/relocation lead?
+          Email is the fastest way to reach me — happy to walk through the work.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
