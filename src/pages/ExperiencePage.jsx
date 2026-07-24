@@ -50,8 +50,11 @@ export default function ExperiencePage() {
           Background
         </p>
         <h1 className="font-serif text-5xl font-bold text-white mb-3">Experience</h1>
+        <p className="text-slate-300 text-base mb-2 max-w-2xl leading-relaxed">
+          From hospitality and coworking through nonprofit and tech: office build-outs, relocations, vendor ops, and the day-to-day that makes a workplace run.
+        </p>
         <p className="text-slate-400 text-sm mb-10 max-w-2xl">
-          Click <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true" focusable="false" className="inline-block align-middle text-yellow-500"><polyline points="6 9 12 15 18 9" /></svg> on any bullet to expand the detail. Skill tags link to the Skills page.
+          Click <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true" focusable="false" className="inline-block align-middle text-yellow-500"><polyline points="6 9 12 15 18 9" /></svg> on any bullet to expand the full story. Skill tags jump to the Skills page.
         </p>
 
         {/* Interactive Resume */}

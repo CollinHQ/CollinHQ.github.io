@@ -6,7 +6,7 @@ export default function ProjectCard({ project }) {
   const [imgFailed, setImgFailed] = useState(false)
   const [imgLoaded, setImgLoaded] = useState(false)
   const imgRef = useRef(null)
-  const { id, icon, title, status, description, tags, numbers, key_highlights, images, case_study_ready } = project
+  const { id, icon, title, status, description, tags, numbers, key_highlights, images, case_study_ready, outcome_headline } = project
 
   const heroImg = images?.hero
   const showImg = heroImg && !imgFailed
@@ -19,6 +19,7 @@ export default function ProjectCard({ project }) {
     ([, v]) => v !== null && v !== true && v !== false
   )
 
+  // Prefer the headline result on the front for instant scannability; keep supporting stats.
   const frontHighlights = (key_highlights || []).slice(0, 2)
 
   return (
@@ -79,6 +80,13 @@ export default function ProjectCard({ project }) {
               <h3 className="font-serif text-xl font-bold text-white mb-2">{title}</h3>
               <p className="text-slate-400 text-sm leading-relaxed">{description}</p>
             </div>
+
+            {outcome_headline && (
+              <div className="rounded-lg bg-yellow-500/5 ring-1 ring-yellow-600/30 px-3 py-2.5 flex items-baseline gap-2.5">
+                <span className="font-serif text-2xl font-bold text-yellow-500 leading-none">{outcome_headline.value}</span>
+                <span className="text-slate-400 text-xs uppercase tracking-wider">{outcome_headline.label}</span>
+              </div>
+            )}
 
             {frontHighlights.length > 0 && (
               <ul className="space-y-1.5">

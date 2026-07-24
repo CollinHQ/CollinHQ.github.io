@@ -21,8 +21,11 @@ export default function ProjectsPage() {
           Portfolio
         </p>
         <h1 className="font-serif text-5xl font-bold text-white mb-4">Projects</h1>
-        <p className="text-slate-400 text-lg mb-14 max-w-2xl">
-          A selection of workplace operations work: office build-outs, redesigns, relocations, and the everyday systems and programs that keep a workplace running, driven from planning through completion.
+        <p className="text-slate-400 text-lg mb-4 max-w-2xl">
+          Office build-outs, redesigns, relocations, and the systems that keep a workplace running — from planning through completion.
+        </p>
+        <p className="text-slate-500 text-sm mb-14 max-w-2xl">
+          Flip any card for more detail. Case studies open for the deepest dive.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredProjects.map((project, i) => (

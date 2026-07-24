@@ -39,8 +39,8 @@ export default function Contact() {
       <div className="max-w-3xl mx-auto text-center">
         <SectionHeading align="center" eyebrow="Contact" title="Get in Touch" />
         <p className="text-slate-400 text-base leading-relaxed mb-10 max-w-xl mx-auto">
-          Open to conversations about workplace operations roles, office build-outs,
-          and how I can help your team. The fastest way to reach me is email.
+          Hiring for workplace operations, facilities, or a build-out/relocation lead?
+          Email is the fastest way to reach me — happy to walk through the work.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
