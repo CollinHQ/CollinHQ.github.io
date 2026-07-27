@@ -3,7 +3,17 @@ import ProjectCard from '../components/ProjectCard'
 import Reveal from '../components/Reveal'
 import usePageTitle from '../hooks/usePageTitle'
 
-const featured = ['fintech-hq-build-out', 'klaviyo-office-redesign', 'klaviyo-coi-tracker', 'bridge-hq-relocation', 'bridge-records-migration', 'bridge-amenity-program', 'optisign-werqwise', 'events-culture']
+// Lead with case studies and strongest outcomes so a hiring manager sees proof first.
+const featured = [
+  'bridge-hq-relocation',
+  'fintech-hq-build-out',
+  'klaviyo-office-redesign',
+  'bridge-records-migration',
+  'klaviyo-coi-tracker',
+  'optisign-werqwise',
+  'bridge-amenity-program',
+  'events-culture',
+]
 const featuredProjects = featured.map(id => projects.find(p => p.id === id)).filter(Boolean)
 
 export default function ProjectsPage() {
@@ -25,7 +35,7 @@ export default function ProjectsPage() {
           Office build-outs, redesigns, relocations, and the systems that keep a workplace running — from planning through completion.
         </p>
         <p className="text-slate-500 text-sm mb-14 max-w-2xl">
-          Flip any card for more detail. Case studies open for the deepest dive.
+          Flip any card for more detail. Open a case study for the full story — metrics, milestones, and what I drove.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredProjects.map((project, i) => (

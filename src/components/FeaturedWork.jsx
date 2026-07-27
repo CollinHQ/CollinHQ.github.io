@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard'
 import SectionHeading from './SectionHeading'
 import Reveal from './Reveal'
 
-const featured = ['fintech-hq-build-out', 'klaviyo-office-redesign', 'bridge-hq-relocation']
+const featured = ['bridge-hq-relocation', 'fintech-hq-build-out', 'klaviyo-office-redesign']
 const featuredProjects = featured.map(id => projects.find(p => p.id === id)).filter(Boolean)
 
 export default function FeaturedWork() {

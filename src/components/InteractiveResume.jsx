@@ -53,9 +53,9 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
       {resume.map((role, roleIdx) => {
         const isBreak = role.id === 'career-break-2020'
         return (
-        <div key={role.id} className={isBreak ? 'bg-amber-50/60' : undefined}>
-          <div className={`px-8 ${roleIdx > 0 ? 'pt-1.5' : 'pt-3'} pb-0`}>
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+        <div key={role.id} id={`role-${role.id}`} className={`scroll-mt-20 ${isBreak ? 'bg-amber-50/60' : ''}`}>
+          <div className={`px-8 ${roleIdx > 0 ? 'pt-3' : 'pt-3'} pb-0`}>
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">
               <div>
                 <span className={`font-bold text-sm ${isBreak ? 'text-amber-800' : 'text-gray-900'}`}>{role.company}</span>
                 <span className={`text-sm ${isBreak ? 'text-amber-700/80' : 'text-gray-500'}`}> — {role.title}</span>
@@ -63,6 +63,11 @@ export default function InteractiveResume({ pinnedSkill, onClearPin }) {
               <span className="text-gray-500 text-xs whitespace-nowrap">{role.start} – {role.end}</span>
             </div>
             {role.location ? <p className="text-gray-400 text-xs">{role.location}</p> : null}
+            {role.signature ? (
+              <p className={`text-xs leading-relaxed mt-1.5 mb-0.5 ${isBreak ? 'text-amber-800/90' : 'text-amber-800'}`}>
+                {role.signature}
+              </p>
+            ) : null}
           </div>
 
           <ul className={`px-8 ${roleIdx === resume.length - 1 ? 'pb-5' : 'pb-1'}`}>

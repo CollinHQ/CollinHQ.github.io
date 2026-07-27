@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import resume from '../data/resume.json'
 import InteractiveResume from '../components/InteractiveResume'
 import Testimonials from '../components/Testimonials'
 import usePageTitle from '../hooks/usePageTitle'
@@ -53,11 +54,36 @@ export default function ExperiencePage() {
         <p className="text-slate-300 text-base mb-2 max-w-2xl leading-relaxed">
           From hospitality and coworking through nonprofit and tech: office build-outs, relocations, vendor ops, and the day-to-day that makes a workplace run.
         </p>
-        <p className="text-slate-400 text-sm mb-10 max-w-2xl">
-          Click <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true" focusable="false" className="inline-block align-middle text-yellow-500"><polyline points="6 9 12 15 18 9" /></svg> on any bullet to expand the full story. Skill tags jump to the Skills page.
+        <p className="text-slate-400 text-sm mb-8 max-w-2xl">
+          Scan the path below, then open any role for the full story. Click <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true" focusable="false" className="inline-block align-middle text-yellow-500"><polyline points="6 9 12 15 18 9" /></svg> on a bullet to expand detail. Skill tags jump to the Skills page.
         </p>
 
-        {/* Interactive Resume */}
+        {/* At-a-glance career path — scannable index into the full résumé below (no content removed). */}
+        <nav aria-label="Career path at a glance" className="mb-10 rounded-2xl border border-yellow-600/20 bg-[#1a2535]/60 p-5">
+          <p className="text-yellow-500 text-xs uppercase tracking-[0.2em] mb-4">At a glance</p>
+          <ol className="space-y-2.5">
+            {resume.map((role) => (
+              <li key={role.id}>
+                <a
+                  href={`#role-${role.id}`}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    document.getElementById(`role-${role.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                  }}
+                  className="group flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5 sm:gap-4 rounded-lg px-2 py-1.5 -mx-2 hover:bg-yellow-500/5 transition-colors"
+                >
+                  <span className="text-sm text-slate-200 group-hover:text-yellow-500 transition-colors">
+                    <span className="font-semibold">{role.company}</span>
+                    <span className="text-slate-400"> — {role.title}</span>
+                  </span>
+                  <span className="text-slate-500 text-xs whitespace-nowrap">{role.start} – {role.end}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        {/* Interactive Resume — full detail preserved */}
         <section id="interactive-resume" ref={resumeRef} className="scroll-mt-16">
           <InteractiveResume pinnedSkill={pinnedSkill} onClearPin={clearPin} />
         </section>

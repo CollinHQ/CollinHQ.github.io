@@ -75,6 +75,7 @@
     "numbers": {
       "under_budget": "$30K"
     },
+    "outcome_headline": { "value": "$30K", "label": "Under budget" },
     "images": {
       "hero": "/assets/images/projects/klaviyo-office-redesign/hero.jpg",
       "before": "/assets/images/projects/klaviyo-office-redesign/before.jpg",
@@ -87,6 +88,7 @@
   },
   {
     "id": "klaviyo-coi-tracker",
+    "case_study_ready": true,
     "icon": "🛡️",
     "title": "Automated COI Compliance Tracker",
     "status": "Completed",
@@ -249,6 +251,7 @@
   },
   {
     "id": "optisign-werqwise",
+    "case_study_ready": true,
     "icon": "🖥️",
     "title": "OptiSigns Digital Signage Rollout",
     "status": "Completed",
