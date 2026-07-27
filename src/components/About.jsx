@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import about from '../data/about.json'
 import SectionHeading from './SectionHeading'
 
@@ -24,6 +25,12 @@ export default function About() {
                 </li>
               ))}
             </ul>
+            <Link
+              to="/skills"
+              className="inline-block mt-4 text-xs text-slate-400 hover:text-yellow-500 transition-colors"
+            >
+              See skills with proof from my experience →
+            </Link>
           </div>
         </div>
       </div>

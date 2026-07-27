@@ -35,7 +35,7 @@ export default function ProjectsPage() {
           Office build-outs, redesigns, relocations, and the systems that keep a workplace running — from planning through completion.
         </p>
         <p className="text-slate-500 text-sm mb-14 max-w-2xl">
-          Flip any card for more detail. Case studies open for the deepest dive.
+          Flip any card for more detail. Open a case study for the full story — metrics, milestones, and what I drove.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {featuredProjects.map((project, i) => (
