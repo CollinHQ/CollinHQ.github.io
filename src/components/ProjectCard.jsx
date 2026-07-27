@@ -78,15 +78,14 @@ export default function ProjectCard({ project }) {
 
             <div>
               <h3 className="font-serif text-xl font-bold text-white mb-2">{title}</h3>
+              {outcome_headline && (
+                <div className="rounded-lg bg-yellow-500/5 ring-1 ring-yellow-600/30 px-3 py-2.5 flex items-baseline gap-2.5 mb-3">
+                  <span className="font-serif text-2xl font-bold text-yellow-500 leading-none">{outcome_headline.value}</span>
+                  <span className="text-slate-400 text-xs uppercase tracking-wider">{outcome_headline.label}</span>
+                </div>
+              )}
               <p className="text-slate-400 text-sm leading-relaxed">{description}</p>
             </div>
-
-            {outcome_headline && (
-              <div className="rounded-lg bg-yellow-500/5 ring-1 ring-yellow-600/30 px-3 py-2.5 flex items-baseline gap-2.5">
-                <span className="font-serif text-2xl font-bold text-yellow-500 leading-none">{outcome_headline.value}</span>
-                <span className="text-slate-400 text-xs uppercase tracking-wider">{outcome_headline.label}</span>
-              </div>
-            )}
 
             {frontHighlights.length > 0 && (
               <ul className="space-y-1.5">

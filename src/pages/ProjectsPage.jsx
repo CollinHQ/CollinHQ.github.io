@@ -3,7 +3,17 @@ import ProjectCard from '../components/ProjectCard'
 import Reveal from '../components/Reveal'
 import usePageTitle from '../hooks/usePageTitle'
 
-const featured = ['fintech-hq-build-out', 'klaviyo-office-redesign', 'klaviyo-coi-tracker', 'bridge-hq-relocation', 'bridge-records-migration', 'bridge-amenity-program', 'optisign-werqwise', 'events-culture']
+// Lead with case studies and strongest outcomes so a hiring manager sees proof first.
+const featured = [
+  'bridge-hq-relocation',
+  'fintech-hq-build-out',
+  'klaviyo-office-redesign',
+  'bridge-records-migration',
+  'klaviyo-coi-tracker',
+  'optisign-werqwise',
+  'bridge-amenity-program',
+  'events-culture',
+]
 const featuredProjects = featured.map(id => projects.find(p => p.id === id)).filter(Boolean)
 
 export default function ProjectsPage() {
