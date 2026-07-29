@@ -1,0 +1,121 @@
+{
+  "profile": {
+    "name": "Collin Brown",
+    "role": "Workplace operations and employee experience | Global commercial real estate firm",
+    "location": "San Francisco Bay Area",
+    "headline": "I make workplaces reliable, welcoming, and ready for what comes next.",
+    "summary": "As a Workplace Coordinator with a global commercial real estate firm, I support workplace operations and employee experience for a technology client in San Francisco. I connect people, facilities, vendors, and daily service needs so teams know what is happening, who owns the next step, and what good looks like.",
+    "target_roles": [
+      "Office Manager",
+      "Workplace Coordinator",
+      "Workplace Manager",
+      "Employee Experience Coordinator",
+      "Employee Experience Manager"
+    ]
+  },
+  "projects": [
+    {
+      "slug": "sf-hq-workplace-operations",
+      "project_name": "San Francisco headquarters workplace program",
+      "project_type": "Integrated workplace and facilities operations",
+      "location": "San Francisco, California",
+      "status": "Active",
+      "updated": "Weekly",
+      "tags": [
+        "Workplace operations",
+        "Employee experience",
+        "Service delivery"
+      ],
+      "summary": "Supporting a consistent workplace experience through clear ownership, dependable service routines, and close coordination between technology-client stakeholders and commercial real estate service partners.",
+      "stats": [
+        {
+          "value": "Global CRE",
+          "label": "Service partner"
+        },
+        {
+          "value": "Active",
+          "label": "Program status"
+        },
+        {
+          "value": "Weekly",
+          "label": "Review cadence"
+        },
+        {
+          "value": "End-to-end",
+          "label": "Service coverage"
+        }
+      ],
+      "narrative": {
+        "challenge": "A strong workplace experience depends on many services that people rarely notice until something breaks. Requests, vendor work, facilities needs, and team priorities must stay connected without adding noise for employees.",
+        "solution": "Created a clear operating rhythm across technology-client stakeholders and commercial real estate service partners. Each request moves from intake to an owner, a next step, and a documented outcome. Risks surface early, and partners have the context they need to act.",
+        "outcome": "The workplace runs with clearer ownership, stronger follow-through, and a more consistent employee experience. Weekly updates preserve decisions, service improvements, and evidence that can demonstrate the program’s impact."
+      },
+      "wins": [
+        "Coordinated daily workplace service delivery across technology-client stakeholders and commercial real estate service partners.",
+        "Turned workplace requests into clear priorities, owners, and next steps.",
+        "Tracked service outcomes, recurring issues, and evidence of workplace improvements in one weekly record."
+      ],
+      "images": {
+        "hero": "",
+        "before": "",
+        "after": ""
+      },
+      "asset_gaps": [
+        "Employee experience or workplace activation",
+        "Front-of-house service moment",
+        "Before-and-after proof of a service improvement"
+      ]
+    }
+  ],
+  "preview_items": [
+    {
+      "id": "workplace-move-bid",
+      "placement": "selected-work",
+      "title": "Keeping a Workplace Move Bid on Track",
+      "wording": "Coordinated a vendor walkthrough and proposal process for a workplace move, flagged a scheduling risk, and cleared a compliance issue that could have limited vendor options.",
+      "tags": [
+        "Vendor Management",
+        "Workplace Operations",
+        "Scheduling"
+      ],
+      "image": ""
+    },
+    {
+      "id": "time-sensitive-workplace-visit",
+      "placement": "program-impact",
+      "title": "Coordinating a Time-Sensitive Workplace Visit",
+      "wording": "When an external photography visit conflicted with a business-critical session, I adjusted the timing, met and escorted the visitors, and kept both activities running smoothly.",
+      "tags": [
+        "Workplace Operations",
+        "Scheduling"
+      ],
+      "image": ""
+    }
+  ],
+  "pipeline": [
+    {
+      "phase": "01",
+      "name": "Intake",
+      "location": "Technology client and CRE team",
+      "description": "Capture workplace requests, service needs, risks, and employee feedback without losing context."
+    },
+    {
+      "phase": "02",
+      "name": "Align",
+      "location": "Operating review",
+      "description": "Set the priority, owner, next step, and timeframe for each item."
+    },
+    {
+      "phase": "03",
+      "name": "Deliver",
+      "location": "Workplace services",
+      "description": "Coordinate facilities and vendor partners, then keep client stakeholders informed."
+    },
+    {
+      "phase": "04",
+      "name": "Capture",
+      "location": "Weekly record",
+      "description": "Document the outcome, impact, and proof so improvements remain visible and reusable."
+    }
+  ]
+}

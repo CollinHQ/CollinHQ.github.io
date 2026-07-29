@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://collinhq.github.io/sitemap.xml
