@@ -34,19 +34,22 @@ const svg = `
 
   <!-- Title -->
   <text x="100" y="360" fill="#cbd5e1" font-family="Georgia, serif" font-size="34" font-style="italic">
-    Workplace Operations Professional
+    Workplace Operations Manager
   </text>
 
   <!-- One-liner -->
-  <text x="100" y="450" fill="#94a3b8" font-family="-apple-system, Arial, sans-serif" font-size="26">
-    7+ years building scalable systems, optimizing vendor performance,
+  <text x="100" y="450" fill="#94a3b8" font-family="-apple-system, Arial, sans-serif" font-size="22">
+    7+ years turning empty shells into offices people are genuinely glad to walk into.
   </text>
-  <text x="100" y="488" fill="#94a3b8" font-family="-apple-system, Arial, sans-serif" font-size="26">
-    and leading office environments across high-growth companies.
+  <text x="100" y="488" fill="#94a3b8" font-family="-apple-system, Arial, sans-serif" font-size="22">
+    Most recently a 13,000 sq ft, 3-floor SF build-out run with no general contractor,
+  </text>
+  <text x="100" y="526" fill="#94a3b8" font-family="-apple-system, Arial, sans-serif" font-size="22">
+    plus the vendors, budgets, and everyday details that make a space work for the people in it.
   </text>
 
   <!-- Footer URL -->
-  <text x="100" y="570" fill="#64748b" font-family="-apple-system, Arial, sans-serif" font-size="22" letter-spacing="2">
+  <text x="100" y="585" fill="#64748b" font-family="-apple-system, Arial, sans-serif" font-size="22" letter-spacing="2">
     collinhq.github.io
   </text>
 
