@@ -1,11 +1,22 @@
 # Keep track of work accomplishments
 
+Two ways to log wins — plus an **agent** that can gather candidates for you.
+
 ## Use this today
 
 ```bash
+# Dump rough notes anytime
+# → docs/wins-inbox.md
+
+# Collect candidates from inbox + current role
+npm run collect-wins
+
 # Publish a keeper to the site feed
 npm run log-win -- --win "What you finished" --type currently
 ```
+
+Or tell Cursor: **“Run the accomplishments collector”**  
+→ brief lives at [`agents/accomplishments-collector.md`](./agents/accomplishments-collector.md)
 
 ---
 
