@@ -75,6 +75,19 @@ Photo worth taking? Add it to that project's `photos_needed` while the thing is
 still standing. See the asset-gap note in
 [`agents/accomplishments-collector.md`](./agents/accomplishments-collector.md).
 
+When you have the photos, import them from any folder — dry run first, nothing
+is written without `--apply`, and your originals are never modified:
+
+```bash
+npm run photos -- --list                      # which projects still need images
+npm run photos -- --from "~/Downloads/Some Folder" --project fintech-hq-build-out
+npm run photos -- --from "~/Downloads/Some Folder" --project fintech-hq-build-out \
+  --map hero="Lobby.jpg" --map before="Shell.jpg" --apply
+```
+
+It reads destinations from `projects.json`, so files land exactly where the site
+looks for them, downscaled to 1600px and stripped of EXIF (including location).
+
 ## What counts as a “win” (keep it simple)
 
 Write **one sentence** that a hiring manager could understand:

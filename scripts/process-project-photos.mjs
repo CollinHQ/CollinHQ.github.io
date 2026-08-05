@@ -1,3 +1,7 @@
+// SUPERSEDED by scripts/import-project-photos.mjs, which takes any folder and a
+// project id instead of a hardcoded list. Kept as the record of which source
+// files became the committed klaviyo-office-redesign images.
+//
 // Optimize source photos into web-ready project images.
 // Downscales to a sensible max width, re-encodes as JPEG, auto-orients from EXIF,
 // and strips metadata — turning ~3 MB phone photos into ~200–400 KB web images.
