@@ -64,6 +64,17 @@ Habit: new row → fill Name / Date / Metric → check **Publish** when it’s c
 
 ---
 
+## Deeper case-study updates
+
+The feed above is for one-liners. When a week produces enough for a real case
+study, patch `src/data/projects.json` directly — field reference in
+[`projects.schema.md`](./projects.schema.md), and append to `key_highlights` /
+`milestones_completed` rather than rewriting history.
+
+Photo worth taking? Add it to that project's `photos_needed` while the thing is
+still standing. See the asset-gap note in
+[`agents/accomplishments-collector.md`](./agents/accomplishments-collector.md).
+
 ## What counts as a “win” (keep it simple)
 
 Write **one sentence** that a hiring manager could understand:

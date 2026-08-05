@@ -26,6 +26,38 @@ Gather work accomplishments from every available source, draft them in **Collin�
 - **Do not name the current client.** The security-compliance company Collin supports via Cushman & Wakefield stays anonymized site-wide — write “a security-compliance company” / “the client”. Only Collin can lift this, and it has not been lifted.
 - Project **ids** are separate from display names: Rho's build-out is still `fintech-hq-build-out` (the published URL). Use the id when passing `--project`, and the display name in prose.
 
+## Translation rule (raw signal → impact line)
+
+Never carry raw ops language onto the site. Rewrite each signal as a line a hiring
+manager would respect — what changed, and what it protected or produced.
+
+| Raw signal | Impact line |
+|---|---|
+| “Mover bid came in high; switching the install partner for the monitors.” | Pivoted a ~100-monitor install to an alternate vendor to protect the HQ move timeline and spend. |
+| “I’m adding a Friday floor walk with a checklist.” | Built a recurring space-readiness walkthrough SOP covering every floor. |
+| “Locked the venue for ~300.” | Secured venue and production path for a ~300-guest company holiday party. |
+| “Pantry vendor markup is wild, buying differently.” | Rebuilt pantry procurement to cut markup and hold the snack program to budget. |
+
+A signal only counts if it proves one of: **timeline saved, spend controlled,
+experience improved, risk removed, scale created.** Routine activity is not a win.
+
+## Tracks
+
+File every win under one. Useful for spotting a thin quarter in one direction.
+
+1. **Relocation** — move bids, monitors, building logistics, move-day sequencing
+2. **Vendor/Spend** — procurement, approvals, COI/vendor onboarding, budget control
+3. **Space Readiness** — walkthroughs, SOPs, facilities reliability
+4. **Events** — venue, production, guest count, programming
+
+## Asset gaps
+
+When a win implies something photogenic — staged desks, move day, a pantry reset,
+event production — add a concrete item to that project's `photos_needed` in
+`src/data/projects.json` (see `docs/projects.schema.md`). Note the photo while the
+thing is still standing; it cannot be recovered later. Clear the item once the
+image lands in `public/assets/images/projects/<id>/`.
+
 ## Sources to check (in order)
 
 1. `docs/wins-inbox.md` — scratch notes  
