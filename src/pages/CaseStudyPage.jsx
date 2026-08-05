@@ -18,7 +18,10 @@ function PhotoIcon() {
 // Renders the image when the file exists. When it's missing, the deployed site
 // drops it entirely so pages read as finished; in dev we keep a labeled dashed
 // placeholder so it's obvious what photo to add.
-function Photo({ src, label, className = '', onFail }) {
+// `label` is the dev-only "go take this photo" prompt; `alt` is what a real
+// visitor's screen reader gets. They must not be the same string — once a photo
+// exists, shipping the prompt as alt text describes nothing.
+function Photo({ src, label, alt, className = '', onFail }) {
   const [failed, setFailed] = useState(false)
   if (!src || failed) {
     if (!import.meta.env.DEV) return null
@@ -32,7 +35,7 @@ function Photo({ src, label, className = '', onFail }) {
   return (
     <img
       src={src}
-      alt={label}
+      alt={alt || label}
       onError={() => { setFailed(true); onFail?.() }}
       className={`object-cover rounded-xl ${className}`}
     />
@@ -42,7 +45,7 @@ function Photo({ src, label, className = '', onFail }) {
 // Before/after pair. Path strings may point at photos that aren't on disk yet,
 // so we track load failures and hide the whole section (heading included) in the
 // deployed site once nothing is left to show. In dev the labeled placeholders stay.
-function BeforeAfter({ before, after }) {
+function BeforeAfter({ before, after, title }) {
   const [beforeFailed, setBeforeFailed] = useState(false)
   const [afterFailed, setAfterFailed] = useState(false)
   const beforeVisible = Boolean(before) && !beforeFailed
@@ -52,8 +55,8 @@ function BeforeAfter({ before, after }) {
     <section className="mb-12">
       <h2 className="font-serif text-2xl font-bold text-white mb-4">Before / after</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <Photo src={before} label="Before photo" className="w-full h-48" onFail={() => setBeforeFailed(true)} />
-        <Photo src={after} label="After photo" className="w-full h-48" onFail={() => setAfterFailed(true)} />
+        <Photo src={before} label="Before photo" alt={`${title} — before`} className="w-full h-48" onFail={() => setBeforeFailed(true)} />
+        <Photo src={after} label="After photo" alt={`${title} — after`} className="w-full h-48" onFail={() => setAfterFailed(true)} />
       </div>
     </section>
   )
@@ -102,7 +105,7 @@ export default function CaseStudyPage() {
         {role && <p className="text-slate-400 text-base mb-8 max-w-2xl">{role}</p>}
 
         {/* Hero */}
-        <Photo src={images.hero} label="Add hero photo — the finished space, or a striking in-progress shot" className="w-full h-64 md:h-80 mb-8" />
+        <Photo src={images.hero} label="Add hero photo — the finished space, or a striking in-progress shot" alt={project.title} className="w-full h-64 md:h-80 mb-8" />
 
         {/* Metrics — headline leads, supporting numbers follow */}
         {(outcome_headline || statEntries.length > 0 || import.meta.env.DEV) && (
@@ -151,7 +154,7 @@ export default function CaseStudyPage() {
         )}
 
         {/* Before / after */}
-        <BeforeAfter before={images.before} after={images.after} />
+        <BeforeAfter before={images.before} after={images.after} title={project.title} />
 
         {/* Milestones */}
         {milestones_completed.length > 0 && (
