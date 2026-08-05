@@ -125,6 +125,26 @@ async function main() {
   console.log('Fetching published wins from Notion…')
   const wins = (await notionQueryAll(databaseId)).slice(0, LIMIT)
 
+  // Guard: an empty result would otherwise overwrite wins.json with [], and the
+  // Recent wins section renders nothing when the list is empty — so a Notion DB
+  // that is new, has nothing marked Publish, or is not shared with the
+  // integration would silently delete the feed. Refuse instead.
+  if (!wins.length) {
+    let existing = 0
+    try {
+      existing = (JSON.parse(readFileSync(OUT, 'utf8')).wins || []).length
+    } catch {
+      /* no existing file — nothing to protect */
+    }
+    if (existing) {
+      fail(
+        `Notion returned 0 published wins, but ${OUT} already has ${existing}.\n` +
+          'Refusing to overwrite. Check that rows have Publish checked and that the\n' +
+          'database is shared with the integration (⋯ → Connections). See docs/WINS-NOTION.md'
+      )
+    }
+  }
+
   const payload = {
     updated_at: new Date().toISOString().slice(0, 10),
     source: 'notion',
