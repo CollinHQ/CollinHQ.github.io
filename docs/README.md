@@ -15,13 +15,12 @@ All setup notes for the Friday work → Notion → personal harvest → GitHub f
 |---|---|
 | [**NOTION-RENAME-COLLIN-BRIEF.md**](./NOTION-RENAME-COLLIN-BRIEF.md) | Rename Tyler Brief → Collin Brief in Notion (if still showing old name) |
 | [**CAPTURE-HUB-SETUP.md**](./CAPTURE-HUB-SETUP.md) | Click-by-click: create Capture Hub in Notion |
-| [**notion-setup-agent-prompt.md**](./notion-setup-agent-prompt.md) | Copy-paste prompts for Cursor + Notion MCP (includes your URLs) |
+| [**notion-setup-agent-prompt.md**](./notion-setup-agent-prompt.md) | Copy-paste prompts for Cursor + Notion MCP (uses private run-time placeholders) |
 | [**notion-capture-hub.md**](./notion-capture-hub.md) | Longer reference spec |
 
-**Your Notion links (saved in agent prompt doc):**
-
-- Capture Hub: https://app.notion.com/p/Capture-Hub-3c14860078b080b09954c73105352c9f
-- Tracks: https://app.notion.com/p/3c14860078b080c89ba5cbfe21d44763
+**Privacy:** this repository is public, so personal Notion workspace URLs and
+object IDs are intentionally not stored here. Keep them in a private bookmark
+or password manager and paste them into the setup prompt only at run time.
 
 ## Weekly agents
 

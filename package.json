@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run check:privacy && vite build",
+    "check:privacy": "node scripts/check-public-privacy.mjs",
     "preview": "vite preview",
     "sync:wins": "node scripts/sync-wins-from-notion.mjs",
     "log-win": "node scripts/log-win.mjs",
