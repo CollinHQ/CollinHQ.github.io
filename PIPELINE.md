@@ -35,6 +35,8 @@ Friday Work Agent or auto-applies harvests into `projects.json` today.
 
 ## What to do to make it usable (minimum viable)
 
+**Start here if you’re new:** [`docs/GETTING-STARTED.md`](docs/GETTING-STARTED.md) — step-by-step with links.
+
 Do these in order. After step 3 you have a **manual but usable** loop. After step 5 the homepage feed can auto-update.
 
 ### 1. Finish / merge this branch’s seed (repo)
