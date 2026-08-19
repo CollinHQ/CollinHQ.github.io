@@ -59,14 +59,17 @@ Add one row per Track for the current week with Status = Captured and empty Impa
 
 ---
 
-## Prompt B — Create the rest of Capture Hub (send parent page URL first)
+## Prompt B — Create the rest of Capture Hub
 
-After Prompt A, open your **Capture Hub parent page** in Notion → Copy link → replace `PASTE_CAPTURE_HUB_URL` below.
+Run **after Prompt A**, or combine with **Prompt C** below.
 
 ```
 You have Notion MCP write access. Complete my **Capture Hub** under this parent page:
 
-**Capture Hub parent URL:** PASTE_CAPTURE_HUB_URL
+**Capture Hub parent URL:**
+https://app.notion.com/p/Capture-Hub-3c14860078b080b09954c73105352c9f
+
+**Capture Hub page ID:** 3c14860078b080b09954c73105352c9f
 
 Create anything that does not already exist. Do not duplicate pages/databases that already exist (Tracks database already exists at https://app.notion.com/p/3c14860078b080c89ba5cbfe21d44763).
 
