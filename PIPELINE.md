@@ -1,28 +1,35 @@
 # End-to-End Information Pipeline (Vanta / C&W)
 
-How portfolio signal is *supposed* to move from the work laptop → Notion → this repo → the live site.
+Friday **scheduled** packet (not continuous auto-scan): work laptop does the heavy
+lift → personal Notion Capture Hub → personal laptop suggests portfolio + experience-bank updates.
 
 ```
-Work Agent (Friday) → Notion Capture Hub → Personal Agent harvest → projects.json → GitHub Pages
+Work Agent (Friday scheduled)
+  → scan / gather / sanitize / sort
+  → write Friday packet to Notion Capture Hub
+Personal Agent (weekend / when ready)
+  → read Ready-for-personal rows
+  → suggest: portfolio (projects.json / wins) + Experience Bank destinations
+  → you approve → commit / push → GitHub Pages
 ```
+
+**Bridge = Notion** (structured). Use Google Drive only for photo/PDF drop folders if needed — not for the weekly text packet.
 
 ## Current status (honest)
 
-**This file is a runbook + contract, not a running system.** Nothing in this repo
-automatically scans Gmail/Slack/Granola or harvests into `projects.json` today.
+**This file is a runbook + contract, not a running system.** Nothing schedules the
+Friday Work Agent or auto-applies harvests into `projects.json` today.
 
 | Piece | Status | Notes |
 |---|---|---|
 | Phase 4 — GitHub Pages deploy | **Works** | `.github/workflows/deploy.yml` builds on push to `main` |
-| Homepage “Recent wins” sync code | **Built, not connected** | Script + Sunday cron exist on `main`; Actions logs show `NOTION_TOKEN` / `NOTION_WINS_DB_ID` are **empty**, so the job no-ops every week |
-| `vanta-sf-hq-ops` project card | **Seeded** | In `src/data/projects.json`; photo folder is empty (`.gitkeep` only); `case_study_ready: false` |
-| Notion Capture Hub | **Not created** | Spec only: [`docs/notion-capture-hub.md`](docs/notion-capture-hub.md) |
-| Friday Detective (Phase 1) | **Prompt only** | [`docs/work-agent-friday.md`](docs/work-agent-friday.md) — must be run manually in Cursor on the work laptop with Gmail/Slack/Granola connected |
-| Personal harvest (Phase 3) | **Prompt only** | [`docs/harvest-prompt.md`](docs/harvest-prompt.md) — paste Notion text into Cursor; no API sync into `projects.json` |
-| Full automation (scan → site with no paste) | **Not built** | Would need always-on work-laptop access + Notion write + a harvest bot. High friction across two machines / two employers. |
+| Homepage “Recent wins” sync code | **Built, not connected** | Script + Sunday cron exist; Actions logs show `NOTION_TOKEN` / `NOTION_WINS_DB_ID` are **empty**, so the job no-ops every week |
+| `vanta-sf-hq-ops` project card | **Seeded** | In `src/data/projects.json`; photo folder empty; `case_study_ready: false` |
+| Notion Capture Hub | **Not created** | Click-by-click: [`docs/CAPTURE-HUB-SETUP.md`](docs/CAPTURE-HUB-SETUP.md) |
+| Friday Work Agent | **Prompt only** | [`docs/work-agent-friday.md`](docs/work-agent-friday.md) — run on a schedule / reminder on the work laptop |
+| Personal harvest | **Prompt only** | [`docs/harvest-prompt.md`](docs/harvest-prompt.md) — suggestions first, then you approve |
 
-**Related system that already exists (lighter path):**  
-[`docs/WINS-NOTION.md`](docs/WINS-NOTION.md) + `npm run sync:wins` + `.github/workflows/sync-wins.yml` sync **published one-liners** into `src/data/wins.json` for the home page. That is *not* the same as patching case-study fields on `vanta-sf-hq-ops`. Use wins for the feed; use this pipeline when a week deserves real project updates.
+**Lighter path already in repo:** [`docs/WINS-NOTION.md`](docs/WINS-NOTION.md) for homepage one-liners. Use Capture Hub when the week deserves real project / experience-bank decisions.
 
 ---
 
@@ -38,33 +45,33 @@ Do these in order. After step 3 you have a **manual but usable** loop. After ste
 
 ### 2. Create the Notion Capture Hub (once, ~20 min)
 
-Follow [`docs/notion-capture-hub.md`](docs/notion-capture-hub.md) in your **personal** Notion:
+Follow the simple checklist: [`docs/CAPTURE-HUB-SETUP.md`](docs/CAPTURE-HUB-SETUP.md)
 
-- Parent page **Capture Hub**
-- Child page **Weekly Summary**
-- Database **Tracks** (properties exactly as listed)
-- Database **Asset Gaps** (seed the five default Needed rows)
-- Child page **Tyler Brief**
+Creates: Weekly Summary · Tracks · Asset Gaps · **Experience Bank** · Tyler Brief.
 
-Optional: connect **Notion MCP** in Cursor desktop and ask an agent to build this from that doc.
+Optional: connect **Notion MCP** in Cursor desktop and ask it to build from that doc.
 
-### 3. Run the Friday → harvest loop by hand (usable pipeline)
+### 3. Run the Friday → personal loop (usable pipeline)
 
-**Friday (work laptop):**
+**Friday (work laptop) — bulk of the work:**
 
-1. Open Cursor with Gmail / Slack / Granola tools available.
-2. Paste [`docs/work-agent-friday.md`](docs/work-agent-friday.md) as the system prompt.
-3. Tell it to write this week’s Signal into the Capture Hub (not into GitHub).
+1. Reminder / Cursor Automation / calendar block: “Friday Detective.”
+2. Open Cursor with Gmail / Slack / Granola available.
+3. Run [`docs/work-agent-friday.md`](docs/work-agent-friday.md).
+4. Agent: scan → gather → sanitize → sort into Tracks / Weekly Summary / Asset Gaps / Experience Bank **candidates**.
+5. Mark Tracks `Ready for personal`. **Do not touch this GitHub repo from work.**
 
-**Weekend / anytime (personal laptop):**
+**Personal laptop — recommendations, then you approve:**
 
-1. Copy this week’s Weekly Summary (+ Track metric deltas / Asset Gaps).
-2. In this repo, paste into chat using [`docs/harvest-prompt.md`](docs/harvest-prompt.md).
-3. Apply the JSON patch to `src/data/projects.json`.
-4. Commit + push → Pages redeploys (~1 min).
-5. Mark Track rows **Harvested** in Notion.
+1. Open Capture Hub → filter Tracks where Status = `Ready for personal`.
+2. In this repo, run [`docs/harvest-prompt.md`](docs/harvest-prompt.md) (paste or Notion MCP).
+3. Agent **suggests** only:
+   - portfolio patches (`projects.json` / homepage wins)
+   - Experience Bank destinations (resume / experience / hold)
+4. You approve → apply → commit / push.
+5. Mark rows `Harvested` / Experience Bank `Published` as appropriate.
 
-Until Capture Hub exists, you can skip Notion and paste rough Friday notes straight into the harvest prompt.
+Until Capture Hub exists, paste the Friday Markdown packet straight into the harvest prompt.
 
 ### 4. Usable *today* without Capture Hub
 
@@ -92,19 +99,25 @@ Until secrets are set, Sunday cron will keep reporting success while doing nothi
 
 ---
 
-## What would be needed for a *true* automated pipeline
+## Scheduled two-laptop design (what you want)
 
-Only pursue this after the manual loop works for a few weeks.
+Not continuous scanning — a **Friday scheduled Work run** + a **personal review run**.
 
-| Gap | What’s missing | Rough shape |
+| Side | Job | Output |
 |---|---|---|
-| Scheduled Friday Detective | No cron on the work laptop; no durable Gmail/Slack auth in this repo | Cursor Automation / scheduled agent on work machine with work MCP; write-only to personal Notion |
-| Capture Hub write API | Hub may not exist; Work Agent needs Notion write access to *personal* workspace | Notion integration + page/DB IDs stored as env (not in git) |
-| Auto-harvest into `projects.json` | Harvest is paste-a-prompt today | Personal-laptop agent or GitHub Action that reads Capture Hub via Notion API and opens a PR patching `vanta-sf-hq-ops` (prefer PR over direct push) |
-| Photo pipeline | Empty asset folder | Keep human-in-the-loop; use `scripts/process-project-photos.mjs` after you drop files |
-| Cross-employer safety | Work laptop must not push to this GitHub repo | Keep the hard split: work → Notion only; personal → git |
+| **Work** | Scan Gmail / Slack / Granola; gather; sanitize; sort | Friday packet in Capture Hub (`Ready for personal`) |
+| **Bridge** | Personal Notion Capture Hub | Weekly Summary, Tracks, Asset Gaps, Experience Bank candidates, Tyler Brief |
+| **Personal** | Read packet; propose portfolio + experience-bank moves | Suggestions → you approve → git |
 
-**Recommendation:** treat **wins sync + weekly paste harvest** as the product. Full auto-scan is optional and fragile across two laptops.
+**Notion vs Google Drive:** put the text packet in **Notion**. Use Drive only if you need a photo drop folder the personal laptop can see.
+
+**To harden later (after a few manual Fridays):**
+1. Calendar / Cursor Automation on work laptop for Friday Detective  
+2. Notion integration so Work Agent writes Capture Hub without paste  
+3. Personal agent that opens a **PR** (suggestions) instead of editing silently  
+4. Keep photos human-approved  
+
+Do **not** auto-publish from work to the live site.
 
 ---
 

@@ -1,10 +1,10 @@
 # Notion Capture Hub setup (Vanta / C&W)
 
-Create this once in your personal Notion workspace. The Work Agent writes here on Fridays; you harvest from here on the personal laptop into `src/data/projects.json`.
-
-> **Status:** This hub does not exist until you create it. Until then the Friday → site loop is still usable by pasting notes straight into [`harvest-prompt.md`](./harvest-prompt.md). Full pipeline status: [`../PIPELINE.md`](../PIPELINE.md).
+> **Start here for click-by-click steps:** [`CAPTURE-HUB-SETUP.md`](./CAPTURE-HUB-SETUP.md)
 >
-> **Cloud / MCP note:** Notion MCP often needs auth in Cursor desktop (Settings → MCP). If connected, ask the agent to “create the Capture Hub from `docs/notion-capture-hub.md`.”
+> This page is the longer reference. Create the hub once in **personal** Notion. Work writes Fridays; personal reads and suggests portfolio + Experience Bank updates.
+>
+> Until the hub exists, paste Friday notes into [`harvest-prompt.md`](./harvest-prompt.md). Pipeline status: [`../PIPELINE.md`](../PIPELINE.md).
 
 ## Parent page
 

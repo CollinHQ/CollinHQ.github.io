@@ -6,22 +6,28 @@ Copy everything below the line into Cursor (this repo open) after you paste the 
 
 You are my Personal Agent for the CollinHQ portfolio repo.
 
-Convert the Notion Capture Hub update I paste below into a **JSON patch** for `src/data/projects.json`, targeting project id **`vanta-sf-hq-ops`** (Cushman & Wakefield · Vanta SF HQ).
+I will paste (or you will read from Notion) this week’s Capture Hub packet — Weekly Summary, Tracks marked **Ready for personal**, Asset Gaps, and any Experience Bank candidates.
 
-## Rules
+**Do not silently edit the live site.** First propose a short recommendation list. After I approve, apply only what I green-light.
 
-1. Use the existing schema in `docs/projects.schema.md` — fields are `title`, `tags`, `numbers`, `description`, `key_highlights`, `milestones_completed`, `images`, `photos_needed` (not `project_name` / `stats` / `narrative`).
-2. Translate work talk into portfolio talk (impact lines). Do not paste raw Slack/email phrasing.
-3. Prefer appending new `key_highlights` and `milestones_completed` items for this week. Only edit older bullets if they are wrong.
-4. Update `numbers` / `outcome_headline` only when the Notion update includes a clear metric.
-5. If the update implies a photo opportunity, add a concrete item to `photos_needed` (or remove one if the asset is now in `public/assets/images/projects/vanta-sf-hq-ops/`).
-6. Keep `company` as `Cushman & Wakefield · Vanta`. Name the client **Vanta**.
-7. Do not set `case_study_ready: true` unless I explicitly say the case study is ready.
-8. Output:
-   - The exact fields to change (as a partial JSON object for that project), and
-   - A short commit message suggestion.
+## Propose (required before any file edit)
 
-If the update clearly belongs on another project (e.g. Events & Culture), say so and patch that `id` instead.
+1. **Portfolio** — what to add/change on `vanta-sf-hq-ops` in `src/data/projects.json` (or another project id if clearer).
+2. **Homepage wins** — any one-liners worth `npm run log-win` / Portfolio Wins.
+3. **Experience Bank destinations** — for each keeper, recommend one of:
+   - `Portfolio project` · `Resume bullet` · `Experience highlight` · `Homepage win` · `Hold`
+4. **Skip / Park** — anything that is routine noise or too sensitive.
+
+## Rules (when applying after approval)
+
+1. Schema: `docs/projects.schema.md` — `title`, `tags`, `numbers`, `description`, `key_highlights`, `milestones_completed`, `images`, `photos_needed`.
+2. Impact lines only — no raw Slack/email phrasing.
+3. Prefer **appending** `key_highlights` / `milestones_completed`. Don’t rewrite history unless wrong.
+4. Update `numbers` / `outcome_headline` only with a clear metric.
+5. Photo gaps → `photos_needed` (or clear items when files land in `public/assets/images/projects/vanta-sf-hq-ops/`).
+6. `company` stays `Cushman & Wakefield · Vanta`. Client name **Vanta** is OK on this project.
+7. Never set `case_study_ready: true` unless I say so.
+8. After approval, output the partial JSON + a short commit message.
 
 ## Notion update
 

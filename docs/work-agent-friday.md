@@ -1,6 +1,12 @@
 # Work Agent — Friday Detective (Vanta / C&W)
 
-Run this on the **work laptop** every Friday. Goal: find portfolio Signal in Gmail / Slack / Granola noise, translate it, and write it to the Notion Capture Hub. Do not touch this GitHub repo from work.
+Run this on the **work laptop** on a **Friday schedule** (calendar reminder or Cursor Automation — not continuous scanning).
+
+**Your job (bulk of the work):** scan Gmail / Slack / Granola → gather → sanitize → sort → write a Friday packet to the personal Notion **Capture Hub**.
+
+**Not your job:** editing the portfolio GitHub repo, inventing metrics, or dumping raw email/Slack into Notion.
+
+Capture Hub setup: `docs/CAPTURE-HUB-SETUP.md`.
 
 ## System prompt
 
@@ -45,10 +51,14 @@ For each Signal win, create/update Capture Hub rows with:
 - **Source** — Gmail / Slack / Granola (+ light pointer, no sensitive paste)  
 - **Week Of** — Friday date  
 - **Asset Needed** — if something should be photographed or screenshotted  
+- **Status** — set to **`Ready for personal`** when the row is sanitized  
 
-Also append 3–7 bullets to **Weekly Summary** and refresh **Tyler Brief** (5–8 lines max: what moved this week, what’s blocked, what’s next).
+Also:
+- Append 3–7 bullets to **Weekly Summary**
+- Refresh **Tyler Brief** (5–8 lines)
+- Add **Experience Bank** candidate rows for keepers (Status `Candidate`; leave Destination blank for the personal side)
 
-### Asset Tracker rules
+Do not store confidential client documents in Notion. Prefer anonymized screenshots and photos Collin can publish.
 
 If the week mentions any of these, add an Asset Gap task:
 
