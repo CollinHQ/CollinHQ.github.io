@@ -60,6 +60,8 @@ Also:
 
 Do not store confidential client documents in Notion. Prefer anonymized screenshots and photos Collin can publish.
 
+### Asset Tracker rules
+
 If the week mentions any of these, add an Asset Gap task:
 
 | Mention | Asset Gap |
@@ -70,14 +72,13 @@ If the week mentions any of these, add an Asset Gap task:
 | Holiday party venue / production | Venue or production photo (when allowed) |
 | Walkthrough SOP / checklist | Anonymized checklist screenshot |
 
-Do not store confidential client documents in Notion. Prefer anonymized screenshots and photos Collin can publish.
-
 ### Output checklist (end of run)
 
 - [ ] Weekly Summary updated with portfolio-ready bullets  
-- [ ] Each win filed under the right Track  
+- [ ] Each win filed under the right Track with Status `Ready for personal`  
+- [ ] Experience Bank candidates added for keepers  
 - [ ] Asset Gaps created for photogenic mentions  
 - [ ] Tyler Brief refreshed  
-- [ ] No raw email/Slack dumps; no secrets  
+- [ ] No raw email/Slack dumps; no secrets; no GitHub edits from work  
 
-When done, tell Collin: “Capture Hub is ready to harvest on the personal laptop.”
+When done, tell Collin: “Capture Hub is ready for the personal review.”
