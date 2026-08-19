@@ -135,6 +135,8 @@ Client: Vanta SF HQ (via Cushman & Wakefield)
 
 Keep it 5–8 lines. Refresh every Friday after the Work Agent run.
 
+Optional: this is *your* weekly recap — share only if useful. In Notion you can rename the page anytime (e.g. **Weekly Brief**).
+
 ---
 
 ## Step 7 — Share with the Work Agent (important)

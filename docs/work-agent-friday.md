@@ -78,7 +78,7 @@ If the week mentions any of these, add an Asset Gap task:
 - [ ] Each win filed under the right Track with Status `Ready for personal`  
 - [ ] Experience Bank candidates added for keepers  
 - [ ] Asset Gaps created for photogenic mentions  
-- [ ] Collin Brief refreshed  
+- [ ] Collin Brief refreshed (optional)
 - [ ] No raw email/Slack dumps; no secrets; no GitHub edits from work  
 
 When done, tell Collin: “Capture Hub is ready for the personal review.”
