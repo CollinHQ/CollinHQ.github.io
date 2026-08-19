@@ -56,6 +56,11 @@ After merge, `vanta-sf-hq-ops` appears on the Projects page (no photos yet — t
 
 **You do this** in your **personal** Notion account (not work Notion).
 
+**Shortcut:** if another AI has Notion access (Cursor desktop + Notion MCP), paste
+[`notion-setup-agent-prompt.md`](./notion-setup-agent-prompt.md) — includes your Tracks database link.
+
+Manual click-by-click below, or see [`CAPTURE-HUB-SETUP.md`](./CAPTURE-HUB-SETUP.md).
+
 ### 2a. Parent page
 
 1. Go to https://www.notion.so  
