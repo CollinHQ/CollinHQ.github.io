@@ -116,6 +116,8 @@ Work side may **suggest** rows. Personal side sets Destination + Status.
 
 ## Step 6 — Collin Brief (child page)
 
+> **Already have “Tyler Brief” in Notion?** Rename it — see [`NOTION-RENAME-COLLIN-BRIEF.md`](./NOTION-RENAME-COLLIN-BRIEF.md). Tyler helped scaffold this; the page is your weekly recap, not a permanent Tyler reference.
+
 1. Subpage named `Collin Brief`
 2. Template:
 

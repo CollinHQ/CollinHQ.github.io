@@ -13,6 +13,7 @@ All setup notes for the Friday work → Notion → personal harvest → GitHub f
 
 | Doc | What it is |
 |---|---|
+| [**NOTION-RENAME-COLLIN-BRIEF.md**](./NOTION-RENAME-COLLIN-BRIEF.md) | Rename Tyler Brief → Collin Brief in Notion (if still showing old name) |
 | [**CAPTURE-HUB-SETUP.md**](./CAPTURE-HUB-SETUP.md) | Click-by-click: create Capture Hub in Notion |
 | [**notion-setup-agent-prompt.md**](./notion-setup-agent-prompt.md) | Copy-paste prompts for Cursor + Notion MCP (includes your URLs) |
 | [**notion-capture-hub.md**](./notion-capture-hub.md) | Longer reference spec |

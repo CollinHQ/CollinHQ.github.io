@@ -193,7 +193,7 @@ Primary project id: vanta-sf-hq-ops
 
 **Database: Experience Bank** — properties: Name, Impact Line, Destination (select: Portfolio project, Resume bullet, Experience highlight, Homepage win, Hold), Project Id (vanta-sf-hq-ops, none), Track (four tracks), Metric, Week Of, Status (Candidate, Approved, Published, Dropped), Source Week.
 
-**Child page: Collin Brief** — template with What moved / Blockers / Next week.
+**Child page: Collin Brief** — template with What moved / Blockers / Next week. (NOT Tyler Brief — if that page exists, rename it to Collin Brief.)
 
 Do not duplicate existing Tracks DB. When done, list all links and any manual steps for Notion integration at https://www.notion.so/my-integrations (integration name: Friday Capture).
 ```
