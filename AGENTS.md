@@ -9,7 +9,9 @@ This repo is a single static portfolio site — a Vite + React 18 + Tailwind CSS
 Standard commands (defined in `package.json`):
 
 - `npm run dev` — Vite dev server at http://localhost:5173 (use this while developing).
-- `npm run build` — production build to `dist/`.
+- `npm run check:privacy` — scan public repository text for personal Notion page
+  links and raw object IDs without printing any matched value.
+- `npm run build` — run the privacy check, then build production files to `dist/`.
 - `npm run preview` — serve the built `dist/` locally.
 
 The update script already runs `npm install`, so dependencies are ready when a session
@@ -24,7 +26,9 @@ Non-obvious notes:
 - `scripts/process-project-photos.mjs` and `scripts/generate-og-image.mjs` are one-off
   asset tools that use `sharp` and read source files from `$HOME`; they are not part of
   the dev/build flow and are not needed to run the site.
-- Deployment is automatic via `.github/workflows/deploy.yml` (Node 20) on push to `main`.
+- Pull requests run the privacy check and production build through
+  `.github/workflows/acceptance.yml`. Deployment remains automatic via
+  `.github/workflows/deploy.yml` (Node 20) on push to `main`.
 - Privacy: the GitHub repo and the published GitHub Pages site are intentionally **public**
   (it's a portfolio). The owner keeps only their **Cursor Cloud environment and secrets
   personal-scoped** (not team-shared) — set scope to Personal in the Cursor dashboard.
