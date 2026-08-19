@@ -2,7 +2,9 @@
 
 Create this once in your personal Notion workspace. The Work Agent writes here on Fridays; you harvest from here on the personal laptop into `src/data/projects.json`.
 
-> **Cloud agent note:** Notion MCP could not be authenticated in the cloud run. Create the hub manually (or re-run with Notion connected in Cursor desktop) using this checklist.
+> **Status:** This hub does not exist until you create it. Until then the Friday → site loop is still usable by pasting notes straight into [`harvest-prompt.md`](./harvest-prompt.md). Full pipeline status: [`../PIPELINE.md`](../PIPELINE.md).
+>
+> **Cloud / MCP note:** Notion MCP often needs auth in Cursor desktop (Settings → MCP). If connected, ask the agent to “create the Capture Hub from `docs/notion-capture-hub.md`.”
 
 ## Parent page
 

@@ -64,12 +64,15 @@ Habit: new row → fill Name / Date / Metric → check **Publish** when it’s c
 
 ---
 
-## Deeper case-study updates
+## Deeper case-study updates (Vanta / C&W weekly pipeline)
 
 The feed above is for one-liners. When a week produces enough for a real case
-study, patch `src/data/projects.json` directly — field reference in
-[`projects.schema.md`](./projects.schema.md), and append to `key_highlights` /
-`milestones_completed` rather than rewriting history.
+study (especially `vanta-sf-hq-ops`), use the runbook in
+[`../PIPELINE.md`](../PIPELINE.md): Friday Detective → Notion Capture Hub →
+harvest prompt → patch `projects.json`.
+
+Field reference: [`projects.schema.md`](./projects.schema.md). Prefer appending
+to `key_highlights` / `milestones_completed` rather than rewriting history.
 
 Photo worth taking? Add it to that project's `photos_needed` while the thing is
 still standing. See the asset-gap note in

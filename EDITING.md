@@ -53,10 +53,11 @@ You probably deleted a `"`, `,`, or `}` by accident. Easiest fix: on GitHub, ope
 
 For Friday Work Agent → Notion → this repo updates (Vanta / Cushman & Wakefield):
 
-1. Read the flow in [`PIPELINE.md`](PIPELINE.md)
+1. Read status + checklist in [`PIPELINE.md`](PIPELINE.md) (the pipeline is a runbook, not auto-running yet)
 2. Paste the Notion Weekly Summary into Cursor using [`docs/harvest-prompt.md`](docs/harvest-prompt.md)
 3. Schema reference: [`docs/projects.schema.md`](docs/projects.schema.md)
 4. Work-laptop scan prompt: [`docs/work-agent-friday.md`](docs/work-agent-friday.md)
+5. For homepage one-liners only, prefer [`docs/TRACKING-WINS.md`](docs/TRACKING-WINS.md) / `npm run log-win`
 
 Primary in-progress project id: **`vanta-sf-hq-ops`** in `projects.json`.
 
