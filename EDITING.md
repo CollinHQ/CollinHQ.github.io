@@ -49,9 +49,22 @@ On the edit screen there's a **"Preview"** tab next to "Edit." It won't show the
 
 You probably deleted a `"`, `,`, or `}` by accident. Easiest fix: on GitHub, open the file's **History** (clock icon), find your last good version, and revert — or just start a fresh AI chat and say "I broke about.json, fix the syntax."
 
+## Weekly harvest (Notion → JSON)
+
+For Friday Work Agent → Notion → this repo updates (Vanta / Cushman & Wakefield):
+
+1. Read status + checklist in [`PIPELINE.md`](PIPELINE.md) (the pipeline is a runbook, not auto-running yet)
+2. Paste the Notion Weekly Summary into Cursor using [`docs/harvest-prompt.md`](docs/harvest-prompt.md)
+3. Schema reference: [`docs/projects.schema.md`](docs/projects.schema.md)
+4. Work-laptop scan prompt: [`docs/work-agent-friday.md`](docs/work-agent-friday.md)
+5. For homepage one-liners only, prefer [`docs/TRACKING-WINS.md`](docs/TRACKING-WINS.md) / `npm run log-win`
+
+Primary in-progress project id: **`vanta-sf-hq-ops`** in `projects.json`.
+
 ## When to use an AI instead
 
-Use a chat (and point it at this repo + `HANDOFF.md`) for the bigger stuff:
+Use a chat (and point it at this repo + [`PIPELINE.md`](PIPELINE.md)) for the bigger stuff:
 - Rewriting a whole section or finding the right words
 - Adding new sections, photos, or testimonials
+- Harvesting a Notion weekly update into `projects.json`
 - Anything involving the layout or code, not just words

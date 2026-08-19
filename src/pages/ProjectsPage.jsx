@@ -3,11 +3,12 @@ import ProjectCard from '../components/ProjectCard'
 import Reveal from '../components/Reveal'
 import usePageTitle from '../hooks/usePageTitle'
 
-// Lead with case studies and strongest outcomes so a hiring manager sees proof first.
+// Lead with case studies and strongest outcomes; current role follows proof.
 const featured = [
   'bridge-hq-relocation',
   'fintech-hq-build-out',
   'klaviyo-office-redesign',
+  'vanta-sf-hq-ops',
   'bridge-records-migration',
   'klaviyo-coi-tracker',
   'optisign-werqwise',

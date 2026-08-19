@@ -1,5 +1,47 @@
 [
   {
+    "id": "vanta-sf-hq-ops",
+    "icon": "🏢",
+    "title": "Vanta SF HQ Workplace Ops & Relocation",
+    "status": "In Progress",
+    "company": "Cushman & Wakefield · Vanta",
+    "location": "San Francisco, CA",
+    "role": "On-site workplace coordinator for Vanta's SF headquarters via Cushman & Wakefield",
+    "description": "Run daily workplace operations for Vanta's SF headquarters on behalf of Cushman & Wakefield, while coordinating the HQ relocation end-to-end — movers, ~100 workstation monitors, building logistics — and owning vendor/spend, space readiness, and a ~300-guest holiday party.",
+    "tags": [
+      "Office Move",
+      "Vendor Mgmt",
+      "Employee Experience",
+      "Events"
+    ],
+    "key_highlights": [
+      "Coordinating Vanta's SF headquarters relocation: mover and installation bids for ~100 workstation monitors, building logistics, and move-day sequencing",
+      "Own the vendor and spend stack for the office: pantry and snack program, procurement approvals, and corporate-card spend",
+      "Built the daily space-readiness routine: recurring walkthroughs with a formal SOP checklist covering every floor",
+      "Planning a ~300-guest company holiday party end-to-end, from venue sourcing through production",
+      "Partner with Vanta's global workplace team while running the SF site on the ground"
+    ],
+    "numbers": {
+      "workstation_monitors": "~100",
+      "holiday_party_guests": "~300"
+    },
+    "outcome_headline": { "value": "3rd", "label": "HQ move of my career" },
+    "images": {
+      "hero": "/assets/images/projects/vanta-sf-hq-ops/hero.jpg",
+      "before": "/assets/images/projects/vanta-sf-hq-ops/before.jpg",
+      "after": "/assets/images/projects/vanta-sf-hq-ops/after.jpg"
+    },
+    "photos_needed": [
+      "Staged workstation / monitor install",
+      "Move-day operations",
+      "Pantry / amenity program",
+      "Holiday party venue or production (when allowed)",
+      "Anonymized walkthrough SOP checklist screenshot"
+    ],
+    "milestones_completed": [],
+    "case_study_ready": false
+  },
+  {
     "id": "fintech-hq-build-out",
     "case_study_ready": true,
     "icon": "🏗️",

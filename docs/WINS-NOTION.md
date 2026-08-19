@@ -20,6 +20,7 @@ New full-page database named **Portfolio Wins**. Add these properties **exactly*
 
 ```
 none
+vanta-sf-hq-ops
 fintech-hq-build-out
 klaviyo-office-redesign
 klaviyo-coi-tracker
