@@ -70,12 +70,12 @@ Default Needed rows to create now (mirror `photos_needed` on `vanta-sf-hq-ops`):
 4. Holiday party venue or production (when allowed)  
 5. Anonymized walkthrough SOP checklist screenshot  
 
-## Child 4 — Tyler Brief (page)
+## Child 4 — Collin Brief (page)
 
 Short shareable brief. Template:
 
 ```
-# Tyler Brief — Week of YYYY-MM-DD
+# Collin Brief — Week of YYYY-MM-DD
 Client: Vanta SF HQ (via Cushman & Wakefield)
 
 ## What moved

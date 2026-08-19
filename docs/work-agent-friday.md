@@ -55,7 +55,7 @@ For each Signal win, create/update Capture Hub rows with:
 
 Also:
 - Append 3–7 bullets to **Weekly Summary**
-- Refresh **Tyler Brief** (5–8 lines)
+- Refresh **Collin Brief** (5–8 lines — optional personal recap; skip if you don’t use it)
 - Add **Experience Bank** candidate rows for keepers (Status `Candidate`; leave Destination blank for the personal side)
 
 Do not store confidential client documents in Notion. Prefer anonymized screenshots and photos Collin can publish.
@@ -78,7 +78,7 @@ If the week mentions any of these, add an Asset Gap task:
 - [ ] Each win filed under the right Track with Status `Ready for personal`  
 - [ ] Experience Bank candidates added for keepers  
 - [ ] Asset Gaps created for photogenic mentions  
-- [ ] Tyler Brief refreshed  
+- [ ] Collin Brief refreshed (optional)
 - [ ] No raw email/Slack dumps; no secrets; no GitHub edits from work  
 
 When done, tell Collin: “Capture Hub is ready for the personal review.”

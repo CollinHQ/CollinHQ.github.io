@@ -56,6 +56,11 @@ After merge, `vanta-sf-hq-ops` appears on the Projects page (no photos yet — t
 
 **You do this** in your **personal** Notion account (not work Notion).
 
+**Shortcut:** if another AI has Notion access (Cursor desktop + Notion MCP), paste
+[`notion-setup-agent-prompt.md`](./notion-setup-agent-prompt.md) — includes your Tracks database link.
+
+Manual click-by-click below, or see [`CAPTURE-HUB-SETUP.md`](./CAPTURE-HUB-SETUP.md).
+
 ### 2a. Parent page
 
 1. Go to https://www.notion.so  
@@ -143,13 +148,13 @@ Primary project id: vanta-sf-hq-ops
 | Status | Select | `Candidate`, `Approved`, `Published`, `Dropped` |
 | Source Week | Text | |
 
-### 2f. Tyler Brief (subpage)
+### 2f. Collin Brief (subpage)
 
-1. Subpage named `Tyler Brief`  
+1. Subpage named `Collin Brief`  
 2. Paste:
 
 ```
-# Tyler Brief — Week of YYYY-MM-DD
+# Collin Brief — Week of YYYY-MM-DD
 Client: Vanta SF HQ (via Cushman & Wakefield)
 
 ## What moved
@@ -235,7 +240,7 @@ Write the Friday packet to my Notion Capture Hub:
 - Tracks rows (Status = Ready for personal)
 - Asset Gaps if needed
 - Experience Bank candidates (Status = Candidate)
-- Tyler Brief
+- Collin Brief
 
 Capture Hub URL: [PASTE YOUR NOTION URL HERE]
 ```
