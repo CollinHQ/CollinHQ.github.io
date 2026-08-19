@@ -49,7 +49,7 @@ Do these in order. After step 3 you have a **manual but usable** loop. After ste
 
 Follow the simple checklist: [`docs/CAPTURE-HUB-SETUP.md`](docs/CAPTURE-HUB-SETUP.md)
 
-Creates: Weekly Summary · Tracks · Asset Gaps · **Experience Bank** · Tyler Brief.
+Creates: Weekly Summary · Tracks · Asset Gaps · **Experience Bank** · Collin Brief.
 
 Optional: connect **Notion MCP** in Cursor desktop and ask it to build from that doc.
 
@@ -108,7 +108,7 @@ Not continuous scanning — a **Friday scheduled Work run** + a **personal revie
 | Side | Job | Output |
 |---|---|---|
 | **Work** | Scan Gmail / Slack / Granola; gather; sanitize; sort | Friday packet in Capture Hub (`Ready for personal`) |
-| **Bridge** | Personal Notion Capture Hub | Weekly Summary, Tracks, Asset Gaps, Experience Bank candidates, Tyler Brief |
+| **Bridge** | Personal Notion Capture Hub | Weekly Summary, Tracks, Asset Gaps, Experience Bank candidates, Collin Brief |
 | **Personal** | Read packet; propose portfolio + experience-bank moves | Suggestions → you approve → git |
 
 **Notion vs Google Drive:** put the text packet in **Notion**. Use Drive only if you need a photo drop folder the personal laptop can see.
@@ -128,7 +128,7 @@ Do **not** auto-publish from work to the live site.
 | Phase | Where | Who / what | Output |
 |---|---|---|---|
 | 1. Detective | Work laptop | Work Agent scans Gmail / Slack / Granola | Portfolio-ready wins + asset gaps written to Notion |
-| 2. Bridge | Notion | Capture Hub | Weekly Summary, Tracks, Asset Gaps, Tyler Brief |
+| 2. Bridge | Notion | Capture Hub | Weekly Summary, Tracks, Asset Gaps, Collin Brief |
 | 3. Editor | Personal laptop | You + Personal Agent (this repo) | Patched `src/data/projects.json` + photos in `/public/assets` |
 | 4. Live site | GitHub Pages | CI deploy on push to `main` | Updated cards / stats |
 
@@ -162,7 +162,7 @@ Parent page: **Capture Hub**, with:
 - **Weekly Summary** — Friday Signal wins (portfolio-ready bullets)
 - **Tracks** — Relocation · Vendor/Spend · Space Readiness · Events/Holiday Party
 - **Asset Gaps** — photo / proof tasks
-- **Tyler Brief** — short shareable brief for the week
+- **Collin Brief** — short shareable brief for the week
 
 Property conventions (mirror JSON): Track, Tags, Impact Line, Metric Delta, Asset Needed, Source, Week Of.
 

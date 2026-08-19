@@ -148,13 +148,13 @@ Primary project id: vanta-sf-hq-ops
 | Status | Select | `Candidate`, `Approved`, `Published`, `Dropped` |
 | Source Week | Text | |
 
-### 2f. Tyler Brief (subpage)
+### 2f. Collin Brief (subpage)
 
-1. Subpage named `Tyler Brief`  
+1. Subpage named `Collin Brief`  
 2. Paste:
 
 ```
-# Tyler Brief — Week of YYYY-MM-DD
+# Collin Brief — Week of YYYY-MM-DD
 Client: Vanta SF HQ (via Cushman & Wakefield)
 
 ## What moved
@@ -240,7 +240,7 @@ Write the Friday packet to my Notion Capture Hub:
 - Tracks rows (Status = Ready for personal)
 - Asset Gaps if needed
 - Experience Bank candidates (Status = Candidate)
-- Tyler Brief
+- Collin Brief
 
 Capture Hub URL: [PASTE YOUR NOTION URL HERE]
 ```

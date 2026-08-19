@@ -114,13 +114,13 @@ Work side may **suggest** rows. Personal side sets Destination + Status.
 
 ---
 
-## Step 6 — Tyler Brief (child page)
+## Step 6 — Collin Brief (child page)
 
-1. Subpage named `Tyler Brief`
+1. Subpage named `Collin Brief`
 2. Template:
 
 ```
-# Tyler Brief — Week of YYYY-MM-DD
+# Collin Brief — Week of YYYY-MM-DD
 Client: Vanta SF HQ (via Cushman & Wakefield)
 
 ## What moved
@@ -164,7 +164,7 @@ Pick one:
 - [ ] Tracks DB exists with the properties above  
 - [ ] Asset Gaps DB seeded with 5 Needed rows  
 - [ ] Experience Bank DB exists  
-- [ ] Tyler Brief page exists  
+- [ ] Collin Brief page exists  
 - [ ] You know how Work will write here (integration **or** paste)
 
 Then follow the Friday loop in [`../PIPELINE.md`](../PIPELINE.md).

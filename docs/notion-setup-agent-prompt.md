@@ -122,11 +122,11 @@ Seed 5 rows, Status = Needed:
 | Status | Select | Candidate, Approved, Published, Dropped |
 | Source Week | Text | |
 
-### 5. Child page: Tyler Brief
+### 5. Child page: Collin Brief
 
 Template:
 
-# Tyler Brief — Week of YYYY-MM-DD
+# Collin Brief — Week of YYYY-MM-DD
 Client: Vanta SF HQ (via Cushman & Wakefield)
 
 ## What moved
@@ -143,6 +143,59 @@ Client: Vanta SF HQ (via Cushman & Wakefield)
 Remind me to connect integration "Friday Capture" at https://www.notion.so/my-integrations to Capture Hub and every new database (⋯ → Connections).
 
 When done, list every page/database created with links.
+```
+
+---
+
+## Prompt C — Do everything in one chat (recommended)
+
+Paste this single prompt if Prompt A is not done yet — it finishes Tracks **and** creates the rest under Capture Hub.
+
+```
+You have Notion MCP write access. Set up my full **Capture Hub** for a portfolio pipeline.
+
+**Capture Hub parent:**
+https://app.notion.com/p/Capture-Hub-3c14860078b080b09954c73105352c9f
+Page ID: 3c14860078b080b09954c73105352c9f
+
+**Tracks database (already exists — configure, do not recreate):**
+https://app.notion.com/p/3c14860078b080c89ba5cbfe21d44763
+Database ID: 3c14860078b080c89ba5cbfe21d44763
+
+## Part 1 — Tracks database
+
+Rename/add properties EXACTLY:
+
+| Property | Type | Options |
+|---|---|---|
+| Name | Title | |
+| Impact Line | Text | |
+| Track | Select | Relocation, Vendor/Spend, Space Readiness, Events/Holiday Party |
+| Tags | Multi-select | Office Move, Vendor Mgmt, Employee Experience, Events, Facilities, Budget |
+| Metric Delta | Text | |
+| Source | Select | Gmail, Slack, Granola, Other |
+| Week Of | Date | |
+| Asset Needed | Text | |
+| Status | Select | Captured, Ready for personal, Harvested, Parked |
+
+Views: Board (group by Track), Table (sort Week Of desc).
+
+## Part 2 — Under Capture Hub parent (create if missing)
+
+**Intro text at top of parent page:**
+Friday packet from Vanta SF HQ (via Cushman & Wakefield).
+Work side writes. Personal side harvests into CollinHQ.github.io.
+Primary project id: vanta-sf-hq-ops
+
+**Child page: Weekly Summary** — template with ## Week of YYYY-MM-DD and bullet placeholders.
+
+**Database: Asset Gaps** — properties: Name (title), Project Id (select: vanta-sf-hq-ops), Keyword Trigger (text), Status (select: Needed, Shot, In repo, Dropped), Week Of (date), Notes (text). Seed 5 Needed rows: staged monitors, move-day ops, pantry, holiday party, SOP screenshot.
+
+**Database: Experience Bank** — properties: Name, Impact Line, Destination (select: Portfolio project, Resume bullet, Experience highlight, Homepage win, Hold), Project Id (vanta-sf-hq-ops, none), Track (four tracks), Metric, Week Of, Status (Candidate, Approved, Published, Dropped), Source Week.
+
+**Child page: Collin Brief** — template with What moved / Blockers / Next week.
+
+Do not duplicate existing Tracks DB. When done, list all links and any manual steps for Notion integration at https://www.notion.so/my-integrations (integration name: Friday Capture).
 ```
 
 ---
@@ -173,12 +226,11 @@ Integration create (for write access): https://www.notion.so/my-integrations
 
 ---
 
-## IDs from your link
+## Your Notion IDs (saved)
 
-| Item | Value |
-|---|---|
-| Tracks database URL | https://app.notion.com/p/3c14860078b080c89ba5cbfe21d44763 |
-| Database ID (no dashes) | `3c14860078b080c89ba5cbfe21d44763` |
-| Database ID (API format) | `3c148600-78b0-80c8-9baf-cbfe21d44763` |
+| Item | URL | ID |
+|---|---|---|
+| **Capture Hub** (parent) | https://app.notion.com/p/Capture-Hub-3c14860078b080b09954c73105352c9f | `3c14860078b080b09954c73105352c9f` |
+| **Tracks** (database) | https://app.notion.com/p/3c14860078b080c89ba5cbfe21d44763 | `3c14860078b080c89ba5cbfe21d44763` |
 
-Send the **Capture Hub parent page** link when you have it — add it to Prompt B.
+API format (with dashes): Capture Hub `3c148600-78b0-80b0-9954-c73105352c9f` · Tracks `3c148600-78b0-80c8-9baf-cbfe21d44763`
