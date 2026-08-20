@@ -23,7 +23,8 @@ Gather work accomplishments from every available source, draft them in **Collin�
 - Avoid: synergy, leverage, elevate, robust, seamless, landscape, cutting-edge, passionate about, “hiring managers actually want,” fake precision.
 - Soften micro-budgets / exact headcounts unless Collin confirms they’re okay public.
 - Company names OK to publish: **Rho** (not “Fintech Startup”), BRIDGE Housing, Klaviyo, Werqwise, Cushman & Wakefield, ConnectionsSF.
-- **Do not name the current client.** The security-compliance company Collin supports via Cushman & Wakefield stays anonymized site-wide — write “a security-compliance company” / “the client”. Only Collin can lift this, and it has not been lifted.
+- Vanta is already approved in the public `vanta-sf-hq-ops` project. Do not add
+  private client details beyond the wording and metrics Collin explicitly approves.
 - Project **ids** are separate from display names: Rho's build-out is still `fintech-hq-build-out` (the published URL). Use the id when passing `--project`, and the display name in prose.
 
 ## Translation rule (raw signal → impact line)
@@ -80,7 +81,8 @@ image lands in `public/assets/images/projects/<id>/`.
 npm run log-win -- --win "…" --type currently|milestone|highlight [--metric "…"] [--project fintech-hq-build-out|bridge-hq-relocation|…]
 ```
 
-7. Commit + push when asked.  
+7. When asked, run `npm run build`, stage `src/data/wins.json` explicitly, and
+   open a draft PR. Merge only after **Acceptance** passes.
 8. Optional Notion: add the same row with **Publish** checked (see `docs/WINS-NOTION.md`).
 
 ## Output format for Collin

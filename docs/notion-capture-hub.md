@@ -45,7 +45,7 @@ Keep bullets portfolio-ready (already translated). No raw email dumps.
 | Source | Select | Gmail · Slack · Granola · Other |
 | Week Of | Date | Friday of that week |
 | Asset Needed | Text | Photo/screenshot TODO, or empty |
-| Status | Select | Captured · Harvested · Parked |
+| Status | Select | Captured · Ready for personal · Harvested · Parked |
 
 Seed one empty row per track for the current week so the board is not blank.
 
@@ -95,7 +95,8 @@ Refresh every Friday after the Detective run (5–8 lines max).
 1. Copy this week’s **Weekly Summary** bullets (+ any Track metric deltas).  
 2. On the personal laptop, open the portfolio repo in Cursor.  
 3. Paste into chat using `docs/harvest-prompt.md`.  
-4. Apply the JSON patch to `vanta-sf-hq-ops`, add photos, commit, push.  
+4. Apply the JSON patch to `vanta-sf-hq-ops`, add photos, run `npm run build`,
+   and open a draft PR with only the approved files.
 5. Mark harvested Track rows as **Harvested**.
 
 ## Auth for agents

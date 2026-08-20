@@ -10,8 +10,9 @@ Most "make this sound more like me" changes are just editing text. You can do it
 4. Click the **pencil icon** (✏️, top-right of the file) to edit
 5. Press **Cmd+F** to find the text you want to change
 6. Change **only the words between the quotation marks** `" "`
-7. Scroll down → **Commit changes** (green button)
-8. Wait ~1 minute. The live site updates on its own.
+7. Click **Commit changes**, choose **Create a new branch for this commit and start a pull request**, and continue
+8. Open the pull request, review its diff, wait for **Acceptance** to pass, then merge it
+9. Wait ~1 minute. The live site updates on its own.
 
 ## The one golden rule
 
@@ -41,13 +42,16 @@ All of these are in `src/data/`:
 | **Project cards** text | `projects.json` | `"description"` / `"key_highlights"` |
 | **Endorsements / testimonials** | `testimonials.json` | `"quote"` |
 
-## Tip: preview before you commit
+## Tip: preview before you propose the change
 
 On the edit screen there's a **"Preview"** tab next to "Edit." It won't show the styled site, but it lets you eyeball that you didn't accidentally delete a quote or comma.
 
 ## If something looks broken after editing
 
-You probably deleted a `"`, `,`, or `}` by accident. Easiest fix: on GitHub, open the file's **History** (clock icon), find your last good version, and revert — or just start a fresh AI chat and say "I broke about.json, fix the syntax."
+You probably deleted a `"`, `,`, or `}` by accident. If the PR is still open, do not
+merge it; edit the same branch or close the PR. If it was already merged, open the
+file's **History** (clock icon), restore the last good version in a new branch, and
+send that through another PR — or ask an AI chat to fix the syntax.
 
 ## Weekly harvest (Notion → JSON)
 

@@ -45,14 +45,16 @@ npm run log-win -- --win "Kitchen install signed off on Floor 3" --metric "On sc
 npm run log-win -- --win "Vendor COI chase running without manual follow-up" --type highlight --project klaviyo-coi-tracker
 ```
 
-Then commit + push (or paste into GitHub). The home page **Recent wins** section reads `src/data/wins.json`.
+Then follow the Step 4 validate-and-draft-PR flow in
+[`GETTING-STARTED.md`](./GETTING-STARTED.md).
+The home page **Recent wins** section reads `src/data/wins.json`.
 
 ### Or edit on GitHub (no terminal)
 
 1. Open [`src/data/wins.json`](../src/data/wins.json)
 2. Add a new object at the **top** of the `"wins"` array (copy an existing one)
 3. Change only the words inside quotes
-4. Commit → site updates after deploy
+4. Commit to a new branch, open a PR, and merge only after **Acceptance** passes
 
 ---
 

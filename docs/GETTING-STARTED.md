@@ -4,7 +4,6 @@ Assume you’re starting from zero. Do these **in order**.
 
 **Live site:** https://collinhq.github.io  
 **Repo:** https://github.com/CollinHQ/CollinHQ.github.io  
-**This pipeline’s PR (merge first):** https://github.com/CollinHQ/CollinHQ.github.io/pull/3
 
 ---
 
@@ -32,7 +31,7 @@ Work laptop **never** pushes to GitHub. You stay in control of what goes public.
 | Done | Where |
 |---|---|
 | Portfolio site + auto-deploy on push to `main` | GitHub Actions |
-| `vanta-sf-hq-ops` project card (needs photos later) | PR #3 |
+| `vanta-sf-hq-ops` project card (needs photos later) | Live site |
 | Friday Work Agent prompt | [`work-agent-friday.md`](./work-agent-friday.md) |
 | Personal harvest prompt (suggest → approve) | [`harvest-prompt.md`](./harvest-prompt.md) |
 | Capture Hub blueprint | [`CAPTURE-HUB-SETUP.md`](./CAPTURE-HUB-SETUP.md) |
@@ -40,19 +39,7 @@ Work laptop **never** pushes to GitHub. You stay in control of what goes public.
 
 ---
 
-## Step 1 — Merge the pipeline PR (5 min)
-
-**You do this.**
-
-1. Open https://github.com/CollinHQ/CollinHQ.github.io/pull/3  
-2. Click **Merge pull request** → **Confirm merge**  
-3. Wait ~1 minute for the site to redeploy  
-
-After merge, `vanta-sf-hq-ops` appears on the Projects page (no photos yet — that’s OK).
-
----
-
-## Step 2 — Create Notion Capture Hub (15–20 min, once)
+## Step 1 — Create Notion Capture Hub (15–20 min, once)
 
 **You do this** in your **personal** Notion account (not work Notion).
 
@@ -61,7 +48,7 @@ After merge, `vanta-sf-hq-ops` appears on the Projects page (no photos yet — t
 
 Manual click-by-click below, or see [`CAPTURE-HUB-SETUP.md`](./CAPTURE-HUB-SETUP.md).
 
-### 2a. Parent page
+### 1a. Parent page
 
 1. Go to https://www.notion.so  
 2. Click **New page** (sidebar)  
@@ -74,7 +61,7 @@ Work side writes. Personal side harvests into CollinHQ.github.io.
 Primary project id: vanta-sf-hq-ops
 ```
 
-### 2b. Weekly Summary (subpage)
+### 1b. Weekly Summary (subpage)
 
 1. On the Capture Hub page, type `/page` → **Page**  
 2. Name it `Weekly Summary`  
@@ -86,7 +73,7 @@ Primary project id: vanta-sf-hq-ops
 - (portfolio-ready impact bullet)
 ```
 
-### 2c. Tracks (database)
+### 1c. Tracks (database)
 
 1. On Capture Hub, type `/database` → **Database – Full page**  
 2. Rename to `Tracks`  
@@ -109,7 +96,7 @@ Primary project id: vanta-sf-hq-ops
 
 **How to add a property in Notion:** click `+` in the table header → pick type → name it exactly as above.
 
-### 2d. Asset Gaps (database)
+### 1d. Asset Gaps (database)
 
 1. Another full-page database on Capture Hub → name `Asset Gaps`  
 2. Properties:
@@ -131,7 +118,7 @@ Primary project id: vanta-sf-hq-ops
 - Holiday party venue or production (when allowed)  
 - Anonymized walkthrough SOP checklist screenshot  
 
-### 2e. Experience Bank (database)
+### 1e. Experience Bank (database)
 
 1. Full-page database → name `Experience Bank`  
 2. Properties:
@@ -148,7 +135,7 @@ Primary project id: vanta-sf-hq-ops
 | Status | Select | `Candidate`, `Approved`, `Published`, `Dropped` |
 | Source Week | Text | |
 
-### 2f. Collin Brief (subpage)
+### 1f. Collin Brief (subpage)
 
 1. Subpage named `Collin Brief`  
 2. Paste:
@@ -167,7 +154,7 @@ Client: Vanta SF HQ (via Cushman & Wakefield)
 - …
 ```
 
-### 2g. Bookmark the hub
+### 1g. Bookmark the hub
 
 Copy the Capture Hub URL — you’ll need it on both laptops.
 
@@ -175,7 +162,7 @@ Copy the Capture Hub URL — you’ll need it on both laptops.
 
 ---
 
-## Step 3 — Connect Notion to Cursor (optional but recommended)
+## Step 2 — Connect Notion to Cursor (optional but recommended)
 
 **You do this** on each laptop where you’ll run agents.
 
@@ -189,7 +176,7 @@ Docs: https://docs.cursor.com/context/mcp (MCP overview)
 
 ### Work laptop (Friday Detective)
 
-Same Notion MCP setup **or** skip for now and paste the Friday packet manually (Step 5b).
+Same Notion MCP setup **or** skip for now and paste the Friday packet manually (Step 3c).
 
 ### Notion integration for agents to *write* (later)
 
@@ -203,16 +190,16 @@ Integration docs: https://developers.notion.com/docs/create-a-notion-integration
 
 ---
 
-## Step 4 — Set up Friday on the work laptop
+## Step 3 — Set up Friday on the work laptop
 
 **You do this** once, then repeat every Friday.
 
-### 4a. Calendar reminder
+### 3a. Calendar reminder
 
 Create a recurring event: **Friday 4:00 PM — Friday Detective** (adjust time).  
 Description: “Run Cursor Work Agent → Capture Hub. Do not edit GitHub.”
 
-### 4b. Connect work tools in Cursor
+### 3b. Connect work tools in Cursor
 
 On the **work laptop**, in Cursor **Settings → MCP**, connect what you have:
 
@@ -224,11 +211,11 @@ On the **work laptop**, in Cursor **Settings → MCP**, connect what you have:
 
 Granola is already useful for “what happened in meetings this week.”
 
-### 4c. First Friday run (copy-paste prompt)
+### 3c. First Friday run (copy-paste prompt)
 
 1. Open Cursor on the **work laptop**  
 2. New Agent chat  
-3. Open this file in the repo (after PR merge) or copy from GitHub:  
+3. Open this file in the repo or copy it from GitHub:
    [`docs/work-agent-friday.md`](https://github.com/CollinHQ/CollinHQ.github.io/blob/main/docs/work-agent-friday.md)  
 4. Paste the **whole file** as your first message, then add:
 
@@ -251,7 +238,7 @@ Capture Hub URL: [PASTE YOUR NOTION URL HERE]
 
 ---
 
-## Step 5 — Personal review (weekend or whenever)
+## Step 4 — Personal review (weekend or whenever)
 
 **You do this** on the **personal laptop**.
 
@@ -277,21 +264,32 @@ Or, with Notion MCP: “Read Capture Hub Tracks where Status is Ready for person
 
 6. Agent returns **suggestions only** — review the list  
 7. Reply: **“Approve items 1, 2, and 4”** (or edit first)  
-8. Agent applies changes → you commit:
+8. Agent applies changes → validate them, then open a draft PR:
 
 ```bash
-git add -A
+git switch main
+git pull --ff-only
+git switch -c harvest/YYYY-MM-DD
+npm run build
+git status --short
+git add src/data/projects.json
+git diff --cached --check
 git commit -m "Harvest: week of YYYY-MM-DD"
-git push
+git push -u origin harvest/YYYY-MM-DD
+gh pr create --draft --fill
 ```
+
+If you approved other files (for example, photos), add each exact path explicitly
+before committing. Review the draft PR and wait for **Acceptance** to pass before
+merging it.
 
 9. In Notion, mark processed Tracks **Harvested** and Experience Bank rows **Published** or **Approved**
 
-Site updates in ~1 minute after push to `main`.
+Site updates in ~1 minute after the approved PR is merged to `main`.
 
 ---
 
-## Step 6 — Optional: auto-sync homepage “Recent wins”
+## Step 5 — Optional: auto-sync homepage “Recent wins”
 
 Separate from Capture Hub. Good for one-liners on the home page.
 
@@ -311,7 +309,7 @@ Until secrets are set, the Sunday job runs but does nothing (safe — it won’t
 
 ---
 
-## Step 7 — Photos (when you have them)
+## Step 6 — Photos (when you have them)
 
 **You do this** when you take publishable photos.
 
@@ -323,7 +321,7 @@ public/assets/images/projects/vanta-sf-hq-ops/hero.jpg
 ```
 
 3. Remove matching lines from `photos_needed` in `src/data/projects.json`  
-4. Commit + push  
+4. Follow the validate-and-draft-PR flow in Step 4, staging each photo and JSON file explicitly
 
 Photo import helper (optional): see [`TRACKING-WINS.md`](./TRACKING-WINS.md) for `process-project-photos.mjs`.
 
@@ -344,7 +342,6 @@ Photo import helper (optional): see [`TRACKING-WINS.md`](./TRACKING-WINS.md) for
 
 ## Checklist — am I ready for my first Friday?
 
-- [ ] PR #3 merged  
 - [ ] Capture Hub exists in personal Notion (all 5 pieces)  
 - [ ] Capture Hub URL bookmarked  
 - [ ] Friday calendar reminder set (work laptop)  
@@ -353,7 +350,7 @@ Photo import helper (optional): see [`TRACKING-WINS.md`](./TRACKING-WINS.md) for
 - [ ] (Optional) Notion MCP connected on personal laptop  
 - [ ] (Optional) Portfolio Wins + GitHub secrets for homepage sync  
 
-When all required boxes are checked, run Step 4 on Friday and Step 5 when you’re ready to publish.
+When all required boxes are checked, run Step 3 on Friday and Step 4 when you’re ready to publish.
 
 ---
 
@@ -361,7 +358,7 @@ When all required boxes are checked, run Step 4 on Friday and Step 5 when you’
 
 | Problem | Fix |
 |---|---|
-| Agent can’t write Notion | Use manual paste (Step 4c) — still works |
+| Agent can’t write Notion | Use manual paste (Step 3c) — still works |
 | Not sure what to approve | Say “only suggest, don’t edit files yet” |
 | Broke a JSON file | GitHub → file → History → revert, or ask Cursor to fix syntax |
 | Work blocked from GitHub | Correct — only use Notion from work |

@@ -6,7 +6,7 @@ All setup notes for the Friday work → Notion → personal harvest → GitHub f
 
 | Doc | What it is |
 |---|---|
-| [**GETTING-STARTED.md**](./GETTING-STARTED.md) | Full setup from zero — merge PR, Notion, Friday run, personal harvest |
+| [**GETTING-STARTED.md**](./GETTING-STARTED.md) | Full setup from zero — Notion, Friday run, personal harvest, reviewed publishing |
 | [**../PIPELINE.md**](../PIPELINE.md) | Architecture, status, and weekly loop |
 
 ## Notion Capture Hub

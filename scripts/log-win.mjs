@@ -73,4 +73,7 @@ writeFileSync(OUT, `${JSON.stringify(data, null, 2)}\n`, 'utf8')
 console.log('Logged win → src/data/wins.json')
 console.log(`  ${entry.date} · ${entry.type} · ${entry.win}`)
 if (entry.metric) console.log(`  metric: ${entry.metric}`)
-console.log('\nCommit & push (or edit on GitHub) so the live site updates after merge/deploy.')
+console.log(
+  '\nRun npm run build, stage src/data/wins.json, and open a draft PR. ' +
+  'Merge only after Acceptance passes.',
+)

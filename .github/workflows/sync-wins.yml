@@ -1,9 +1,10 @@
 # Sync published wins from Notion → src/data/wins.json
-# Then commit if changed (push to main triggers the existing Pages deploy).
+# Then commit if changed and explicitly dispatch the existing Pages deploy.
 #
 # Required repo secrets (Settings → Secrets and variables → Actions):
 #   NOTION_TOKEN        — Notion integration secret
 #   NOTION_WINS_DB_ID   — Wins database ID
+#   NOTION_WINS_DATA_SOURCE_ID — optional explicit source for multi-source DBs
 #
 # Until secrets are set, this workflow exits successfully without changing files.
 
@@ -11,16 +12,17 @@ name: Sync wins from Notion
 
 on:
   schedule:
-    # Sundays 16:00 UTC (~9am PT)
+    # Sundays 16:00 UTC (8am PST / 9am PDT)
     - cron: '0 16 * * 0'
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: sync-wins
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -28,6 +30,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -38,17 +42,33 @@ jobs:
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_WINS_DB_ID: ${{ secrets.NOTION_WINS_DB_ID }}
+          NOTION_WINS_DATA_SOURCE_ID: ${{ secrets.NOTION_WINS_DATA_SOURCE_ID }}
           WINS_LIMIT: '12'
         run: node scripts/sync-wins-from-notion.mjs
 
-      - name: Commit and push if changed
+      - name: Validate public output before commit
+        run: |
+          npm test
+          npm run check:privacy
+
+      - name: Commit if changed and ensure the current revision deploys
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if git diff --quiet -- src/data/wins.json; then
             echo "wins.json unchanged"
-            exit 0
+            current_sha="$(git rev-parse HEAD)"
+            deployed_sha="$(gh run list --workflow deploy.yml --branch main --status success --limit 1 --json headSha --jq '.[0].headSha // ""')"
+            if [ "$current_sha" = "$deployed_sha" ]; then
+              echo "Current revision already deployed"
+              exit 0
+            fi
+            echo "Current revision has no successful deploy; dispatching one"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add src/data/wins.json
+            git commit -m "chore: sync portfolio wins from Notion"
+            git push
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/wins.json
-          git commit -m "chore: sync portfolio wins from Notion"
-          git push
+          gh workflow run deploy.yml --ref main
