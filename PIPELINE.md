@@ -10,7 +10,7 @@ Work Agent (Friday scheduled)
 Personal Agent (weekend / when ready)
   → read Ready-for-personal rows
   → suggest: portfolio (projects.json / wins) + Experience Bank destinations
-  → you approve → commit / push → GitHub Pages
+  → you approve → draft PR → Acceptance → human merge → GitHub Pages
 ```
 
 **Bridge = Notion** (structured). Use Google Drive only for photo/PDF drop folders if needed — not for the weekly text packet.
@@ -25,7 +25,7 @@ Friday Work Agent or auto-applies harvests into `projects.json` today.
 | Phase 4 — GitHub Pages deploy | **Works** | `.github/workflows/deploy.yml` builds on push to `main` |
 | Homepage “Recent wins” sync code | **Built, not connected** | Script + Sunday cron exist; Actions logs show `NOTION_TOKEN` / `NOTION_WINS_DB_ID` are **empty**, so the job no-ops every week |
 | `vanta-sf-hq-ops` project card | **Seeded** | In `src/data/projects.json`; photo folder empty; `case_study_ready: false` |
-| Notion Capture Hub | **Not created** | Click-by-click: [`docs/CAPTURE-HUB-SETUP.md`](docs/CAPTURE-HUB-SETUP.md) |
+| Notion Capture Hub | **Setup status unverified** | Confirm privately; click-by-click: [`docs/CAPTURE-HUB-SETUP.md`](docs/CAPTURE-HUB-SETUP.md) |
 | Friday Work Agent | **Prompt only** | [`docs/work-agent-friday.md`](docs/work-agent-friday.md) — run on a schedule / reminder on the work laptop |
 | Personal harvest | **Prompt only** | [`docs/harvest-prompt.md`](docs/harvest-prompt.md) — suggestions first, then you approve |
 
@@ -39,7 +39,7 @@ Friday Work Agent or auto-applies harvests into `projects.json` today.
 
 Do these in order. After step 3 you have a **manual but usable** loop. After step 5 the homepage feed can auto-update.
 
-### 1. Finish / merge this branch’s seed (repo)
+### 1. Keep the seeded project current (repo)
 
 - Keep `vanta-sf-hq-ops` in `projects.json`.
 - Add `vanta-sf-hq-ops` to the Notion **Portfolio Wins** Project select options (see `docs/WINS-NOTION.md`).
@@ -70,7 +70,7 @@ Optional: connect **Notion MCP** in Cursor desktop and ask it to build from that
 3. Agent **suggests** only:
    - portfolio patches (`projects.json` / homepage wins)
    - Experience Bank destinations (resume / experience / hold)
-4. You approve → apply → commit / push.
+4. You approve → apply → validate → open a draft PR → merge after Acceptance passes.
 5. Mark rows `Harvested` / Experience Bank `Published` as appropriate.
 
 Until Capture Hub exists, paste the Friday Markdown packet straight into the harvest prompt.
@@ -81,8 +81,16 @@ If you only want the site to stay current:
 
 ```bash
 # one-liner on the home page (no Notion required)
+git switch main
+git pull --ff-only
+git switch -c win/YYYY-MM-DD
 npm run log-win -- --win "Your portfolio-ready sentence" --type currently --project vanta-sf-hq-ops
-git add src/data/wins.json && git commit -m "chore: log win" && git push
+npm run build
+git add src/data/wins.json
+git diff --cached --check
+git commit -m "chore: log win"
+git push -u origin win/YYYY-MM-DD
+gh pr create --draft --fill
 ```
 
 Or edit `src/data/wins.json` / `projects.json` on GitHub per [`EDITING.md`](EDITING.md).
@@ -116,7 +124,7 @@ Not continuous scanning — a **Friday scheduled Work run** + a **personal revie
 **To harden later (after a few manual Fridays):**
 1. Calendar / Cursor Automation on work laptop for Friday Detective  
 2. Notion integration so Work Agent writes Capture Hub without paste  
-3. Personal agent that opens a **PR** (suggestions) instead of editing silently  
+3. Keep the personal-side **draft PR** and Acceptance review boundary
 4. Keep photos human-approved  
 
 Do **not** auto-publish from work to the live site.
@@ -174,7 +182,8 @@ Setup checklist: [`docs/notion-capture-hub.md`](docs/notion-capture-hub.md).
 2. In Cursor on this repo, paste into chat with the prompt in [`docs/harvest-prompt.md`](docs/harvest-prompt.md).
 3. Apply the JSON patch to [`src/data/projects.json`](src/data/projects.json) (usually the `vanta-sf-hq-ops` entry).
 4. Drop any new photos into `public/assets/images/projects/vanta-sf-hq-ops/` and clear matching `photos_needed` items.
-5. Commit and push. GitHub Actions redeploys the site.
+5. Run `npm run build`, stage exact approved paths, and open a draft PR. Merge only
+   after Acceptance passes; GitHub Actions then redeploys the site.
 
 Schema reference: [`docs/projects.schema.md`](docs/projects.schema.md).  
 Self-serve text edits without AI: [`EDITING.md`](EDITING.md).  

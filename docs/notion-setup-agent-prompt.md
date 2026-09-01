@@ -5,6 +5,10 @@ Use this in **Cursor desktop on your personal laptop** with **Notion MCP connect
 
 This cloud agent **cannot** reach your Notion workspace.
 
+> **Public-repo privacy:** replace the bracketed URL/ID placeholders only in
+> the private chat you send to Notion. Never commit personal workspace URLs or
+> object IDs to this repository.
+
 ---
 
 ## Prompt A — Finish the Tracks database (you already created the page)
@@ -15,9 +19,9 @@ Copy everything in the box below into a new Cursor chat (Notion MCP on).
 You have Notion MCP write access. Set up my Capture Hub **Tracks** database.
 
 **Database URL (already exists):**
-https://app.notion.com/p/3c14860078b080c89ba5cbfe21d44763?v=3c14860078b0807fbf25000cd059d815
+[PASTE TRACKS DATABASE URL]
 
-**Database ID:** 3c14860078b080c89ba5cbfe21d44763
+**Database ID:** [PASTE TRACKS DATABASE ID]
 
 **Goal:** Rename/add properties so they match EXACTLY (names are case-sensitive for our pipeline). Do not delete rows the user already added unless empty test rows.
 
@@ -67,11 +71,11 @@ Run **after Prompt A**, or combine with **Prompt C** below.
 You have Notion MCP write access. Complete my **Capture Hub** under this parent page:
 
 **Capture Hub parent URL:**
-https://app.notion.com/p/Capture-Hub-3c14860078b080b09954c73105352c9f
+[PASTE CAPTURE HUB URL]
 
-**Capture Hub page ID:** 3c14860078b080b09954c73105352c9f
+**Capture Hub page ID:** [PASTE CAPTURE HUB PAGE ID]
 
-Create anything that does not already exist. Do not duplicate pages/databases that already exist (Tracks database already exists at https://app.notion.com/p/3c14860078b080c89ba5cbfe21d44763).
+Create anything that does not already exist. Do not duplicate pages/databases that already exist (Tracks database already exists at [PASTE TRACKS DATABASE URL]).
 
 ### 1. Parent page intro (top of Capture Hub)
 
@@ -155,12 +159,12 @@ Paste this single prompt if Prompt A is not done yet — it finishes Tracks **an
 You have Notion MCP write access. Set up my full **Capture Hub** for a portfolio pipeline.
 
 **Capture Hub parent:**
-https://app.notion.com/p/Capture-Hub-3c14860078b080b09954c73105352c9f
-Page ID: 3c14860078b080b09954c73105352c9f
+[PASTE CAPTURE HUB URL]
+Page ID: [PASTE CAPTURE HUB PAGE ID]
 
 **Tracks database (already exists — configure, do not recreate):**
-https://app.notion.com/p/3c14860078b080c89ba5cbfe21d44763
-Database ID: 3c14860078b080c89ba5cbfe21d44763
+[PASTE TRACKS DATABASE URL]
+Database ID: [PASTE TRACKS DATABASE ID]
 
 ## Part 1 — Tracks database
 
@@ -226,11 +230,9 @@ Integration create (for write access): https://www.notion.so/my-integrations
 
 ---
 
-## Your Notion IDs (saved)
+## Add your Notion details at run time
 
-| Item | URL | ID |
-|---|---|---|
-| **Capture Hub** (parent) | https://app.notion.com/p/Capture-Hub-3c14860078b080b09954c73105352c9f | `3c14860078b080b09954c73105352c9f` |
-| **Tracks** (database) | https://app.notion.com/p/3c14860078b080c89ba5cbfe21d44763 | `3c14860078b080c89ba5cbfe21d44763` |
-
-API format (with dashes): Capture Hub `3c148600-78b0-80b0-9954-c73105352c9f` · Tracks `3c148600-78b0-80c8-9baf-cbfe21d44763`
+Keep the Capture Hub and Tracks URLs/IDs in a private bookmark, password
+manager, or local note. Paste them over the bracketed placeholders immediately
+before sending a prompt to an authenticated Notion agent; do not save the
+resolved prompt in this public repository.

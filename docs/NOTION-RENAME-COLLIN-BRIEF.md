@@ -8,7 +8,7 @@ Tyler helped scaffold this; the weekly recap is **for you**, not a standing refe
 
 ## Quick fix in Notion (you)
 
-1. Open Capture Hub: https://app.notion.com/p/Capture-Hub-3c14860078b080b09954c73105352c9f  
+1. Open Capture Hub from your private bookmark
 2. Click the child page titled **Tyler Brief**  
 3. Click the title at the top → rename to **Collin Brief**  
    - Or **Weekly Brief** if you prefer something neutral  
@@ -23,7 +23,7 @@ Done. No GitHub changes needed.
 ```
 Rename my Notion page "Tyler Brief" under Capture Hub to "Collin Brief".
 
-Capture Hub: https://app.notion.com/p/Capture-Hub-3c14860078b080b09954c73105352c9f
+Capture Hub: [PASTE CAPTURE HUB URL]
 
 Update any heading inside that page from "Tyler Brief" to "Collin Brief".
 Do not rename anything else.

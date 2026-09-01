@@ -65,11 +65,18 @@ Repo → **Settings** → **Secrets and variables** → **Actions**:
 | `NOTION_TOKEN` | Integration secret |
 | `NOTION_WINS_DB_ID` | Database ID |
 
+The sync uses Notion API `2026-03-11` and automatically discovers the single data
+source inside this database. If you later add multiple data sources, also set
+`NOTION_WINS_DATA_SOURCE_ID` to the exact source that contains Portfolio Wins.
+
 ## 5. Turn it on
 
 - **Actions** → **Sync wins from Notion** → **Run workflow** (manual test)
 - Or wait for the Sunday cron
-- When `wins.json` changes on `main`, the existing Pages deploy publishes the site
+- The workflow replaces each private Notion page ID with a stable one-way digest,
+  then runs the privacy regression suite and repository scan before it can commit
+- After a safe bot commit, the sync explicitly dispatches the existing Pages deploy
+  (workflow-token pushes do not trigger push workflows on their own)
 
 ## Local test (optional)
 
